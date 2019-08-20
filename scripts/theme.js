@@ -7,16 +7,10 @@ import {Overlay} from 'xtend-library/src/components/overlay/overlay'
 import {TweenMax} from 'gsap/TweenMax'
 
 /**
- * Xt
- */
-
-Xt.ready(Xt.load)
-
-/**
  * ajax
  */
 
-Xt.observe.push({
+Xt.mount.push({
   matches: 'html',
   fnc: function (main, index, query) {
 
@@ -26,7 +20,7 @@ Xt.observe.push({
 
     // destroy
 
-    return function destroy() {
+    return function unmount() {
       self.destroy();
       self = null;
     };
@@ -38,7 +32,7 @@ Xt.observe.push({
  * smooth
  */
 
-Xt.observe.push({
+Xt.mount.push({
   matches: 'html',
   fnc: function (main, index, query) {
 
@@ -46,7 +40,7 @@ Xt.observe.push({
 
     // destroy
 
-    return function destroy() {
+    return function unmount() {
       self.destroy();
       self = null;
     };
@@ -58,7 +52,7 @@ Xt.observe.push({
  * .header
  */
 
-Xt.observe.push({
+Xt.mount.push({
   matches: '.header',
   fnc: function (main, index, query) {
 
@@ -88,7 +82,7 @@ Xt.observe.push({
 
     // destroy
 
-    return function destroy() {
+    return function unmount() {
       self.destroy();
       self = null;
       // external events
@@ -102,7 +96,7 @@ Xt.observe.push({
  * .footer
  */
 
-Xt.observe.push({
+Xt.mount.push({
   matches: '.footer',
   fnc: function (main, index, query) {
 
@@ -125,7 +119,7 @@ Xt.observe.push({
 
     // destroy
 
-    return function destroy() {
+    return function unmount() {
       self.destroy();
       self = null;
     };
