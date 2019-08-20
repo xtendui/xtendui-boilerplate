@@ -8,6 +8,8 @@
     "build": "webpack"
   },
   "dependencies": {
+    "bezier-easing": "^2.1.0",
+    "gsap": "^2.1.2",
     "xtend-library": "^0.9.26"
   },
   "devDependencies": {

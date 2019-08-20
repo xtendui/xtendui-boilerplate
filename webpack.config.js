@@ -9,6 +9,7 @@ console.log('NODE_ENV:', mode)
 
 module.exports = {
   mode: mode,
+  context: path.resolve(__dirname, ''),
   entry: {
     'scripts/theme': ['./scripts/theme.js'],
     'styles/theme': ['./styles/theme.less'],
@@ -65,6 +66,6 @@ module.exports = {
       },
     })],
   },
-  devtool: 'source-map',
   watch: true,
+  devtool: 'source-map',
 };
