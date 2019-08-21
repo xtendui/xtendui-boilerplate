@@ -12,7 +12,7 @@ import {TweenMax} from 'gsap/TweenMax'
 
 Xt.mount.push({
   matches: 'html',
-  fnc: function (main, index, query) {
+  fnc: function mount(main, index, query) {
 
     let self = new Ajax(main, {
       "query": ".site_wrapper",
@@ -34,7 +34,7 @@ Xt.mount.push({
 
 Xt.mount.push({
   matches: 'html',
-  fnc: function (main, index, query) {
+  fnc: function mount(main, index, query) {
 
     let self = new Smooth(document.scrollingElement, {});
 
@@ -54,7 +54,7 @@ Xt.mount.push({
 
 Xt.mount.push({
   matches: '.header',
-  fnc: function (main, index, query) {
+  fnc: function mount(main, index, query) {
 
     let parallax = main;
 
@@ -75,8 +75,8 @@ Xt.mount.push({
 
     // external event test
 
-    let externalEvent = function() {
-      console.log(self.object);
+    let externalEvent = function () {
+      console.debug('this event gets removed on unmount', self.object);
     }
     window.addEventListener('scroll', externalEvent);
 
@@ -98,7 +98,7 @@ Xt.mount.push({
 
 Xt.mount.push({
   matches: '.footer',
-  fnc: function (main, index, query) {
+  fnc: function mount(main, index, query) {
 
     let parallax = main;
 

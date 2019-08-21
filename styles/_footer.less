@@ -4,5 +4,18 @@
 
 .footer {
   .padding(y, big);
-  background: @gray--300;
+  background: @secondary;
+}
+
+.footer_inner {
+  > .row {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer_menu {
+  > .list {
+    .list-space(medium);
+  }
 }

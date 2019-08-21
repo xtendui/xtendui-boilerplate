@@ -4,5 +4,18 @@
 
 .header {
   .padding(y, big);
-  background: @gray--300;
+  background: @primary;
+}
+
+.header_inner {
+  > .row {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header_menu {
+  > .list {
+    .list-space(medium);
+  }
 }
