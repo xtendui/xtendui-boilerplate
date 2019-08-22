@@ -20,7 +20,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'xtend-library': path.resolve(__dirname, 'node_modules/xtend-library'),
+      'xtend-theme': path.resolve(__dirname, 'xtend-theme'), // xtend-theme path
+      'xtend-library': path.resolve(__dirname, 'node_modules/xtend-library'), // xtend-library path
     },
   },
   module: {
@@ -52,7 +53,7 @@ module.exports = {
     new FixStyleOnlyEntriesPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css',
-    })
+    }),
   ],
   optimization: {
     minimizer: [new TerserJSPlugin({
