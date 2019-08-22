@@ -5,7 +5,8 @@
   "author": "Riccardo Caroli <beaver82@gmail.com>",
   "repository": "https://github.com/minimit/xtend-demo-vanilla.git",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "webpack --watch"
   },
   "dependencies": {
     "bezier-easing": "^2.1.0",

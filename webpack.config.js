@@ -2,7 +2,6 @@ const path = require('path')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries')
 
 const mode = process.env.NODE_ENV === 'production' ? 'production' : 'development'
 console.log('NODE_ENV:', mode)
@@ -11,8 +10,7 @@ module.exports = {
   mode: mode,
   context: path.resolve(__dirname, ''),
   entry: {
-    'scripts/theme': ['./scripts/theme.js'],
-    'styles/theme': ['./styles/theme.less'],
+    'assets/theme': ['./assets/theme.js', './assets/theme.less'],
   },
   output: {
     filename: '[name].min.js',
@@ -50,7 +48,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new FixStyleOnlyEntriesPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
@@ -67,6 +64,5 @@ module.exports = {
       },
     })],
   },
-  watch: true,
   devtool: 'source-map',
 };
