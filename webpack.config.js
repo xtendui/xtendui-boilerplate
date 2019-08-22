@@ -7,7 +7,7 @@ module.exports = {
   mode: 'production', // production for minification
   context: path.resolve(__dirname, ''),
   entry: {
-    'assets/theme': ['./assets/theme.js', './assets/theme.less'],
+    'dist/assets/theme': ['./dist/assets/theme.js', './dist/assets/theme.less'],
   },
   output: {
     filename: '[name].min.js',
@@ -15,7 +15,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'xtend-theme': path.resolve(__dirname, 'xtend-theme'), // resolve xtend-theme
+      'xtend-theme': path.resolve(__dirname, 'dist/xtend-theme'), // resolve xtend-theme
       'xtend-library': path.resolve(__dirname, 'node_modules/xtend-library'), // resolve xtend-library
     },
   },
@@ -62,4 +62,9 @@ module.exports = {
     })],
   },
   devtool: 'source-map',
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000,
+  },
 };

@@ -5,8 +5,9 @@
   "author": "Riccardo Caroli <beaver82@gmail.com>",
   "repository": "https://github.com/minimit/xtend-demo-vanilla.git",
   "scripts": {
+    "start": "webpack-dev-server",
     "build": "webpack --progress --colors",
-    "dev": "webpack --progress --colors --watch"
+    "dev": "npm run start & webpack --progress --colors --watch"
   },
   "dependencies": {
     "bezier-easing": "^2.1.0",
@@ -29,6 +30,7 @@
     "url-loader": "^2.1.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0",
     "webpack-fix-style-only-entries": "^0.3.0"
   }
 }
