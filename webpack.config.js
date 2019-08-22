@@ -4,7 +4,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-  mode: 'production',
+  mode: 'production', // production for minification
   context: path.resolve(__dirname, ''),
   entry: {
     'assets/theme': ['./assets/theme.js', './assets/theme.less'],
@@ -15,8 +15,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'xtend-theme': path.resolve(__dirname, 'xtend-theme'), // xtend-theme path
-      'xtend-library': path.resolve(__dirname, 'node_modules/xtend-library'), // xtend-library path
+      'xtend-theme': path.resolve(__dirname, 'xtend-theme'), // resolve xtend-theme
+      'xtend-library': path.resolve(__dirname, 'node_modules/xtend-library'), // resolve xtend-library
     },
   },
   module: {
