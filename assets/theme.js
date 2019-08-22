@@ -1,9 +1,8 @@
 import {Xt} from 'xtend-library'
-import {Ajax} from 'xtend-library/src/core/ajax/ajax'
-import {Smooth} from 'xtend-library/src/core/smooth/smooth'
-import {Scroll} from 'xtend-library/src/core/scroll/scroll'
-import {Overlay} from 'xtend-library/src/core/overlay/overlay'
-
+import 'xtend-library/src/core/ajax/ajax'
+import 'xtend-library/src/core/smooth/smooth'
+import 'xtend-library/src/core/scroll/scroll'
+import 'xtend-library/src/core/overlay/overlay'
 import {TweenMax} from 'gsap/TweenMax'
 
 /**
@@ -14,7 +13,7 @@ Xt.mount.push({
   matches: 'html',
   fnc: function mount(object) {
 
-    let self = new Ajax(object, {
+    let self = new Xt.Ajax(object, {
       "query": ".site_wrapper",
     });
 
@@ -36,7 +35,7 @@ Xt.mount.push({
   matches: 'html',
   fnc: function mount(object) {
 
-    let self = new Smooth(document.scrollingElement, {});
+    let self = new Xt.Smooth(document.scrollingElement, {});
 
     // unmount
 
@@ -58,7 +57,7 @@ Xt.mount.push({
 
     let parallax = object;
 
-    let self = new Scroll(parallax, {
+    let self = new Xt.Scroll(parallax, {
       "sticky": "fixed",
       "end": 350
     });
@@ -102,7 +101,7 @@ Xt.mount.push({
 
     let parallax = object;
 
-    let self = new Scroll(parallax, {
+    let self = new Xt.Scroll(parallax, {
       "sticky": true,
       "start": "125%"
     });
