@@ -75,7 +75,7 @@ let webpackConfig = {
   devtool: 'source-map',
   stats: {
     colors: true,
-  }
+  },
 }
 
 function build() {
@@ -90,7 +90,7 @@ function build() {
  * dev
  */
 
-const webpackConfigDev = webpackConfig;
+const webpackConfigDev = Object.assign({}, webpackConfig);
 webpackConfigDev.watch = true;
 const browser = Browser.create();
 const bundler = webpack(webpackConfigDev);
