@@ -2,9 +2,10 @@ const path = require('path')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const env = process.env.NODE_ENV === 'production' ? 'production' : 'development';
 
 module.exports = {
-  mode: 'production', // production for minification
+  mode: env,
   context: path.resolve(__dirname, ''),
   entry: {
     'dist/assets/theme': ['./dist/assets/theme.js', './dist/assets/theme.less'],
