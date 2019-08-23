@@ -9,7 +9,7 @@ let OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 let MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 /**
- * build
+ * webpack
  */
 
 const env = process.env.NODE_ENV === 'production' ? 'production' : 'development';
@@ -78,6 +78,13 @@ let webpackConfig = {
   },
 }
 
+const webpackConfigDev = Object.assign({}, webpackConfig);
+webpackConfigDev.watch = true;
+
+/**
+ * build
+ */
+
 function build() {
   return new Promise(resolve => webpack(webpackConfig, (err, stats) => {
     if (err) console.log('Webpack', err);
@@ -90,12 +97,22 @@ function build() {
  * dev
  */
 
-const webpackConfigDev = Object.assign({}, webpackConfig);
-webpackConfigDev.watch = true;
+function dev() {
+  return new Promise(resolve => webpack(webpackConfigDev, (err, stats) => {
+    if (err) console.log('Webpack', err);
+    console.log(stats.toString({}));
+    resolve();
+  }));
+}
+
+/**
+ * serve
+ */
+
 const browser = Browser.create();
 const bundler = webpack(webpackConfigDev);
 
-function watch() {
+function serve() {
   browser.init({
     server: 'dist',
     port: 9000,
@@ -108,9 +125,9 @@ function watch() {
 }
 
 /**
- * gulp
+ * tasks
  */
 
 gulp.task('build', gulp.series(build));
-gulp.task('dev', gulp.series(build, watch));
+gulp.task('dev', gulp.series(dev, serve));
 gulp.task('default', gulp.series('build'));
