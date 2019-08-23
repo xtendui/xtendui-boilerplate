@@ -5,9 +5,10 @@
   "author": "Riccardo Caroli <beaver82@gmail.com>",
   "repository": "https://github.com/minimit/xtend-demo-vanilla.git",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack --progress --colors",
-    "dev": "npm run start & webpack --progress --colors --watch"
+    "build": "gulp build",
+    "dev": "gulp dev",
+    "build:wp": "webpack",
+    "dev:wp": "webpack-dev-server & webpack --watch"
   },
   "dependencies": {
     "bezier-easing": "^2.1.0",
@@ -20,7 +21,9 @@
     "@babel/plugin-transform-arrow-functions": "^7.2.0",
     "@babel/plugin-transform-for-of": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
+    "browser-sync": "^2.26.7",
     "css-loader": "^3.2.0",
+    "gulp": "^4.0.2",
     "less": "^3.10.1",
     "less-loader": "^5.0.0",
     "mini-css-extract-plugin": "^0.8.0",
@@ -30,6 +33,7 @@
     "url-loader": "^2.1.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7",
+    "webpack-dev-middleware": "^3.7.0",
     "webpack-dev-server": "^3.8.0"
   }
 }
