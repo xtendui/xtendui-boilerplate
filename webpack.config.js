@@ -19,8 +19,8 @@ module.exports = {
   resolve: {
     plugins: [new AliasPlugin('described-resolve', [
       // resolve xtend-library js and less
-      {name: 'xtend-library', alias: path.resolve(__dirname, 'dist/xtend-library')},
-      {name: 'xtend-library', alias: path.resolve(__dirname, 'node_modules/xtend-library')},
+      {name: 'xtend-library', alias: path.resolve(__dirname, './dist/xtend-library')},
+      {name: 'xtend-library', alias: path.resolve(__dirname, './node_modules/xtend-library')},
     ], 'resolve')],
   },
   module: {
