@@ -1,4 +1,4 @@
-import {Xt} from 'xtend-library/src/xtend.js'
+import {Xt} from 'xtend-library'
 import {TweenMax} from 'gsap/TweenMax'
 
 import 'xtend-library/src/core/ajax/ajax.js'
