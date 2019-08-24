@@ -1,11 +1,11 @@
-import {Xt} from 'xtend-library'
+import {Xt} from 'xtend-library/src/xtend.js'
 import {TweenMax} from 'gsap/TweenMax'
 
 import 'xtend-library/src/core/ajax/ajax.js'
 import 'xtend-library/src/core/smooth/smooth.js'
 import 'xtend-library/src/core/scroll/scroll.js'
 import 'xtend-library/src/core/overlay/overlay.js'
-import 'xtend-theme/src/extensions/test/test.js' // example overrided file in xtend-theme
+import 'xtend-library/src/extensions/test/test.js' // example overrided file in xtend-theme
 
 /**
  * ajax

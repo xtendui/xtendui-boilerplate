@@ -2,6 +2,8 @@ const path = require('path')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const AliasPlugin = require('@piglovesyou/enhanced-resolve/lib/AliasPlugin')
+
 const env = process.env.NODE_ENV === 'production' ? 'production' : 'development'
 
 module.exports = {
@@ -15,10 +17,11 @@ module.exports = {
     path: __dirname,
   },
   resolve: {
-    alias: {
-      'xtend-theme': path.resolve(__dirname, 'dist/xtend-theme'), // resolve xtend-theme before xtend-library
-      'xtend-library': path.resolve(__dirname, 'node_modules/xtend-library'), // resolve xtend-library
-    },
+    plugins: [new AliasPlugin('described-resolve', [
+      // resolve xtend-library js
+      {name: 'xtend-library', alias: path.resolve(__dirname, 'dist/xtend-library')},
+      {name: 'xtend-library', alias: path.resolve(__dirname, 'node_modules/xtend-library')},
+    ], 'resolve')],
   },
   module: {
     rules: [
@@ -37,8 +40,9 @@ module.exports = {
             options: {
               sourceMap: true,
               paths: [
-                path.resolve(__dirname, 'dist/xtend-theme'), // resolve xtend-theme before xtend-library
-                path.resolve(__dirname, 'node_modules/xtend-library'), // resolve xtend-library
+                // resolve xtend-library less
+                path.resolve(__dirname, 'dist/xtend-library'),
+                path.resolve(__dirname, 'node_modules/xtend-library'),
               ],
             },
           },
