@@ -1,11 +1,10 @@
 /**
  * xtend
- * to fork file copy it in xtend-theme/src/<path>
- * and use @import '~xtend-theme/<path>'; instead of @import '~xtend-library/<path>';
+ * to override a file copy from 'node_modules/xtend-library/src/<path>' to 'dist/xtend-theme/src/<path>'
  */
 
-// instead of xtend-core.less you can put contents of xtend-core.less and fork them, or just import what you want
-@import '~xtend-library/src/xtend-core.less';
+@import 'src/xtend-core.less';
+@import 'src/extensions/overlay/close-outside.less'; // example forked file
 
 /**
  * theme

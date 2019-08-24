@@ -26,7 +26,7 @@ let webpackConfig = {
   },
   resolve: {
     alias: {
-      'xtend-theme': path.resolve(__dirname, 'dist/xtend-theme'), // resolve xtend-theme
+      'xtend-theme': path.resolve(__dirname, 'dist/xtend-theme'), // resolve xtend-theme before xtend-library
       'xtend-library': path.resolve(__dirname, 'node_modules/xtend-library'), // resolve xtend-library
     },
   },
@@ -38,11 +38,19 @@ let webpackConfig = {
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
-            options: {sourceMap: true},
+            options: {
+              sourceMap: true
+            },
           },
           {
             loader: 'less-loader',
-            options: {sourceMap: true},
+            options: {
+              sourceMap: true,
+              paths: [
+                path.resolve(__dirname, 'dist/xtend-theme'), // resolve xtend-theme before xtend-library
+                path.resolve(__dirname, 'node_modules/xtend-library'), // resolve xtend-library
+              ],
+            },
           },
         ]
       },
@@ -119,9 +127,11 @@ function serve() {
     open: false,
     watch: true,
     middleware: [
-      webpackDevMiddleware(bundler, { watch: true })
+      webpackDevMiddleware(bundler, {watch: true})
     ],
   });
+  //gulp.watch('dist/**/*', gulp.series(reload))
+  //gulp.watch('dist/**/*').on('change', () => browser.reload())
 }
 
 /**
