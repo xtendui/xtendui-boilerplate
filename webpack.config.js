@@ -2,7 +2,7 @@ const path = require('path')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const env = process.env.NODE_ENV === 'production' ? 'production' : 'development';
+const env = process.env.NODE_ENV === 'production' ? 'production' : 'development'
 
 module.exports = {
   mode: env,
@@ -16,7 +16,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'xtend-theme': path.resolve(__dirname, 'dist/xtend-theme'), // resolve xtend-theme
+      'xtend-theme': path.resolve(__dirname, 'dist/xtend-theme'), // resolve xtend-theme before xtend-library
       'xtend-library': path.resolve(__dirname, 'node_modules/xtend-library'), // resolve xtend-library
     },
   },
@@ -28,11 +28,19 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
-            options: {sourceMap: true},
+            options: {
+              sourceMap: true
+            },
           },
           {
             loader: 'less-loader',
-            options: {sourceMap: true},
+            options: {
+              sourceMap: true,
+              paths: [
+                path.resolve(__dirname, 'dist/xtend-theme'), // resolve xtend-theme before xtend-library
+                path.resolve(__dirname, 'node_modules/xtend-library'), // resolve xtend-library
+              ],
+            },
           },
         ]
       },
@@ -62,12 +70,12 @@ module.exports = {
       },
     })],
   },
-  devtool: 'source-map',
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 9000,
   },
+  devtool: 'source-map',
   stats: {
     colors: true,
   },
