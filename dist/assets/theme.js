@@ -1,6 +1,5 @@
-import {Xt} from 'xtend-library'
 import {TweenMax} from 'gsap/TweenMax'
-
+import {Xt} from 'xtend-library'
 import 'xtend-library/src/core/ajax/ajax.js'
 import 'xtend-library/src/core/smooth/smooth.js'
 import 'xtend-library/src/core/scroll/scroll.js'
