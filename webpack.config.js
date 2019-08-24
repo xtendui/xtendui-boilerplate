@@ -2,7 +2,7 @@ const path = require('path')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const AliasPlugin = require('@piglovesyou/enhanced-resolve/lib/AliasPlugin')
+const AliasPlugin = require('@piglovesyou/enhanced-resolve/lib/AliasPlugin') // waiting for https://github.com/webpack/enhanced-resolve/pull/181
 
 const env = process.env.NODE_ENV === 'production' ? 'production' : 'development'
 
@@ -18,7 +18,7 @@ module.exports = {
   },
   resolve: {
     plugins: [new AliasPlugin('described-resolve', [
-      // resolve xtend-library js
+      // resolve xtend-library js and less
       {name: 'xtend-library', alias: path.resolve(__dirname, 'dist/xtend-library')},
       {name: 'xtend-library', alias: path.resolve(__dirname, 'node_modules/xtend-library')},
     ], 'resolve')],
@@ -39,11 +39,6 @@ module.exports = {
             loader: 'less-loader',
             options: {
               sourceMap: true,
-              paths: [
-                // resolve xtend-library less
-                path.resolve(__dirname, 'dist/xtend-library'),
-                path.resolve(__dirname, 'node_modules/xtend-library'),
-              ],
             },
           },
         ]
