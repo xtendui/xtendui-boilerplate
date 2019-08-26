@@ -1,3 +1,5 @@
+import 'core-js'
+import 'regenerator-runtime/runtime'
 import {TweenMax} from 'gsap/TweenMax'
 import {Xt} from 'xtend-library'
 import 'xtend-library/src/core/ajax/ajax.js'

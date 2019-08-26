@@ -26,6 +26,13 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.m?js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+      {
         test: /\.less$/,
         use: [
           MiniCssExtractPlugin.loader,
