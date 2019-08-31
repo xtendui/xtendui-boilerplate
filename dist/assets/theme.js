@@ -2,11 +2,8 @@ import 'core-js'
 import 'regenerator-runtime/runtime'
 import {TweenMax} from 'gsap/TweenMax'
 import {Xt} from 'xtend-library'
-import 'xtend-library/src/core/ajax/ajax.js'
-import 'xtend-library/src/core/smooth/smooth.js'
-import 'xtend-library/src/core/scroll/scroll.js'
-import 'xtend-library/src/core/overlay/overlay.js'
-import 'xtend-library/src/extensions/test/test.js' // example overrided file in xtend-theme
+import 'xtend-library/src/xtend-core.js'
+import 'xtend-library/src/extensions/test/test.js' // example override file
 
 /**
  * ajax
