@@ -55,9 +55,7 @@ Xt.mount.push({
   matches: '.header',
   fnc: function mount(object) {
 
-    let parallax = object;
-
-    let self = new Xt.Scroll(parallax, {
+    let self = new Xt.Scroll(object, {
       "sticky": "fixed",
       "end": 350
     });
@@ -99,9 +97,7 @@ Xt.mount.push({
   matches: '.footer',
   fnc: function mount(object) {
 
-    let parallax = object;
-
-    let self = new Xt.Scroll(parallax, {
+    let self = new Xt.Scroll(object, {
       "sticky": true,
       "start": "125%"
     });
