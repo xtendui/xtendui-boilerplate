@@ -1,9 +1,11 @@
 import 'core-js'
 import 'regenerator-runtime/runtime'
-import { TweenMax } from 'gsap/TweenMax'
+import 'xtend-library/src/polyfill.js'
+import 'xtend-library/src/polyfill-old.js'
 import { Xt } from 'xtend-library'
 import 'xtend-library/src/xtend-core.js'
 import 'xtend-library/src/extensions/test/test.js' // example override file
+import { TweenMax } from 'gsap/TweenMax'
 
 /**
  * ajax
