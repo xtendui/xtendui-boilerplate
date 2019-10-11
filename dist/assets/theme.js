@@ -4,6 +4,7 @@ import 'xtend-library/src/polyfill.js'
 import 'xtend-library/src/polyfill-old.js'
 import { Xt } from 'xtend-library'
 import 'xtend-library/src/xtend-core.js'
+import 'xtend-library/src/xtend-extension.js'
 import 'xtend-library/src/extensions/test/test.js' // example override file
 import { TweenMax } from 'gsap/TweenMax'
 
@@ -13,7 +14,7 @@ import { TweenMax } from 'gsap/TweenMax'
 
 Xt.mount.push({
   matches: 'html',
-  fnc: function mount (object) {
+  mount: function (object) {
     let self = new Xt.Ajax(object, {
       query: '.site_wrapper'
     })
@@ -33,7 +34,7 @@ Xt.mount.push({
 
 Xt.mount.push({
   matches: 'html',
-  fnc: function mount (object) {
+  mount: function (object) {
     let self = new Xt.Smooth(document.scrollingElement, {})
 
     // unmount
@@ -51,7 +52,7 @@ Xt.mount.push({
 
 Xt.mount.push({
   matches: '.header',
-  fnc: function mount (object) {
+  mount: function (object) {
     let self = new Xt.Scroll(object, {
       sticky: 'fixed',
       end: 350
@@ -89,7 +90,7 @@ Xt.mount.push({
 
 Xt.mount.push({
   matches: '.footer',
-  fnc: function mount (object) {
+  mount: function (object) {
     let self = new Xt.Scroll(object, {
       sticky: true,
       start: '125%'
