@@ -4,8 +4,10 @@ import 'xtend-library/src/polyfill.js'
 import 'xtend-library/src/polyfill-old.js'
 import { Xt } from 'xtend-library'
 import 'xtend-library/src/xtend-core.js'
-import 'xtend-library/src/xtend-extension.js'
-import 'xtend-library/src/extensions/test/test.js' // example override file
+import 'xtend-library/src/extension/Ajax/Ajax.js'
+import 'xtend-library/src/extension/Smooth/Smooth.js'
+import 'xtend-library/src/extension/Scroll/Scroll.js'
+import 'xtend-library/src/extension/test.js' // example override file: check console.debug
 import { TweenMax } from 'gsap/TweenMax'
 
 /**
