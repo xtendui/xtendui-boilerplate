@@ -4,10 +4,10 @@ import 'xtend-library/src/polyfill.js'
 import 'xtend-library/src/polyfill-old.js'
 import { Xt } from 'xtend-library'
 import 'xtend-library/src/xtend-core.js'
-import 'xtend-library/src/extension/test.js' // example override file: check console.debug
-import 'xtend-library/src/extension/ajax/ajax.js'
-import 'xtend-library/src/extension/smooth/smooth.js'
-import 'xtend-library/src/extension/scroll/scroll.js'
+import 'xtend-library/src/extensions/test.js' // example override file: check console.debug
+import 'xtend-library/src/extensions/ajax/ajax.js'
+import 'xtend-library/src/extensions/smooth/smooth.js'
+import 'xtend-library/src/extensions/scroll/scroll.js'
 import { TweenMax } from 'gsap/TweenMax'
 
 /**
@@ -16,18 +16,18 @@ import { TweenMax } from 'gsap/TweenMax'
 
 Xt.mount.push({
   matches: 'html',
-  mount: function (object) {
+  mount: function(object) {
     let self = new Xt.Ajax(object, {
-      query: '.site_wrapper'
+      query: '.site_wrapper',
     })
 
     // unmount
 
-    return function unmount () {
+    return function unmount() {
       self.destroy()
       self = null
     }
-  }
+  },
 })
 
 /**
@@ -36,16 +36,16 @@ Xt.mount.push({
 
 Xt.mount.push({
   matches: 'html',
-  mount: function (object) {
+  mount: function(object) {
     let self = new Xt.Smooth(document.scrollingElement, {})
 
     // unmount
 
-    return function unmount () {
+    return function unmount() {
       self.destroy()
       self = null
     }
-  }
+  },
 })
 
 /**
@@ -54,23 +54,23 @@ Xt.mount.push({
 
 Xt.mount.push({
   matches: '.header',
-  mount: function (object) {
+  mount: function(object) {
     let self = new Xt.Scroll(object, {
       sticky: 'fixed',
-      end: 350
+      end: 350,
     })
 
     // event
 
     for (const el of self.elements) {
-      el.addEventListener('change.xt.scroll', function (e) {
+      el.addEventListener('change.xt.scroll', function(e) {
         TweenMax.set(el, { opacity: self.detail.ratioInverse })
       })
     }
 
     // example external event
 
-    const exampleExternalEvent = function () {
+    const exampleExternalEvent = function() {
       console.debug('this event gets removed on unmount', self.object)
     }
 
@@ -78,12 +78,12 @@ Xt.mount.push({
 
     // unmount
 
-    return function unmount () {
+    return function unmount() {
       self.destroy()
       self = null
       window.removeEventListener('scroll', exampleExternalEvent)
     }
-  }
+  },
 })
 
 /**
@@ -92,25 +92,25 @@ Xt.mount.push({
 
 Xt.mount.push({
   matches: '.footer',
-  mount: function (object) {
+  mount: function(object) {
     let self = new Xt.Scroll(object, {
       sticky: true,
-      start: '125%'
+      start: '125%',
     })
 
     // event
 
     for (const el of self.elements) {
-      el.addEventListener('change.xt.scroll', function (e) {
+      el.addEventListener('change.xt.scroll', function(e) {
         TweenMax.set(el, { opacity: self.detail.ratio })
       })
     }
 
     // unmount
 
-    return function unmount () {
+    return function unmount() {
       self.destroy()
       self = null
     }
-  }
+  },
 })
