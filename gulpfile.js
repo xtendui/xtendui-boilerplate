@@ -9,7 +9,7 @@ let webpackDevMiddleware = require('webpack-dev-middleware')
 
 const webpackConfig = require('./webpack.config.js')
 
-function build() {
+function buildTaks() {
   return new Promise(resolve =>
     webpack(webpackConfig, (err, stats) => {
       if (err) console.log('Webpack', err)
@@ -26,7 +26,7 @@ function build() {
 const webpackConfigDev = Object.assign({}, webpackConfig)
 webpackConfigDev.watch = true
 
-function dev() {
+function devTask() {
   return new Promise(resolve =>
     webpack(webpackConfigDev, (err, stats) => {
       if (err) console.log('Webpack', err)
@@ -39,7 +39,7 @@ function dev() {
 const browser = Browser.create()
 const bundler = webpack(webpackConfigDev)
 
-function serve() {
+function serveTask() {
   browser.init({
     server: 'dist',
     port: 9000,
@@ -55,6 +55,6 @@ function serve() {
  * tasks
  */
 
-gulp.task('build', gulp.series(build))
-gulp.task('dev', gulp.series(dev, serve))
+gulp.task('build', gulp.series(buildTaks))
+gulp.task('dev', gulp.series(devTask, serveTask))
 gulp.task('default', gulp.series('build'))
