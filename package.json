@@ -23,7 +23,6 @@
     "@babel/plugin-transform-arrow-functions": "^7.2.0",
     "@babel/plugin-transform-for-of": "^7.0.0",
     "@babel/preset-env": "^7.7.1",
-    "@piglovesyou/enhanced-resolve": "^4.3.0",
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.7",
     "css-loader": "^3.2.0",
@@ -39,7 +38,7 @@
     "source-map-loader": "^0.2.4",
     "terser-webpack-plugin": "^1.4.1",
     "url-loader": "^2.2.0",
-    "webpack": "^4.41.2",
+    "webpack": "^5.0.0-beta.7",
     "webpack-cli": "^3.3.10",
     "webpack-dev-middleware": "^3.7.2",
     "webpack-dev-server": "^3.9.0"
