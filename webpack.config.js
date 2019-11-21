@@ -17,11 +17,17 @@ module.exports = {
     path: __dirname,
   },
   resolve: {
-    plugins: [new AliasPlugin('described-resolve', [
-      // resolve xtend-library js and less
-      {name: 'xtend-library', alias: path.resolve(__dirname, './dist/xtend-library')},
-      {name: 'xtend-library', alias: path.resolve(__dirname, './node_modules/xtend-library')},
-    ], 'resolve')],
+    plugins: [
+      new AliasPlugin(
+        'described-resolve',
+        [
+          // resolve xtend-library js and less
+          { name: 'xtend-library', alias: path.resolve(__dirname, './dist/xtend-library') },
+          { name: 'xtend-library', alias: path.resolve(__dirname, './node_modules/xtend-library') },
+        ],
+        'resolve'
+      ),
+    ],
   },
   module: {
     rules: [
@@ -38,7 +44,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true
+              sourceMap: true,
             },
           },
           {
@@ -47,7 +53,7 @@ module.exports = {
               sourceMap: true,
             },
           },
-        ]
+        ],
       },
       {
         test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
@@ -64,16 +70,19 @@ module.exports = {
     }),
   ],
   optimization: {
-    minimizer: [new TerserJSPlugin({
-      sourceMap: true,
-    }), new OptimizeCSSAssetsPlugin({
-      cssProcessorOptions: {
-        map: {
-          inline: false,
-          annotation: true,
+    minimizer: [
+      new TerserJSPlugin({
+        sourceMap: true,
+      }),
+      new OptimizeCSSAssetsPlugin({
+        cssProcessorOptions: {
+          map: {
+            inline: false,
+            annotation: true,
+          },
         },
-      },
-    })],
+      }),
+    ],
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -84,4 +93,4 @@ module.exports = {
   stats: {
     colors: true,
   },
-};
+}
