@@ -20,11 +20,12 @@ module.exports = {
       // resolve xtend-library js and less
       'xtend-library': [
         path.resolve(__dirname, './dist/xtend-library'),
-        path.resolve(__dirname, './node_modules/xtend-library')
+        path.resolve(__dirname, './node_modules/xtend-library'),
       ],
     },
   },
   module: {
+    unsafeCache: false, // https://github.com/webpack/webpack/issues/9802#issuecomment-558138107
     rules: [
       {
         test: /\.m?js$/,
