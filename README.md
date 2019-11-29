@@ -8,7 +8,7 @@
 
 ## Usage
 
-This is a boilerplate setup to start a project for [xtend-library](https://github.com/minimit/xtend-library):
+This is a boilerplate setup to start a vanilla project with [xtend-library](https://github.com/minimit/xtend-library):
 
 ### Webpack
 
