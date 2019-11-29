@@ -8,7 +8,7 @@ import 'xtend-library/src/extensions/test.js' // example override file: check co
 import 'xtend-library/src/addons/ajax/ajax.js'
 import 'xtend-library/src/addons/smooth/smooth.js'
 import 'xtend-library/src/addons/scroll/scroll.js'
-import { TweenMax } from 'gsap/TweenMax'
+import gsap from 'gsap'
 
 /**
  * ajax
@@ -64,7 +64,7 @@ Xt.mount.push({
 
     for (const el of self.elements) {
       el.addEventListener('change.xt.scroll', function(e) {
-        TweenMax.set(el, { opacity: self.detail.ratioInverse })
+        gsap.set(el, { opacity: self.detail.ratioInverse })
       })
     }
 
@@ -102,7 +102,7 @@ Xt.mount.push({
 
     for (const el of self.elements) {
       el.addEventListener('change.xt.scroll', function(e) {
-        TweenMax.set(el, { opacity: self.detail.ratio })
+        gsap.set(el, { opacity: self.detail.ratio })
       })
     }
 

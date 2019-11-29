@@ -15,7 +15,7 @@
   "dependencies": {
     "bezier-easing": "^2.1.0",
     "core-js": "^2.6.10",
-    "gsap": "^2.1.2",
+    "gsap": "^3.0.1",
     "regenerator-runtime": "^0.13.3",
     "xtend-library": "^0.11.0"
   },
