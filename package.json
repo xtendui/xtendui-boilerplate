@@ -41,7 +41,7 @@
     "source-map-loader": "^0.2.4",
     "terser-webpack-plugin": "^1.4.1",
     "url-loader": "^2.2.0",
-    "webpack": "^5.0.0-beta.7",
+    "webpack": "^5.0.0-beta.9",
     "webpack-cli": "^3.3.10",
     "webpack-dev-middleware": "^3.7.2",
     "webpack-dev-server": "^3.9.0"
