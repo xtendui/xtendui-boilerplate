@@ -24,8 +24,9 @@ module.exports = {
       ],
     },
   },
+  cache: false, // @FIX compilation on new files when still compiling node_modules
   module: {
-    unsafeCache: false, // https://github.com/webpack/webpack/issues/9802#issuecomment-558138107
+    unsafeCache: false, // @FIX compilation on new files when still compiling node_modules
     rules: [
       {
         test: /\.m?js$/,
