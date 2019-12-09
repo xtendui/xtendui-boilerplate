@@ -4,10 +4,10 @@ import 'xtend-library/src/polyfill.js'
 import 'xtend-library/src/polyfill-old.js'
 import { Xt } from 'xtend-library'
 import 'xtend-library/src/xtend-core.js'
-import 'xtend-library/src/extensions/test.js' // example override file: check console.debug
-import 'xtend-library/src/addons/ajax/ajax.js'
-import 'xtend-library/src/addons/smooth/smooth.js'
-import 'xtend-library/src/addons/scroll/scroll.js'
+import 'xtend-library/src/extensions/ajax/ajax.js'
+import 'xtend-library/src/extensions/smooth/smooth.js'
+import 'xtend-library/src/extensions/scroll/scroll.js'
+import 'xtend-library/src/addons/test.js' // example override file: check console.debug
 import gsap from 'gsap'
 
 /**
