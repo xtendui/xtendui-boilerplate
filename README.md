@@ -2,7 +2,7 @@
 
 ## Installation
 
-Download the [latest release](https://github.com/minimit/xtend-library/releases/latest).
+Download the [latest release](https://github.com/minimit/xtend-theme-vanilla/releases/latest).
 
 ## Compilation
 
