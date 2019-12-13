@@ -1,3 +1,9 @@
+# WIP pre 1.0 version: api changing fast
+
+## Installation
+
+Download the [latest release](https://github.com/minimit/xtend-library/releases/latest).
+
 ## Compilation
 
 * Install required npm packages with `npm install`
