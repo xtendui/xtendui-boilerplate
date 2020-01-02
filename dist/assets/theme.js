@@ -7,6 +7,7 @@ import 'xtend-library/src/xtend-core.js'
 import 'xtend-library/src/extensions/ajax/ajax.js'
 import 'xtend-library/src/extensions/smooth/smooth.js'
 import 'xtend-library/src/extensions/scroll/scroll.js'
+import 'xtend-library/src/extensions/sticky/sticky.js'
 import 'xtend-library/src/addons/test.js' // example override file: check console.debug
 import gsap from 'gsap'
 
@@ -23,10 +24,11 @@ Xt.mount.push({
 
     // unmount
 
-    return function unmount() {
+    const unmount = function() {
       self.destroy()
       self = null
     }
+    return unmount
   },
 })
 
@@ -41,10 +43,11 @@ Xt.mount.push({
 
     // unmount
 
-    return function unmount() {
+    const unmount = function() {
       self.destroy()
       self = null
     }
+    return unmount
   },
 })
 
@@ -55,34 +58,18 @@ Xt.mount.push({
 Xt.mount.push({
   matches: '.header',
   mount: function(object) {
-    let self = new Xt.Scroll(object, {
+    let self = new Xt.Sticky(object, {
       sticky: 'fixed',
-      end: 350,
+      hide: 'down'
     })
-
-    // event
-
-    for (const el of self.elements) {
-      el.addEventListener('change.xt.scroll', function(e) {
-        gsap.set(el, { opacity: self.detail.ratioInverse })
-      })
-    }
-
-    // example external event
-
-    const exampleExternalEvent = function() {
-      console.debug('this event gets removed on unmount', self.object)
-    }
-
-    window.addEventListener('scroll', exampleExternalEvent)
 
     // unmount
 
-    return function unmount() {
+    const unmount = function() {
       self.destroy()
       self = null
-      window.removeEventListener('scroll', exampleExternalEvent)
     }
+    return unmount
   },
 })
 
@@ -93,24 +80,30 @@ Xt.mount.push({
 Xt.mount.push({
   matches: '.footer',
   mount: function(object) {
+    // init
+
     let self = new Xt.Scroll(object, {
       sticky: true,
       start: '125%',
     })
 
-    // event
+    // change
+
+    const eventChange = function() {
+      const el = this
+      gsap.set(el, { opacity: self.detail.ratio, scale: 0.9 + 0.1 * self.detail.ratio })
+    }
 
     for (const el of self.elements) {
-      el.addEventListener('change.xt.scroll', function(e) {
-        gsap.set(el, { opacity: self.detail.ratio })
-      })
+      el.addEventListener('change.xt', eventChange)
     }
 
     // unmount
 
-    return function unmount() {
+    const unmount = function() {
       self.destroy()
       self = null
     }
+    return unmount
   },
 })
