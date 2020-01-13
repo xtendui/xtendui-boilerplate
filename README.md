@@ -2,9 +2,10 @@
 
 * Install required npm packages with `npm install`
 * Use `npm run build` to build with **webpack**
-* Use `npm run dev` to build and watch and run the webserver with **webpack**
-* Use `npm run build:gulp` to build with **gulp** and **webpack**
-* Use `npm run dev:gulp` to build and watch and run the webserver with **gulp** and **webpack**
+* Use `npm run dev` to build and watch with **webpack**
+* Use `npm run build:gulp` to build with **gulp**
+* Use `npm run dev:gulp` to build and watch with **gulp**
+* Use `npm run start` run the webserver with **webpack**
 
 ## Usage
 
