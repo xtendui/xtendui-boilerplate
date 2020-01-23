@@ -3,7 +3,7 @@ const TerserJSPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-const env = process.env.NODE_ENV === 'production' ? 'production' : 'development'
+const env = 'production'
 
 module.exports = {
   mode: env,
