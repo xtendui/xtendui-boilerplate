@@ -16,6 +16,7 @@
     "core-js": "^2.6.10",
     "gsap": "^3.0.1",
     "regenerator-runtime": "^0.13.3",
+    "relaxed-json": "^1.0.3",
     "xtend-library": "^0.13.0"
   },
   "devDependencies": {
