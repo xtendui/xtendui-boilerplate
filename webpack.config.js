@@ -14,6 +14,7 @@ module.exports = {
   output: {
     filename: '[name].min.js',
     path: __dirname,
+    ecmaVersion: 5,
   },
   resolve: {
     alias: {
