@@ -15,39 +15,95 @@
 
 <div class="site_wrapper">
 
-    <div class="site_header">
-        <header class="header">
-            <div class="container">
+    <header class="site_header">
+        <div class="container">
 
-                <div class="header_inner">
-                    <div class="row">
+            <div class="site_header_inner">
+                <div class="row">
 
-                        <div class="header_logo">
-                            <h6>header</h6>
+                    <div class="site_header_logo">
+                        <h6>header</h6>
+                    </div>
+
+                    <div class="site_header_menu">
+                        <div class="drop-container" data-xt-drop>
+                            <button type="button" class="btn btn-primary">
+                                pages
+                            </button>
+                            <div class="drop drop-default drop-bottom drop-right">
+                                <div class="drop-inner">
+                                    <div class="drop-design"></div>
+                                    <div class="drop-content">
+                                        <ul class="list list-drop">
+                                            <li>
+                                                <a href="/">
+                                                    Homepage
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/overlay.html">
+                                                    Overlay
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="header_menu">
-                            <div class="drop-container" data-xt-drop>
-                                <button type="button" class="btn btn-primary">
-                                    pages
-                                </button>
-                                <div class="drop drop-default drop-bottom drop-right">
-                                    <div class="drop-inner">
-                                        <div class="drop-design"></div>
-                                        <div class="drop-content">
-                                            <ul class="list list-drop">
-                                                <li>
-                                                    <a href="/">
-                                                        Homepage
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="/overlay.html">
-                                                        Overlay
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="site_main">
+        <div class="container">
+
+            <h1>Overlay</h1>
+
+            <p>
+                <button type="button" class="btn btn-primary" data-xt-overlay='{"targets": "#overlay_test"}'>
+                    overlay
+                </button>
+            </p>
+
+            <div class="overlay" id="overlay_test">
+                <div class="overlay-container">
+                    <div class="overlay-inner">
+
+                        <div class="card card-overlay">
+                            <div class="card-design"></div>
+                            <div class="card-inner">
+                                <div class="btn btn-close" aria-label="Close"></div>
+                                <div class="card-content">
+                                    <div class="card-block card-item">
+                                        <div class="card-title">Lorem ipsum</div>
+                                        <ul class="list list-default">
+                                            <li>
+                                                <a href="/">
+                                                    Homepage
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/overlay.html">
+                                                    Overlay
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus,
+                                            lectus quis ornare volutpat,
+                                            ligula nulla sollicitudin nunc, ut commodo nulla enim nec nisi.</p>
+                                        <p>Morbi sodales, dolor a iaculis ornare, velit justo lacinia erat, pretium
+                                            sollicitudin dui sem id
+                                            justo.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus,
+                                            lectus quis ornare volutpat,
+                                            ligula nulla sollicitudin nunc, ut commodo nulla enim nec nisi.</p>
+                                        <p>Morbi sodales, dolor a iaculis ornare, velit justo lacinia erat, pretium
+                                            sollicitudin dui sem id
+                                            justo.</p>
                                     </div>
                                 </div>
                             </div>
@@ -55,115 +111,53 @@
 
                     </div>
                 </div>
-
             </div>
-        </header>
-    </div>
 
-    <div class="site_main">
-        <main class="main">
-            <div class="container">
+        </div>
+    </main>
 
-                <h1>Overlay</h1>
+    <footer class="site_footer">
+        <div class="container">
 
-                <p>
-                    <button type="button" class="btn btn-primary" data-xt-overlay='{"targets": "#overlay_test"}'>
-                        overlay
-                    </button>
-                </p>
+            <div class="site_footer_inner">
+                <div class="row">
 
-                <div class="overlay" id="overlay_test">
-                    <div class="overlay-container">
-                        <div class="overlay-inner">
-
-                            <div class="card card-overlay">
-                                <div class="card-design"></div>
-                                <div class="card-inner">
-                                    <div class="btn btn-close" aria-label="Close"></div>
-                                    <div class="card-content">
-                                        <div class="card-block card-item">
-                                            <div class="card-title">Lorem ipsum</div>
-                                            <ul class="list list-default">
-                                                <li>
-                                                    <a href="/">
-                                                        Homepage
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="/overlay.html">
-                                                        Overlay
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus,
-                                                lectus quis ornare volutpat,
-                                                ligula nulla sollicitudin nunc, ut commodo nulla enim nec nisi.</p>
-                                            <p>Morbi sodales, dolor a iaculis ornare, velit justo lacinia erat, pretium
-                                                sollicitudin dui sem id
-                                                justo.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus,
-                                                lectus quis ornare volutpat,
-                                                ligula nulla sollicitudin nunc, ut commodo nulla enim nec nisi.</p>
-                                            <p>Morbi sodales, dolor a iaculis ornare, velit justo lacinia erat, pretium
-                                                sollicitudin dui sem id
-                                                justo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="site_footer_logo">
+                        <h6>footer</h6>
                     </div>
-                </div>
 
-            </div>
-        </main>
-    </div>
-
-    <div class="site_footer">
-        <footer class="footer">
-            <div class="container">
-
-                <div class="footer_inner">
-                    <div class="row">
-
-                        <div class="footer_logo">
-                            <h6>footer</h6>
-                        </div>
-
-                        <div class="footer_menu">
-                            <div class="drop-container" data-xt-drop>
-                                <button type="button" class="btn btn-primary">
-                                    pages
-                                </button>
-                                <div class="drop drop-default drop-top drop-right">
-                                    <div class="drop-inner">
-                                        <div class="drop-design"></div>
-                                        <div class="drop-content">
-                                            <ul class="list list-drop">
-                                                <li>
-                                                    <a href="/">
-                                                        Homepage
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="/overlay.html">
-                                                        Overlay
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
+                    <div class="site_footer_menu">
+                        <div class="drop-container" data-xt-drop>
+                            <button type="button" class="btn btn-primary">
+                                pages
+                            </button>
+                            <div class="drop drop-default drop-top drop-right">
+                                <div class="drop-inner">
+                                    <div class="drop-design"></div>
+                                    <div class="drop-content">
+                                        <ul class="list list-drop">
+                                            <li>
+                                                <a href="/">
+                                                    Homepage
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/overlay.html">
+                                                    Overlay
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                </div>
 
+                </div>
             </div>
-        </footer>
-    </div>
+
+        </div>
+    </footer>
 
 </div>
 
