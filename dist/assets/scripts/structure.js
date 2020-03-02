@@ -46,11 +46,11 @@ Xt.mount.push({
 })
 
 /**
- * .header
+ * .site_header
  */
 
 Xt.mount.push({
-  matches: '.header',
+  matches: '.site_header',
   mount: function(object) {
     let self = new Xt.Sticky(object, {
       sticky: 'fixed',
@@ -68,11 +68,11 @@ Xt.mount.push({
 })
 
 /**
- * .footer
+ * .site_footer
  */
 
 Xt.mount.push({
-  matches: '.footer',
+  matches: '.site_footer',
   mount: function(object) {
     // init
 
