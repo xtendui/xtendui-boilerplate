@@ -9,7 +9,7 @@ let webpackDevMiddleware = require('webpack-dev-middleware')
 
 const webpackConfig = require('./webpack.config.js')
 
-function buildTaks() {
+function buildTask() {
   return new Promise(resolve =>
     webpack(webpackConfig, (err, stats) => {
       if (err) console.log('Webpack', err)
@@ -55,6 +55,6 @@ function serveTask() {
  * tasks
  */
 
-gulp.task('build', gulp.series(buildTaks))
+gulp.task('build', gulp.series(buildTask))
 gulp.task('dev', gulp.series(devTask, serveTask))
 gulp.task('default', gulp.series('build'))
