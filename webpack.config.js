@@ -16,15 +16,6 @@ module.exports = {
     path: __dirname,
     ecmaVersion: 5,
   },
-  resolve: {
-    alias: {
-      // resolve xtend-library js and less
-      'xtend-library': [
-        path.resolve(__dirname, './dist/assets/xtend-library'),
-        path.resolve(__dirname, './node_modules/xtend-library'),
-      ],
-    },
-  },
   cache: false, // @FIX compilation on new files when still compiling node_modules
   module: {
     unsafeCache: false, // @FIX compilation on new files when still compiling node_modules
@@ -50,6 +41,9 @@ module.exports = {
             loader: 'less-loader',
             options: {
               sourceMap: true,
+              lessOptions: {
+                paths: [path.resolve(__dirname, './dist/assets/xtend-library'), path.resolve(__dirname, './node_modules/xtend-library'),],
+              },
             },
           },
         ],

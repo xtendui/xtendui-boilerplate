@@ -42,17 +42,17 @@ With this setup you can **fork** css and js files inside `./dist/xtend-library` 
 You need to import the **reset** file as first import:
 
 ```less
-@import '~xtend-library/src/xtend-reset.less'; // always first loaded
+@import '/src/xtend-reset.less'; // always first loaded
 ```
 
-Then you can import the components you need as described in the docs, just be sure to import the library as reference first: `@import (reference) '~xtend-library/src/xtend-core.less';`.
+Then you can import the components you need as described in the docs, just be sure to import the library as reference first: `@import (reference) '/src/xtend-core.less';`.
 
 Or just import all core/extensions/addons as needed:
 
 ```less
-@import '~xtend-library/src/xtend-core.less';
-@import '~xtend-library/src/xtend-extensions.less';
-@import '~xtend-library/src/xtend-addons.less';
+@import '/src/xtend-core.less';
+@import '/src/xtend-extensions.less';
+@import '/src/xtend-addons.less';
 ```
 
 ### Js
@@ -71,7 +71,7 @@ import 'regenerator-runtime/runtime'
 You need to import the **polyfills** files and the **main** js:
 
 ```jsx
-import 'xtend-library/src/polyfill.js'
+import '/src/polyfill.js'
 import { Xt } from 'xtend-library'
 ```
 
@@ -80,9 +80,9 @@ Then you can import the components you need as described in the docs.
 Or just import all core/extensions/addons as needed:
 
 ```jsx
-import 'xtend-library/src/xtend-core.js'
-import 'xtend-library/src/xtend-extensions.js'
-import 'xtend-library/src/xtend-addons.js'
+import '/src/xtend-core.js'
+import '/src/xtend-extensions.js'
+import '/src/xtend-addons.js'
 ```
 
 ### Gsap
