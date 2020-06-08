@@ -15,10 +15,7 @@ module.exports = {
       require.resolve('babel-plugin-module-resolver'),
       {
         // resolve xtend-library js import
-        root: [
-          path.resolve(__dirname, './dist/assets/xtend-library'),
-          path.resolve(__dirname, './node_modules/xtend-library'),
-        ],
+        root: [path.resolve(__dirname, './dist/assets/xtend-library'), path.resolve(__dirname, './node_modules/xtend-library')],
       },
     ],
   ],

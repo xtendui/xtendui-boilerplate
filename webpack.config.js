@@ -4,7 +4,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const env = process.env.NODE_ENV === 'production' ? 'production' : 'development'
-
+console.log('==============', path.resolve(__dirname, 'node_modules/xtend-library'))
 module.exports = {
   mode: env,
   context: path.resolve(__dirname, ''),
@@ -42,7 +42,11 @@ module.exports = {
             options: {
               sourceMap: true,
               lessOptions: {
-                paths: [path.resolve(__dirname, './dist/assets/xtend-library'), path.resolve(__dirname, './node_modules/xtend-library'),],
+                // resolve xtend-library less import
+                paths: [
+                  //path.resolve(__dirname, './dist/assets/xtend-library'),
+                  path.resolve(__dirname, './node_modules/xtend-library'),
+                ],
               },
             },
           },
