@@ -42,7 +42,7 @@ module.exports = {
             options: {
               sourceMap: true,
               lessOptions: {
-                // resolve xtend-library less import
+                // resolve xtend-library import less
                 paths: [path.resolve(__dirname, './dist/assets/xtend-library'), path.resolve(__dirname, './node_modules/xtend-library')],
               },
             },
