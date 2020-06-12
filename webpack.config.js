@@ -14,11 +14,8 @@ module.exports = {
   output: {
     filename: '[name].min.js',
     path: __dirname,
-    ecmaVersion: 5,
   },
-  cache: false, // @FIX compilation on new files when still compiling node_modules
   module: {
-    unsafeCache: false, // @FIX compilation on new files when still compiling node_modules
     rules: [
       {
         test: /\.m?js$/,
