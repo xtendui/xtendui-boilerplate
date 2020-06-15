@@ -69,7 +69,7 @@ yarn-error.log
 .yarn-integrity
 
 # build
-theme.min.css
-theme.min.css.map
-theme.min.js
-theme.min.js.map
+*.min.css
+*.min.css.map
+*.min.js
+*.min.js.map

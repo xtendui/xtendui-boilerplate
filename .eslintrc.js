@@ -1,18 +1,22 @@
 module.exports = {
-  extends: ['prettier'],
+  extends: ['eslint:recommended', 'google', 'prettier'],
   plugins: ['prettier'],
   env: {
     browser: true,
-    node: true,
+    commonjs: true,
     es6: true,
+    jest: true,
+    node: true,
   },
   parserOptions: {
     sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
   },
   rules: {
-    'prettier/prettier': 'error'
+    'prettier/prettier': 2,
+    'no-console': 'off',
+    'prefer-arrow-callback': 2,
+    'no-unused-vars': 0,
+    'require-jsdoc': 'off',
+    'valid-jsdoc': 'off',
   },
 }

@@ -11,14 +11,14 @@ import gsap from 'gsap'
 
 Xt.mount.push({
   matches: 'html',
-  mount: function(object) {
+  mount: object => {
     let self = new Xt.Ajax(object, {
       query: '.site_wrapper',
     })
 
     // unmount
 
-    const unmount = function() {
+    const unmount = () => {
       self.destroy()
       self = null
     }
@@ -32,12 +32,12 @@ Xt.mount.push({
 
 Xt.mount.push({
   matches: 'html',
-  mount: function(object) {
+  mount: object => {
     let self = new Xt.Smooth(document.scrollingElement, {})
 
     // unmount
 
-    const unmount = function() {
+    const unmount = () => {
       self.destroy()
       self = null
     }
@@ -51,7 +51,7 @@ Xt.mount.push({
 
 Xt.mount.push({
   matches: '.site_header',
-  mount: function(object) {
+  mount: object => {
     let self = new Xt.Sticky(object, {
       sticky: 'fixed',
       hide: 'down',
@@ -59,7 +59,7 @@ Xt.mount.push({
 
     // unmount
 
-    const unmount = function() {
+    const unmount = () => {
       self.destroy()
       self = null
     }
@@ -73,7 +73,7 @@ Xt.mount.push({
 
 Xt.mount.push({
   matches: '.site_footer',
-  mount: function(object) {
+  mount: object => {
     // init
 
     let self = new Xt.Scroll(object, {
@@ -83,8 +83,8 @@ Xt.mount.push({
 
     // change
 
-    const eventChange = function() {
-      const el = this
+    const eventChange = e => {
+      const el = e.target
       gsap.set(el, { opacity: self.detail.ratio, scale: 0.9 + 0.1 * self.detail.ratio })
     }
 
@@ -94,7 +94,7 @@ Xt.mount.push({
 
     // unmount
 
-    const unmount = function() {
+    const unmount = () => {
       self.destroy()
       self = null
     }

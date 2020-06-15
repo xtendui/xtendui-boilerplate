@@ -4,7 +4,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const env = process.env.NODE_ENV === 'production' ? 'production' : 'development'
-console.log('==============', path.resolve(__dirname, 'node_modules/xtend-library'))
+
 module.exports = {
   mode: env,
   context: path.resolve(__dirname, ''),
@@ -19,9 +19,14 @@ module.exports = {
     rules: [
       {
         test: /\.m?js$/,
-        use: {
-          loader: 'babel-loader',
-        },
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+          {
+            loader: 'eslint-loader',
+          },
+        ],
       },
       {
         test: /\.less$/,

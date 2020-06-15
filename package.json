@@ -9,7 +9,8 @@
     "dev": "cross-env NODE_ENV=development webpack --watch",
     "build:gulp": "cross-env NODE_ENV=production gulp build",
     "dev:gulp": "cross-env NODE_ENV=development gulp dev",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "lint": "eslint . --ext .js --fix"
   },
   "dependencies": {
     "bezier-easing": "^2.1.0",
@@ -27,8 +28,10 @@
     "browser-sync": "^2.26.7",
     "cross-env": "^7.0.0",
     "css-loader": "^3.4.2",
-    "eslint": "^6.8.0",
+    "eslint": "7.2.0",
+    "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^6.10.0",
+    "eslint-loader": "^4.0.2",
     "eslint-plugin-prettier": "^3.1.2",
     "gulp": "^4.0.2",
     "less-loader": "^6.1.0",

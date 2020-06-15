@@ -1,7 +1,7 @@
-let gulp = require('gulp')
-let Browser = require('browser-sync')
-let webpack = require('webpack')
-let webpackDevMiddleware = require('webpack-dev-middleware')
+const gulp = require('gulp')
+const Browser = require('browser-sync')
+const webpack = require('webpack')
+const webpackDevMiddleware = require('webpack-dev-middleware')
 
 /**
  * build
@@ -47,8 +47,8 @@ function serveTask() {
     watch: true,
     middleware: [webpackDevMiddleware(bundler, { watch: true })],
   })
-  //gulp.watch('dist/**/*', gulp.series(reload))
-  //gulp.watch('dist/**/*').on('change', () => browser.reload())
+  // gulp.watch('dist/**/*', gulp.series(reload))
+  // gulp.watch('dist/**/*').on('change', () => browser.reload())
 }
 
 /**
