@@ -43,6 +43,9 @@ module.exports = {
             loader: 'less-loader',
             options: {
               sourceMap: true,
+              lessOptions: {
+                paths: [path.resolve(__dirname, './dist'), path.resolve(__dirname, './node_modules')],
+              }
             },
           },
         ],

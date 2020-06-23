@@ -7732,10 +7732,10 @@ xmlhttprequest-ssl@~1.5.4:
   version "1.5.5"
   resolved "https://registry.yarnpkg.com/xmlhttprequest-ssl/-/xmlhttprequest-ssl-1.5.5.tgz#c2876b06168aadc40e57d97e81191ac8f4398b3e"
 
-xtend-library@^0.14.8:
-  version "0.14.8"
-  resolved "https://registry.yarnpkg.com/xtend-library/-/xtend-library-0.14.8.tgz#d72d8dc9f4f093cb0e8fbf4cb304be4106d99748"
-  integrity sha512-TZOf6qyT5Nndz3/pnuWaEp5PpIumgLvNDPam1RZAFQ7Lxvw3Po2CmVB+EQgiS6Kpv/iHN1QSU8AWeRsu6XT6BA==
+xtend-library@^0.15.1:
+  version "0.15.2"
+  resolved "https://registry.yarnpkg.com/xtend-library/-/xtend-library-0.15.2.tgz#35f2a2d78a33f11b61db266c9b13814e5e5a27ef"
+  integrity sha512-gxF2WzNJ9xwP6VgxBeXcbSw632BE4opoy3fg1bNTPqqv/FHYdtXmAkiXcpkVdZs//ZGBVv1hMCc/9oWt+/cBag==
   dependencies:
     "@google/markerclusterer" "^2.0.8"
     bezier-easing "^2.1.0"
