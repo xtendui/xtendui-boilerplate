@@ -10,7 +10,7 @@
     "build:gulp": "cross-env NODE_ENV=production gulp build",
     "dev:gulp": "cross-env NODE_ENV=development gulp dev",
     "start": "webpack-dev-server",
-    "lint": "eslint . --ext .js --fix"
+    "lint": "eslint . --ext .js"
   },
   "dependencies": {
     "bezier-easing": "^2.1.0",

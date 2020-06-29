@@ -23,9 +23,6 @@ module.exports = {
           {
             loader: 'babel-loader',
           },
-          {
-            loader: 'eslint-loader',
-          },
         ],
       },
       {
@@ -46,7 +43,7 @@ module.exports = {
               lessOptions: {
                 // resolve xtend-library import less
                 paths: [path.resolve(__dirname, './dist'), path.resolve(__dirname, './node_modules')],
-              }
+              },
             },
           },
         ],
