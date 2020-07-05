@@ -23,9 +23,6 @@ module.exports = {
           {
             loader: 'babel-loader',
           },
-          {
-            loader: 'eslint-loader',
-          },
         ],
       },
       {
@@ -65,6 +62,7 @@ module.exports = {
     minimizer: [
       new TerserJSPlugin({
         sourceMap: true,
+        extractComments: false,
       }),
       new OptimizeCSSAssetsPlugin({
         cssProcessorOptions: {
