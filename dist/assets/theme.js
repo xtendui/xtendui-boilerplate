@@ -11,12 +11,10 @@ import './scripts/structure.js'
  * favicon
  */
 
-const favicon = document.querySelector('#favicon')
-const faviconDark = document.querySelector('#favicon-dark')
-
-const colorSchemeMq = window.matchMedia('(prefers-color-scheme: dark)')
-
 const changeMq = () => {
+  const colorSchemeMq = window.matchMedia('(prefers-color-scheme: dark)')
+  const favicon = document.querySelector('#favicon')
+  const faviconDark = document.querySelector('#favicon-dark')
   if (colorSchemeMq.matches) {
     favicon.remove()
     document.head.append(faviconDark)
@@ -26,5 +24,4 @@ const changeMq = () => {
   }
 }
 
-colorSchemeMq.addListener(changeMq)
 changeMq()

@@ -14,8 +14,8 @@ module.exports = {
     [
       require.resolve('babel-plugin-module-resolver'),
       {
-        // resolve xtend-library import js
         alias: {
+          // resolve xtend-library import js
           'xtend-library': [path.resolve(__dirname, './dist/assets/xtend-library'), path.resolve(__dirname, './node_modules/xtend-library')],
         },
       },
