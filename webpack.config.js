@@ -9,7 +9,7 @@ module.exports = {
   mode: env,
   context: path.resolve(__dirname, ''),
   entry: {
-    'dist/assets/theme': ['./dist/assets/theme.js', './dist/assets/theme.less'],
+    'dist/assets/theme': ['./dist/assets/theme.js', './dist/assets/theme.css'],
   },
   output: {
     filename: '[name].min.js',
@@ -26,7 +26,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.less$/,
+        test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
           {
@@ -37,6 +37,10 @@ module.exports = {
             },
           },
           {
+            loader: 'postcss-loader',
+          },
+          /*
+          {
             loader: 'less-loader',
             options: {
               sourceMap: true,
@@ -46,6 +50,7 @@ module.exports = {
               },
             },
           },
+          */
         ],
       },
       {
