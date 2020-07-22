@@ -1,6 +1,17 @@
 module.exports = {
   purge: [],
-  theme: require('xtend-library/src/core/structure/theme.js'),
-  plugins: [require('xtend-library/src/core/button')()],
-  //plugins: [require('./dist/assets/xtend-library/src/core/button')()],
+  theme: {
+    extend: {
+      //require('xtend-library/src/theme'),
+      // components
+      btn: (theme) => ({
+        textTransform: 'capitalize',
+      }),
+    },
+  },
+  variants: require('xtend-library/src/variants'),
+  plugins: [
+    require('xtend-library/src/plugins')(),
+    require('xtend-library/src/core/button')(),
+  ],
 }
