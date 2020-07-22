@@ -11,7 +11,7 @@ module.exports = {
       // resolve xtend-library import less
       resolve: function (id) {
         const arr = id.split('/')
-        const theme = path.resolve(__dirname, './' + arr.slice(1).join('/'))
+        const theme = path.resolve(__dirname, './dist/assets/' + arr.slice(1).join('/'))
         if (fs.existsSync(theme)) {
           return theme
         }
