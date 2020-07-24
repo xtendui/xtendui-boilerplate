@@ -27,8 +27,5 @@ module.exports = {
     },
   }),
   variants: require('xtend-library/src/variants')(),
-  plugins: [
-    require('xtend-library/src/plugins')(),
-    require('xtend-library/src/core/button')(),
-  ],
+  plugins: [require('xtend-library/src/plugins')(), require('xtend-library/src/core/button')()],
 }
