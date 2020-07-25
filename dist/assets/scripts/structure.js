@@ -32,7 +32,7 @@ Xt.mount.push({
 
 Xt.mount.push({
   matches: 'html',
-  mount: object => {
+  mount: () => {
     let self = new Xt.Smooth(document.scrollingElement, {})
 
     // unmount

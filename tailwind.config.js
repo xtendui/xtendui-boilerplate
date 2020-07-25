@@ -2,7 +2,6 @@ module.exports = {
   purge: [],
   theme: require('xtend-library/src/tailwind-theme')({
     extend: {
-
       /**
        * design
        */
@@ -24,8 +23,7 @@ module.exports = {
       /**
        * xtend
        */
-      xtend: theme => ({
-
+      xtend: () => ({
         /**
          * btn
          */
