@@ -2,7 +2,7 @@ module.exports = {
   purge: [],
   theme: require('xtend-library/src/theme')({
     extend: {
-      // colors
+      // design
       colors: {
         // https://javisperez.github.io/tailwindcolorshades/#/?Blue%20Ribbon=7567f8&tv=1
         accent: {
