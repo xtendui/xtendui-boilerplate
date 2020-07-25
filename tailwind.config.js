@@ -17,12 +17,17 @@ module.exports = {
           900: '#231F4A',
         },
       },
-      // btn
-      btnCustom: theme => ({
-        textTransform: 'capitalize',
+      // custom
+      custom: theme => ({
+        // btn
+        btn: {
+          '.btn': {
+            textTransform: 'capitalize',
+          },
+        },
       }),
     },
   }),
   variants: require('xtend-library/src/variants')(),
-  plugins: [require('xtend-library/src/plugins')(), require('xtend-library/src/core/button')()],
+  plugins: [require('xtend-library/src/plugins')(), require('xtend-library/src/core/button')],
 }
