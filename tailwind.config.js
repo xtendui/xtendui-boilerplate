@@ -21,9 +21,9 @@ module.exports = {
       },
 
       /**
-       * xtend
+       * xtendCustom
        */
-      xtend: () => ({
+      xtendCustom: () => ({
         /**
          * btn
          */
@@ -40,6 +40,5 @@ module.exports = {
       }),
     },
   }),
-  variants: require('xtend-library/src/variants')(),
-  plugins: [require('xtend-library/src/plugins')(), require('xtend-library/src/tailwind-plugins')],
+  plugins: [require('xtend-library/src/tailwind-plugins')],
 }
