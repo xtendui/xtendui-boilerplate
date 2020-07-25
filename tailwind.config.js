@@ -17,12 +17,9 @@ module.exports = {
           900: '#231F4A',
         },
       },
-      // button
-      // PROBLEM https://github.com/tailwindlabs/tailwindcss/discussions/2069
-      btn: theme => ({
-        custom: {
-          textTransform: 'capitalize',
-        },
+      // btn
+      btnCustom: theme => ({
+        textTransform: 'capitalize',
       }),
     },
   }),
