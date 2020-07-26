@@ -8,6 +8,7 @@ module.exports = {
   map: true,
   plugins: [
     postcssImport({
+      /*
       // resolve xtend-library import less
       resolve: function (id) {
         const arr = id.split('/')
@@ -21,6 +22,7 @@ module.exports = {
         }
         return arr.join('/')
       },
+      */
     }),
     tailwindcss(),
     postcssNesting(),

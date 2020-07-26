@@ -1,10 +1,10 @@
 module.exports = {
   purge: [],
-  theme: require('xtend-library/src/tailwind-theme')({
+  theme: {
     extend: {
-      /**
-       * design
-       */
+      // xtend theme
+      ...require('xtend-library/src/tailwind-theme'),
+      // theme
       colors: {
         // https://javisperez.github.io/tailwindcolorshades/#/?Blue%20Ribbon=7567f8&tv=1
         accent: {
@@ -19,26 +19,18 @@ module.exports = {
           900: '#231F4A',
         },
       },
-
-      /**
-       * xtendCustom
-       */
-      xtendCustom: () => ({
-        /**
-         * btn
-         */
-        btn: {
+      // xtend plugin
+      xtend: theme => ({
+        css: {
+          // btn
           '.btn': {
             textTransform: 'capitalize',
           },
+          // list
+          list: false,
         },
-
-        /**
-         * list
-         */
-        list: false,
       }),
     },
-  }),
-  plugins: [require('xtend-library/src/tailwind-plugins')],
+  },
+  plugins: [require('xtend-library/src/tailwind-plugin')],
 }
