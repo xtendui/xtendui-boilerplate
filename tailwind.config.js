@@ -1,9 +1,7 @@
 module.exports = {
   purge: [],
-  theme: {
+  theme: require('./src/tailwind-theme')({
     extend: {
-      // xtend theme
-      ...require('xtend-library/src/tailwind-theme'),
       // theme
       colors: {
         // https://javisperez.github.io/tailwindcolorshades/#/?Blue%20Ribbon=7567f8&tv=1
@@ -24,6 +22,7 @@ module.exports = {
         css: {
           // btn
           '.btn': {
+            backgroundColor: theme('colors.gray.900'),
             textTransform: 'capitalize',
           },
           // list
@@ -31,6 +30,6 @@ module.exports = {
         },
       }),
     },
-  },
+  }),
   plugins: [require('xtend-library/src/tailwind-plugin')],
 }
