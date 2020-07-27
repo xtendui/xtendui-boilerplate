@@ -1,6 +1,6 @@
 module.exports = {
   purge: [],
-  theme: require('./src/tailwind-theme')({
+  theme: require('xtend-library/src/tailwind-theme')({
     extend: {
       // theme
       colors: {
