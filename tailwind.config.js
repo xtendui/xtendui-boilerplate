@@ -25,7 +25,7 @@ module.exports = {
         components: {
           btn: {
             '.btn': {
-              textTransform: 'capitalize',
+              textTransform: 'capitalize', // example custom component
             },
           },
           //list: false, // example disable component
