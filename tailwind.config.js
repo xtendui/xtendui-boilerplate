@@ -1,6 +1,6 @@
 module.exports = {
   purge: [],
-  theme: require('xtend-library/src/tailwind-theme')({
+  theme: {
     extend: {
       // theme
       colors: {
@@ -32,6 +32,6 @@ module.exports = {
         },
       }),
     },
-  }),
+  },
   plugins: [require('xtend-library/src/tailwind-plugin')],
 }
