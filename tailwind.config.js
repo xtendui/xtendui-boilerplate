@@ -23,15 +23,23 @@ module.exports = {
           //list: false, // example disable utility
         },
         components: {
+          //list: false, // example disable component
           btn: {
+            // example custom component
             '.btn': {
-              textTransform: 'capitalize', // example custom component
+              fontFamily: theme('fontFamily.serif').toString(),
+              textTransform: 'capitalize',
             },
           },
-          //list: false, // example disable component
         },
       }),
     },
   },
-  plugins: [require('xtend-library/src/tailwind-plugin')],
+  plugins: [require('xtend-library')],
+  experimental: {
+    applyComplexClasses: true,
+    extendedSpacingScale: true,
+    defaultLineHeights: true,
+    removeDeprecatedGapUtilities: true,
+  },
 }
