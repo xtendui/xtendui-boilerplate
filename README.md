@@ -65,7 +65,6 @@ npm install --save core-js regenerator-runtime
 
 ```jsx
 import 'core-js'
-import 'regenerator-runtime/runtime'
 ```
 
 You need to import the **polyfills** files and the **main** js:
