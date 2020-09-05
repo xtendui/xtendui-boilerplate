@@ -15,7 +15,7 @@ module.exports = {
       require.resolve('babel-plugin-module-resolver'),
       {
         alias: {
-          // resolve xtend-library import js
+          // if you want to fork javascript file add a local path.resolve as first in array
           'xtend-library': [path.resolve(__dirname, './dist/assets/xtend-library'), path.resolve(__dirname, './node_modules/xtend-library')],
         },
       },

@@ -39,18 +39,6 @@ module.exports = {
           {
             loader: 'postcss-loader',
           },
-          /*
-          {
-            loader: 'less-loader',
-            options: {
-              sourceMap: true,
-              lessOptions: {
-                // resolve xtend-library import less
-                paths: [path.resolve(__dirname, './dist'), path.resolve(__dirname, './node_modules')],
-              },
-            },
-          },
-          */
         ],
       },
       {
