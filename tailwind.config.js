@@ -73,11 +73,24 @@ module.exports = {
       // xtend plugin
       xtend: theme => ({
         utilities: {
-          drop: false, // disable utility
+          // disable utility
+          drop: false,
+          // modify utility
+          typography: {
+            '.text-default': {
+              'a:not([class]), .link': {
+                color: theme('colors.black'),
+                '&:hover': {
+                  color: theme('colors.black'),
+                },
+              },
+            },
+          },
         },
         components: {
-          drop: false, // disable component
-          // extend component
+          // disable component
+          drop: false,
+          // modify component
           btn: {
             '.btn': {
               letterSpacing: theme('letterSpacing.tight'),
