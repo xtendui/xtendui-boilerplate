@@ -1,8 +1,37 @@
 module.exports = {
   purge: [],
   theme: require('xtend-library/src/tailwind-theme')({
+    // xtend utilities and components in node_modules/xtend-library/src/tailwind-xtend.js
+    xtend: theme => ({
+      utilities: {
+        // disable utility
+        drop: false,
+        // modify utility
+        typography: {
+          '.text-default': {
+            'a:not([class]), .link': {
+              color: theme('colors.black'),
+              '&:hover': {
+                color: theme('colors.black'),
+              },
+            },
+          },
+        },
+      },
+      components: {
+        // disable component
+        drop: false,
+        // modify component
+        btn: {
+          '.btn': {
+            letterSpacing: theme('letterSpacing.tight'),
+            textTransform: 'capitalize',
+          },
+        },
+      },
+    }),
+    // extend theme in node_modules/xtend-library/src/tailwind-theme.js
     extend: {
-      // extend theme in node_modules/xtend-library/src/tailwind-theme.js
       colors: {
         accent: {
           100: '#F1F0FE',
@@ -16,35 +45,6 @@ module.exports = {
           900: '#231F4A',
         },
       },
-      // xtend utilities and components in node_modules/xtend-library/src/tailwind-xtend.js
-      xtend: theme => ({
-        utilities: {
-          // disable utility
-          drop: false,
-          // modify utility
-          typography: {
-            '.text-default': {
-              'a:not([class]), .link': {
-                color: theme('colors.black'),
-                '&:hover': {
-                  color: theme('colors.black'),
-                },
-              },
-            },
-          },
-        },
-        components: {
-          // disable component
-          drop: false,
-          // modify component
-          btn: {
-            '.btn': {
-              letterSpacing: theme('letterSpacing.tight'),
-              textTransform: 'capitalize',
-            },
-          },
-        },
-      }),
     },
   }),
   variants: require('xtend-library/src/tailwind-variants')({
