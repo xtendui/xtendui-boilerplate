@@ -1,9 +1,6 @@
 import 'core-js'
-import 'xtend-library/src/xt.js'
-import 'xtend-library/src/xtend-core.js'
-import 'xtend-library/src/addons/test.js' // example override file: check console.debug
 
-import './scripts/general.js'
+import './scripts/general'
 
 /**
  * favicon

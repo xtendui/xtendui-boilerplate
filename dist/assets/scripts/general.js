@@ -1,8 +1,8 @@
-import { Xt } from 'xtend-library/src/xt.js'
-import 'xtend-library/src/extensions/ajax/ajax.js'
-import 'xtend-library/src/extensions/smooth/smooth.js'
-import 'xtend-library/src/extensions/scroll/scroll.js'
-import 'xtend-library/src/extensions/sticky/sticky.js'
+import { Xt } from 'xtend-library'
+import 'xtend-library/src/core/ajax'
+import 'xtend-library/src/core/smooth'
+import 'xtend-library/src/core/scroll'
+import 'xtend-library/src/core/sticky'
 import gsap from 'gsap'
 
 /**
