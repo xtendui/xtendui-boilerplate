@@ -17,7 +17,7 @@ module.exports = {
       {
         alias: {
           // if you want to fork javascript file add a local path.resolve as first in array
-          'xtend-library': [path.resolve(__dirname, './dist/assets/xtend-library'), path.resolve(__dirname, './node_modules/xtend-library')],
+          'xtend-library': [path.resolve(__dirname, './node_modules/xtend-library')],
         },
       },
     ],
