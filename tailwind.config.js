@@ -4,30 +4,38 @@ module.exports = {
     // xtend utilities and components in node_modules/xtend-library/src/tailwind-xtend.js
     xtend: theme => ({
       utilities: {
-        // disable utility
-        drop: false,
-        // modify utility
-        typography: {
-          '.text-default': {
-            'a:not([class]), .link': {
-              color: theme('colors.black'),
-              '&:hover': {
+        core: {
+          // disable utility
+          drop: false,
+          // modify utility
+          typography: {
+            '.text-default': {
+              'a:not([class]), .link': {
                 color: theme('colors.black'),
+                '&:hover': {
+                  color: theme('colors.black'),
+                },
               },
             },
           },
         },
+        // disable addons
+        addons: false,
       },
       components: {
-        // disable component
-        drop: false,
-        // modify component
-        btn: {
-          '.btn': {
-            letterSpacing: theme('letterSpacing.tight'),
-            textTransform: 'capitalize',
+        core: {
+          // disable component
+          drop: false,
+          // modify component
+          btn: {
+            '.btn': {
+              letterSpacing: theme('letterSpacing.tight'),
+              textTransform: 'capitalize',
+            },
           },
         },
+        // disable addons
+        addons: false,
       },
     }),
     // extend theme in node_modules/xtend-library/src/tailwind-theme.js

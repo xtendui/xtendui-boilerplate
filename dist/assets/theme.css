@@ -2,6 +2,29 @@
  * tailwind
  */
 
- @import "tailwindcss/base";
- @import "tailwindcss/components";
- @import "tailwindcss/utilities";
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+/**
+ * xtend
+ * to override a file copy from 'node_modules/xtend-library/src/<path>' to 'dist/xtend-library/src/<path>'
+
+@import 'xtend-library/src/xtend-reset.less'; // always first loaded
+@import 'xtend-library/src/xtend-core.less';
+@import 'xtend-library/src/extensions/ajax/ajax.less';
+@import 'xtend-library/src/extensions/scroll/scroll.less';
+@import 'xtend-library/src/extensions/sticky/sticky.less';
+@import 'xtend-library/src/addons/structure/sticky-footer.less';
+@import 'xtend-library/src/addons/test.less'; // example override file: check inspect body:before
+
+ */
+/**
+ * theme
+
+@import 'styles/_header.less';
+@import 'styles/_footer.less';
+@import 'styles/_main.less';
+ */
