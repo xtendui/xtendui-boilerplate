@@ -16,7 +16,6 @@
     "lint": "eslint . --ext .js"
   },
   "dependencies": {
-    "bezier-easing": "^2.1.0",
     "core-js": "^3.6.5",
     "gsap": "^3.3.4",
     "tailwindcss": "^1.7.2",
