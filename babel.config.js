@@ -11,12 +11,13 @@ module.exports = {
     ],
   ],
   plugins: [
+    [require.resolve('@babel/plugin-transform-runtime')],
     [
       require.resolve('babel-plugin-module-resolver'),
       {
         alias: {
-          // resolve xtend-library import js
-          'xtend-library': [path.resolve(__dirname, './dist/assets/xtend-library'), path.resolve(__dirname, './node_modules/xtend-library')],
+          // if you want to fork javascript file add a local path.resolve as first in array
+          'xtend-ui': [path.resolve(__dirname, './node_modules/xtend-ui')],
         },
       },
     ],

@@ -4,6 +4,9 @@
   "license": "MIT",
   "author": "Riccardo Caroli <beaver82@gmail.com>",
   "repository": "https://github.com/minimit/xtend-demo-vanilla.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
     "dev": "cross-env NODE_ENV=development webpack --watch",
@@ -13,15 +16,14 @@
     "lint": "eslint . --ext .js"
   },
   "dependencies": {
-    "bezier-easing": "^2.1.0",
     "core-js": "^3.6.5",
     "gsap": "^3.3.4",
-    "json5": "^2.1.3",
-    "regenerator-runtime": "^0.13.3",
-    "xtend-library": "^0.15.27"
+    "tailwindcss": "^1.7.2",
+    "xtend-ui": "^0.15.50"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-env": "^7.10.4",
     "babel-loader": "^8.0.6",
     "babel-plugin-module-resolver": "^4.0.0",
@@ -29,14 +31,15 @@
     "cross-env": "^7.0.0",
     "css-loader": "^3.6.0",
     "eslint": "7.4.0",
-    "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^6.10.0",
-    "eslint-loader": "^4.0.2",
     "eslint-plugin-prettier": "^3.1.4",
     "gulp": "^4.0.2",
     "less-loader": "^6.2.0",
     "mini-css-extract-plugin": "^0.9.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-nesting": "^7.0.1",
     "prettier-eslint": "^11.0.0",
     "source-map-loader": "^1.0.1",
     "terser-webpack-plugin": "^3.0.6",
@@ -45,8 +48,5 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-middleware": "^3.7.2",
     "webpack-dev-server": "^3.10.3"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }

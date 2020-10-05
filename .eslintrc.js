@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['eslint:recommended', 'google', 'prettier'],
+  extends: ['eslint:recommended', 'prettier'],
   plugins: ['prettier'],
   env: {
     browser: true,
@@ -10,13 +10,16 @@ module.exports = {
   },
   parserOptions: {
     sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
   rules: {
     'prettier/prettier': 2,
-    'no-console': 'off',
-    'prefer-arrow-callback': 2,
-    'no-unused-vars': 0,
-    'require-jsdoc': 'off',
-    'valid-jsdoc': 'off',
   },
 }

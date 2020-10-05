@@ -1,9 +1,28 @@
-import { Xt } from 'xtend-library/src/xt.js'
-import 'xtend-library/src/extensions/ajax/ajax.js'
-import 'xtend-library/src/extensions/smooth/smooth.js'
-import 'xtend-library/src/extensions/scroll/scroll.js'
-import 'xtend-library/src/extensions/sticky/sticky.js'
+import { Xt } from 'xtend-ui'
+import 'xtend-ui/src/core/ajax'
+import 'xtend-ui/src/core/smooth'
+import 'xtend-ui/src/core/scroll'
+import 'xtend-ui/src/core/sticky'
 import gsap from 'gsap'
+
+/**
+ * favicon
+ */
+
+const changeMq = () => {
+  const colorSchemeMq = window.matchMedia('(prefers-color-scheme: dark)')
+  const favicon = document.querySelector('#favicon')
+  const faviconDark = document.querySelector('#favicon-dark')
+  if (colorSchemeMq.matches) {
+    favicon.remove()
+    document.head.append(faviconDark)
+  } else {
+    document.head.append(favicon)
+    faviconDark.remove()
+  }
+}
+
+changeMq()
 
 /**
  * ajax
@@ -32,7 +51,7 @@ Xt.mount.push({
 
 Xt.mount.push({
   matches: 'html',
-  mount: object => {
+  mount: () => {
     let self = new Xt.Smooth(document.scrollingElement, {})
 
     // unmount
