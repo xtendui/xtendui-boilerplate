@@ -10,15 +10,15 @@
 
 /**
  * xtend
- * to override a file copy from 'node_modules/xtend-library/src/<path>' to 'dist/xtend-library/src/<path>'
+ * to override a file copy from 'node_modules/xtend-ui/src/<path>' to 'dist/xtend-ui/src/<path>'
 
-@import 'xtend-library/src/xtend-reset.less'; // always first loaded
-@import 'xtend-library/src/xtend-core.less';
-@import 'xtend-library/src/extensions/ajax/ajax.less';
-@import 'xtend-library/src/extensions/scroll/scroll.less';
-@import 'xtend-library/src/extensions/sticky/sticky.less';
-@import 'xtend-library/src/addons/structure/sticky-footer.less';
-@import 'xtend-library/src/addons/test.less'; // example override file: check inspect body:before
+@import 'xtend-ui/src/xtend-reset.less'; // always first loaded
+@import 'xtend-ui/src/xtend-core.less';
+@import 'xtend-ui/src/extensions/ajax/ajax.less';
+@import 'xtend-ui/src/extensions/scroll/scroll.less';
+@import 'xtend-ui/src/extensions/sticky/sticky.less';
+@import 'xtend-ui/src/addons/structure/sticky-footer.less';
+@import 'xtend-ui/src/addons/test.less'; // example override file: check inspect body:before
 
  */
 /**

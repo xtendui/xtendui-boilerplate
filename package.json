@@ -19,7 +19,7 @@
     "core-js": "^3.6.5",
     "gsap": "^3.3.4",
     "tailwindcss": "^1.7.2",
-    "xtend-library": "^0.15.27"
+    "xtend-ui": "^0.15.50"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",

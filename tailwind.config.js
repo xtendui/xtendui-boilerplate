@@ -1,7 +1,7 @@
 module.exports = {
   purge: [],
-  theme: require('xtend-library/src/tailwind-theme')({
-    // xtend utilities and components in node_modules/xtend-library/src/tailwind-xtend.js
+  theme: require('xtend-ui/src/tailwind-theme')({
+    // xtend utilities and components in node_modules/xtend-ui/src/tailwind-xtend.js
     xtend: theme => ({
       utilities: {
         core: {
@@ -38,7 +38,7 @@ module.exports = {
         addons: false,
       },
     }),
-    // extend theme in node_modules/xtend-library/src/tailwind-theme.js
+    // extend theme in node_modules/xtend-ui/src/tailwind-theme.js
     extend: {
       colors: {
         accent: {
@@ -55,10 +55,10 @@ module.exports = {
       },
     },
   }),
-  variants: require('xtend-library/src/tailwind-variants')({
+  variants: require('xtend-ui/src/tailwind-variants')({
     // add here your variants
   }),
-  plugins: [require('xtend-library/src/tailwind-plugin')],
+  plugins: [require('xtend-ui/src/tailwind-plugin')],
   experimental: {
     applyComplexClasses: true,
     extendedSpacingScale: true,
