@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="">
+<html>
 
 <head>
 
-    <meta charset="utf-8">
-    <title>Overlay</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="/assets/images/favicon.png" id="favicon">
-    <link rel="icon" href="/assets/images/favicon-dark.png" id="favicon-dark">
+  <link rel="icon" href="/assets/images/favicon.png" id="favicon">
+  <link rel="icon" href="/assets/images/favicon-dark.png" id="favicon-dark">
 
-    <link rel="stylesheet" href="/assets/theme.min.css">
+  <link rel="stylesheet" href="/assets/theme.min.css">
 
 </head>
 
@@ -18,138 +18,92 @@
 
 <div class="site_wrapper">
 
-    <header class="site_header">
-        <div class="container">
+  <header class="site_header">
+    <div class="container">
 
-            <div class="site_header_inner">
-                <div class="row">
+      <div class="site_header_inner">
+        <div class="list">
 
-                    <div class="site_header_logo">
-                        <h6>header</h6>
-                    </div>
+          <div class="site_header_logo">
+            <div class="h4">Header</div>
+          </div>
 
-                    <div class="site_header_menu">
-                        <div class="drop-container" data-xt-drop>
-                            <button type="button" class="btn btn-primary">
-                                pages
-                            </button>
-                            <div class="drop drop-default drop-bottom drop-right">
-                                <div class="drop-inner">
-                                    <div class="drop-design"></div>
-                                    <div class="drop-content">
-                                        <ul class="list list-drop">
-                                            <li>
-                                                <a href="/">
-                                                    Homepage
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/overlay.html">
-                                                    Overlay
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+          <nav class="list list-space-2">
+            <a href="/">
+              Homepage
+            </a>
+            <a href="/overlay.html">
+              Overlay
+            </a>
+          </nav>
 
         </div>
-    </header>
+      </div>
 
-    <main class="site_main">
-        <div class="container">
+    </div>
+  </header>
 
-            <h1>Overlay</h1>
+  <main class="site_main">
+    <div class="container">
 
-            <p>
-                <button type="button" class="btn btn-primary" data-xt-overlay='{"targets": "#overlay_test"}'>
-                    overlay
-                </button>
-            </p>
+      <h1>Overlay</h1>
 
-            <div class="overlay overlay-default" id="overlay_test">
-                <div class="overlay-container">
-                    <div class="overlay-inner">
-                        <div class="overlay-design"></div>
+      <div data-xt-overlay>
 
-                        <div class="card card-overlay">
-                            <div class="card-design"></div>
-                            <div class="card-inner">
-                                <div class="btn btn-close" aria-label="Close"></div>
-                                <div class="card-content">
-                                    <div class="card-block card-item">
-                                        <div class="card-title">Lorem ipsum</div>
-                                        <ul class="list list-default">
-                                            <li>
-                                                <a href="/">
-                                                    Homepage
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/overlay.html">
-                                                    Overlay
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <button type="button" class="btn btn-md text-inverse rounded-md bg-accent-500 hover:bg-accent-600 active:bg-accent-700">
+          default
+        </button>
 
-                    </div>
+        <div class="overlay">
+          <div class="overlay-container max-w-4xl">
+            <div class="overlay-inner">
+
+              <div class="card text-default rounded-md bg-white shadow-lg">
+                <div class="btn btn-close p-5" aria-label="Close"><span class="icon-close"></span></div>
+                <div class="card-block card-block-lg">
+                  <div class="h3">Lorem ipsum</div>
+                  <nav class="list list-space-2">
+                    <a href="/">
+                      Homepage
+                    </a>
+                    <a href="/overlay.html">
+                      Overlay
+                    </a>
+                  </nav>
                 </div>
+              </div>
+
             </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site_footer">
+    <div class="container">
+
+      <div class="site_footer_inner">
+        <div class="list">
+
+          <div class="h4">Footer</div>
+
+          <nav class="list list-space-2">
+            <a href="/">
+              Homepage
+            </a>
+            <a href="/overlay.html">
+              Overlay
+            </a>
+          </nav>
 
         </div>
-    </main>
+      </div>
 
-    <footer class="site_footer">
-        <div class="container">
-
-            <div class="site_footer_inner">
-                <div class="row">
-
-                    <div class="site_footer_logo">
-                        <h6>footer</h6>
-                    </div>
-
-                    <div class="site_footer_menu">
-                        <div class="drop-container" data-xt-drop>
-                            <button type="button" class="btn btn-primary">
-                                pages
-                            </button>
-                            <div class="drop drop-default drop-top drop-right">
-                                <div class="drop-inner">
-                                    <div class="drop-design"></div>
-                                    <div class="drop-content">
-                                        <ul class="list list-drop">
-                                            <li>
-                                                <a href="/">
-                                                    Homepage
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/overlay.html">
-                                                    Overlay
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </footer>
+    </div>
+  </footer>
 
 </div>
 

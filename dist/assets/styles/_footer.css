@@ -3,12 +3,11 @@
  */
 
 .site_footer {
-  .padding(y, big);
-  background: @shade-200;
+  @apply py-6 bg-gray-200;
 }
 
 .site_footer_inner {
-  > .row {
+  > .list {
     align-items: center;
     justify-content: space-between;
   }

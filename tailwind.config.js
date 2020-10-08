@@ -10,17 +10,10 @@ module.exports = {
           // modify utility
           typography: {
             '.text-default': {
-              'a:not([class]), .link': {
-                color: theme('colors.black'),
-                '&:hover': {
-                  color: theme('colors.black'),
-                },
-              },
+              '@apply text-black': '',
             },
           },
         },
-        // disable addons
-        addons: false,
       },
       components: {
         core: {
@@ -34,8 +27,6 @@ module.exports = {
             },
           },
         },
-        // disable addons
-        addons: false,
       },
     }),
     // extend theme in node_modules/xtend-ui/src/tailwind-theme.js
