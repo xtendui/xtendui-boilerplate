@@ -1,16 +1,4 @@
-<p align="center">
-  Boilerplate theme vanilla for [Xtend UI](https://github.com/minimit/xtend-ui).
-  <br/><br/>
-  <a href="https://github.com/minimit/xtend-theme-vanilla/actions?query=workflow%3ARelease" style="display: inline-block;">
-    <img src="https://img.shields.io/github/workflow/status/minimit/xtend-theme-vanilla/Release" alt="Build Status">
-  </a>
-  <a href="https://www.npmjs.com/package/xtend-theme-vanilla" style="display: inline-block;">
-    <img src="https://img.shields.io/npm/v/xtend-theme-vanilla.svg" alt="Latest Release">
-  </a>
-  <a href="https://github.com/minimit/xtend-theme-vanilla/blob/master/LICENSE" style="display: inline-block;">
-    <img src="https://img.shields.io/npm/l/xtend-theme-vanilla.svg" alt="License">
-  </a>
-</p>
+Boilerplate theme vanilla for [Xtend UI](https://github.com/minimit/xtend-ui).
 
 ## Installation
 
