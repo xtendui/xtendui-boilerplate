@@ -20,34 +20,6 @@ module.exports = {
         900: '#3D424D',
       },
     },
-    // xtend utilities and components in node_modules/xtend-ui/src/tailwind-xtend.js
-    xtend: theme => ({
-      utilities: {
-        core: {
-          // disable utility
-          drop: false,
-          // modify utility
-          typography: {
-            '.text-default': {
-              '@apply text-black': '',
-            },
-          },
-        },
-      },
-      components: {
-        core: {
-          // disable component
-          drop: false,
-          // modify component
-          btn: {
-            '.btn': {
-              letterSpacing: theme('letterSpacing.tight'),
-              textTransform: 'capitalize',
-            },
-          },
-        },
-      },
-    }),
     // extend theme in node_modules/xtend-ui/src/tailwind-theme.js
     extend: {
       colors: {
@@ -64,6 +36,30 @@ module.exports = {
         },
       },
     },
+    // xtend utilities and components in node_modules/xtend-ui/src/tailwind-xtend.js
+    xtend: theme => ({
+      utilities: {
+        core: {
+          // modify utility
+          typography: {
+            '.text-default': {
+              '@apply text-black': '',
+            },
+          },
+        },
+      },
+      components: {
+        core: {
+          // modify core
+          btn: {
+            '.btn': {
+              letterSpacing: theme('letterSpacing.tight'),
+              textTransform: 'capitalize',
+            },
+          },
+        },
+      },
+    }),
   }),
   variants: require('xtend-ui/src/tailwind-variants')({
     // add here your variants
