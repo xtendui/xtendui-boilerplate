@@ -8611,7 +8611,7 @@ table@^5.2.3:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
-tailwindcss@^1.8.12:
+tailwindcss@^1.8.12, tailwindcss@^1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.9.1.tgz#5cd83b7962c0e22d7608bc502daf4185962995fc"
   dependencies:
@@ -9535,16 +9535,16 @@ xmlhttprequest-ssl@~1.5.4:
   version "1.5.5"
   resolved "https://registry.yarnpkg.com/xmlhttprequest-ssl/-/xmlhttprequest-ssl-1.5.5.tgz#c2876b06168aadc40e57d97e81191ac8f4398b3e"
 
-xtend-ui@^0.16.3:
-  version "0.16.3"
-  resolved "https://registry.yarnpkg.com/xtend-ui/-/xtend-ui-0.16.3.tgz#278ac387b32ee8b5a73aeea01ebb42aa8bd9b5b6"
+xtend-ui@^0.16.7:
+  version "0.16.7"
+  resolved "https://registry.yarnpkg.com/xtend-ui/-/xtend-ui-0.16.7.tgz#ec862cb901b0cfcdb7a2a055fb60f4589934ed4d"
   dependencies:
     "@googlemaps/markerclustererplus" "^1.0.3"
     "@semantic-release/npm" "^7.0.5"
     core-js "^3.6.5"
     gsap "^3.3.4"
     json5 "^2.1.3"
-    tailwindcss "^1.7.5"
+    tailwindcss "^1.8.12"
 
 xtend@^4.0.0, xtend@^4.0.2, xtend@~4.0.0, xtend@~4.0.1:
   version "4.0.2"
