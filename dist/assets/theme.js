@@ -1,5 +1,5 @@
 import 'core-js'
-import { Xt } from 'xtend-ui'
+import { Xt } from 'xtendui'
 
 import './scripts/general'
 

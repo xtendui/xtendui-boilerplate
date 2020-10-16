@@ -1,6 +1,6 @@
 module.exports = {
   purge: [],
-  theme: require('xtend-ui/src/tailwind-theme')({
+  theme: require('xtendui/src/tailwind-theme')({
     // only some colors
     colors: {
       transparent: 'transparent',
@@ -20,7 +20,7 @@ module.exports = {
         900: '#3D424D',
       },
     },
-    // extend theme in node_modules/xtend-ui/src/tailwind-theme.js
+    // extend theme in node_modules/xtendui/src/tailwind-theme.js
     extend: {
       colors: {
         accent: {
@@ -37,7 +37,7 @@ module.exports = {
         },
       },
     },
-    // xtend utilities and components in node_modules/xtend-ui/src/tailwind-xtend.js
+    // xtend utilities and components in node_modules/xtendui/src/tailwind-xtend.js
     xtend: theme => ({
       utilities: {
         core: {
@@ -62,10 +62,10 @@ module.exports = {
       },
     }),
   }),
-  variants: require('xtend-ui/src/tailwind-variants')({
+  variants: require('xtendui/src/tailwind-variants')({
     // add here your variants
   }),
-  plugins: [require('xtend-ui/src/tailwind-plugin')],
+  plugins: [require('xtendui/src/tailwind-plugin')],
   experimental: {
     applyComplexClasses: true,
     extendedSpacingScale: true,

@@ -17,7 +17,7 @@ module.exports = {
       {
         alias: {
           // if you want to fork javascript file add a local path.resolve as first in array
-          'xtend-ui': [path.resolve(__dirname, './node_modules/xtend-ui')],
+          xtendui: [path.resolve(__dirname, './node_modules/xtendui')],
         },
       },
     ],

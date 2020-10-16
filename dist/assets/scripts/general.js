@@ -1,5 +1,5 @@
-import { Xt } from 'xtend-ui'
-import 'xtend-ui/src/core/overlay'
+import { Xt } from 'xtendui'
+import 'xtendui/src/core/overlay'
 
 /**
  * favicon

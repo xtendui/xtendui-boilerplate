@@ -1,4 +1,4 @@
-Boilerplate theme to start a vanilla project with [Xtend UI](https://github.com/minimit/xtend-ui).
+Boilerplate theme to start a vanilla project with [Xtend UI](https://github.com/minimit/xtendui).
 
 ## Installation
 
