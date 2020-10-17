@@ -36,30 +36,28 @@ module.exports = {
           900: '#231F4A',
         },
       },
-    },
-    // xtend utilities and components in node_modules/xtendui/src/tailwind-xtend.js
-    xtend: theme => ({
-      utilities: {
-        core: {
-          // modify utility
-          typography: {
-            '.text-default': {
-              '@apply text-black': '',
-            },
-          },
-        },
+      transitionTimingFunction: {
+        in: 'cubic-bezier(.19,1,.22,1)',
+        out: 'cubic-bezier(1,0,0,1)',
       },
-      components: {
-        core: {
-          // modify core
-          btn: {
+      // xtend utilities and components in node_modules/xtendui/src/tailwind-xtend.js
+      xtendui: {
+        typography: {
+          utilities: theme => ({
+            '.text-default': {
+              color: theme('color.black'),
+            },
+          }),
+        },
+        btn: {
+          components: theme => ({
             '.btn': {
               letterSpacing: theme('letterSpacing.tight'),
               textTransform: 'capitalize',
             },
-          },
+          }),
         },
       },
-    }),
+    },
   },
 }
