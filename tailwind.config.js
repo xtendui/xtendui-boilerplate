@@ -1,6 +1,6 @@
 module.exports = {
-  purge: [],
-  theme: require('xtendui/src/tailwind-theme')({
+  presets: [require('tailwindcss/defaultConfig'), require('xtendui/src/tailwind-config')],
+  theme: {
     // only some colors
     colors: {
       transparent: 'transparent',
@@ -20,7 +20,7 @@ module.exports = {
         900: '#3D424D',
       },
     },
-    // extend theme in node_modules/xtendui/src/tailwind-theme.js
+    // extend theme in node_modules/xtendui/src/tailwind-config.js
     extend: {
       colors: {
         accent: {
@@ -61,15 +61,5 @@ module.exports = {
         },
       },
     }),
-  }),
-  variants: require('xtendui/src/tailwind-variants')({
-    // add here your variants
-  }),
-  plugins: [require('xtendui/src/tailwind-plugin')],
-  experimental: {
-    applyComplexClasses: true,
-    extendedSpacingScale: true,
-    defaultLineHeights: true,
-    removeDeprecatedGapUtilities: true,
   },
 }
