@@ -6,7 +6,7 @@
 
 @import "tailwindcss/components";
 
-@import 'styles/_general.css';
+@import 'styles/_structure.css';
 @import 'styles/_header.css';
 @import 'styles/_footer.css';
 

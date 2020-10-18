@@ -1,7 +1,7 @@
 module.exports = {
   presets: [require('tailwindcss/defaultConfig'), require('xtendui/src/tailwind-config')],
   theme: {
-    // only some colors
+    // only some tailwind colors
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -20,9 +20,10 @@ module.exports = {
         900: '#3D424D',
       },
     },
-    // extend theme in node_modules/xtendui/src/tailwind-config.js
     extend: {
       colors: {
+        success: '#48bb78',
+        error: '#f56565',
         accent: {
           50: '#F8F7FF',
           100: '#F1F0FE',
@@ -40,23 +41,22 @@ module.exports = {
         in: 'cubic-bezier(.19,1,.22,1)',
         out: 'cubic-bezier(1,0,0,1)',
       },
-      // xtend utilities and components in node_modules/xtendui/src/tailwind-xtend.js
-      xtendui: {
-        typography: {
-          utilities: theme => ({
-            '.text-default': {
-              color: theme('color.black'),
-            },
-          }),
-        },
-        btn: {
-          components: theme => ({
-            '.btn': {
-              letterSpacing: theme('letterSpacing.tight'),
-              textTransform: 'capitalize',
-            },
-          }),
-        },
+    },
+    xtendui: {
+      btn: {
+        components: theme => ({
+          '.btn': {
+            letterSpacing: theme('letterSpacing.tight'),
+            textTransform: 'capitalize',
+          },
+        }),
+      },
+      typography: {
+        utilities: theme => ({
+          '.text-default': {
+            color: theme('color.black'),
+          },
+        }),
       },
     },
   },
