@@ -1,6 +1,6 @@
-import { Xt } from 'xtendui'
-import './toggle'
-import JSON5 from 'json5'
+import { Xt } from '../xt.mjs'
+import './toggle.mjs'
+import JSON5 from 'https://unpkg.com/json5/dist/index.min.mjs'
 
 /**
  * Overlay

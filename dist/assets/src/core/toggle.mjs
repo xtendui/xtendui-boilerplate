@@ -1,5 +1,5 @@
-import JSON5 from 'json5'
-import { Xt } from 'xtendui'
+import { Xt } from '../xt.mjs'
+import JSON5 from 'https://unpkg.com/json5/dist/index.min.mjs'
 
 /**
  * Toggle

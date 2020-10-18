@@ -35,7 +35,7 @@
             <a href="/cdn.html" class="btn btn-md text-inverse rounded-md bg-accent-500 hover:bg-accent-600 active:bg-accent-700">
               Cdn
             </a>
-            <a hre="/module.html" class="btn btn-md text-inverse rounded-md bg-accent-500 hover:bg-accent-600 active:bg-accent-700">
+            <a href="/module.html" class="btn btn-md active text-inverse rounded-md bg-accent-500 hover:bg-accent-600 active:bg-accent-700">
               Module
             </a>
           </nav>
@@ -74,7 +74,7 @@
                     <a href="/cdn.html" class="btn btn-md text-inverse rounded-md bg-accent-500 hover:bg-accent-600 active:bg-accent-700">
                       Cdn
                     </a>
-                    <a hre="/module.html" class="btn btn-md text-inverse rounded-md bg-accent-500 hover:bg-accent-600 active:bg-accent-700">
+                    <a href="/module.html" class="btn btn-md active text-inverse rounded-md bg-accent-500 hover:bg-accent-600 active:bg-accent-700">
                       Module
                     </a>
                   </nav>
@@ -105,7 +105,7 @@
             <a href="/cdn.html" class="btn btn-md text-inverse rounded-md bg-accent-500 hover:bg-accent-600 active:bg-accent-700">
               Cdn
             </a>
-            <a hre="/module.html" class="btn btn-md text-inverse rounded-md bg-accent-500 hover:bg-accent-600 active:bg-accent-700">
+            <a href="/module.html" class="btn btn-md active text-inverse rounded-md bg-accent-500 hover:bg-accent-600 active:bg-accent-700">
               Module
             </a>
           </nav>
@@ -119,8 +119,11 @@
 </div>
 
 <script type="module">
-  import { Xt } from "https://unpkg.com/xtendui/dist/xtendui.min.js";
+
+  import { Xt } from '/assets/src/xt.mjs'; //https://unpkg.com/xtendui/dist/xtendui.min.js
+  import '/assets/src/core/overlay.mjs';
 </script>
+<script nomodule src="https://unpkg.com/xtendui/dist/xtendui.min.js"></script>
 
 </body>
 
