@@ -44,7 +44,7 @@ module.exports = {
     },
     xtendui: {
       btn: {
-        components: theme => ({
+        component: theme => ({
           '.btn': {
             letterSpacing: theme('letterSpacing.tight'),
             textTransform: 'capitalize',
@@ -52,7 +52,7 @@ module.exports = {
         }),
       },
       typography: {
-        utilities: theme => ({
+        utility: theme => ({
           '.text-default': {
             color: theme('color.black'),
           },
