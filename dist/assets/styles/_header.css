@@ -3,7 +3,7 @@
  */
 
 .site_header {
-  @apply py-6 text-inverse bg-accent-500;
+  @apply py-6 text-white bg-accent-500;
 }
 
 .site_header_inner {
