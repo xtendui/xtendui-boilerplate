@@ -1,4 +1,8 @@
 module.exports = {
+  purge: {
+    content: ['./dist/**/*.html', './dist/**/*.css', './dist/**/*.js'],
+    options: {},
+  },
   presets: [require('tailwindcss/defaultConfig'), require('xtendui/src/tailwind-config')],
   theme: {
     // only some tailwind colors
