@@ -8,8 +8,6 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
     "dev": "cross-env NODE_ENV=development webpack --watch",
-    "build:gulp": "cross-env NODE_ENV=production gulp build",
-    "dev:gulp": "cross-env NODE_ENV=development gulp dev",
     "start": "webpack-dev-server",
     "lint": "eslint . --ext .js"
   },
@@ -31,7 +29,6 @@
     "eslint": "7.10.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "gulp": "^4.0.2",
     "less-loader": "^7.0.1",
     "mini-css-extract-plugin": "^0.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
