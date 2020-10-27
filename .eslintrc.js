@@ -21,5 +21,6 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': 2,
+    'prefer-template': 2,
   },
 }
