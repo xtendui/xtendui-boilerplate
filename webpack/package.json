@@ -7,7 +7,6 @@
     "lint": "eslint . --ext .js"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
     "gsap": "^3.5.1",
     "tailwindcss": "^2.0.0-alpha.1",
     "xtendui": "^0.16.7"

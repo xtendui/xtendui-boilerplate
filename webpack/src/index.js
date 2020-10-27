@@ -2,7 +2,6 @@
  * scripts
  */
 
-import 'core-js'
 import { Xt } from 'xtendui'
 
 console.log(Xt)
