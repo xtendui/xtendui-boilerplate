@@ -1,0 +1,9 @@
+# folders
+.cache/
+public
+
+# files
+polyfill.js
+ResizeSensor.js
+**/*.min.js
+**/*.min.js.map
