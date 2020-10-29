@@ -2,9 +2,9 @@
   "name": "xtendui-snowpack",
   "private": true,
   "scripts": {
-    "dev": "snowpack dev",
     "build": "snowpack build",
     "build:css": "postcss css/theme.css --dir dist",
+    "dev": "snowpack dev",
     "dev:css": "postcss css/theme.css --dir dist -w"
   },
   "dependencies": {
