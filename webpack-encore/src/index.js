@@ -8,7 +8,7 @@ import '../css/index.css'
  * scripts
  */
 
-import { Xt } from 'xtendui'
+import 'xtendui'
 import 'xtendui/src/core/drop'
 
 /**
