@@ -1,16 +1,17 @@
 /**
- * scripts
- */
-
-import { Xt } from 'xtendui'
-
-console.log(Xt)
-
-/**
  * styles
  */
 
 import '../css/theme.css'
+
+/**
+ * scripts
+ */
+
+import { Xt } from 'xtendui'
+import 'xtendui/src/core/toggle'
+
+console.log(Xt)
 
 /**
  * favicon dark

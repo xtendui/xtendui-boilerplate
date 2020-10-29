@@ -1,6 +1,6 @@
 module.exports = {
   purge: {
-    content: ['./dist/**/*.html', './dist/**/*.css', './dist/**/*.js'],
+    content: ['./src/**/*.ejs', './src/**/*.css', './src/**/*.js'],
     options: {},
   },
   presets: [require('tailwindcss/defaultConfig'), require('xtendui/src/tailwind-config')],
@@ -47,11 +47,6 @@ module.exports = {
       },
     },
     xtendui: {
-      structure: {
-        component: {
-          '.container': false,
-        },
-      },
       btn: {
         component: theme => ({
           '.btn': {
