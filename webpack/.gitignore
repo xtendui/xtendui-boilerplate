@@ -67,9 +67,3 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
-
-# build
-*.min.css
-*.min.css.map
-*.min.js
-*.min.js.map
