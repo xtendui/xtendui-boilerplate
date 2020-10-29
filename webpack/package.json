@@ -27,7 +27,7 @@
     "postcss-nested": "^5.0.1",
     "style-loader": "2.0.0",
     "url-loader": "^4.1.0",
-    "webpack": "5.2.0",
+    "webpack": "4",
     "webpack-cli": "4.1.0",
     "webpack-dev-server": "3.11.0",
     "webpack-merge": "5.2.0"
