@@ -21,6 +21,7 @@
     "postcss": "^8.1.4",
     "postcss-cli": "^8.1.0",
     "postcss-import": "^13.0.0",
+    "postcss-nested": "^5.0.1",
     "snowpack": "^2.15.1"
   }
 }

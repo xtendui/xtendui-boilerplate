@@ -1,8 +1,8 @@
 # Boilerplate setup examples for [Xtend UI](https://github.com/minimit/xtendui)
 
-- [webpack](webpack)
-
 - [snowpack](snowpack)
+
+- [webpack](webpack)
 
 ## Copyright
 
