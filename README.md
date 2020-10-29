@@ -1,5 +1,7 @@
 # Boilerplate setup examples for [Xtend UI](https://github.com/minimit/xtendui)
 
+- [gulp](gulp)
+
 - [snowpack](snowpack)
 
 - [webpack](webpack)

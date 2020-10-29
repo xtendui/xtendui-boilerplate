@@ -1,0 +1,8 @@
+# https://github.com/ai/browserslist
+
+Chrome >= 38
+Safari >= 10
+iOS >= 10
+Firefox >= 38
+Edge >= 12
+Opera >= 25
