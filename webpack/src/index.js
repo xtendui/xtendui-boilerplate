@@ -10,6 +10,7 @@ import '../css/theme.css'
 
 import 'xtendui'
 import 'xtendui/src/core/toggle'
+import 'xtendui/src/core/drop'
 
 /**
  * favicon dark
