@@ -2,10 +2,8 @@
  * scripts
  */
 
-import { Xt } from 'xtendui'
+import 'xtendui'
 import 'xtendui/src/core/drop'
-
-console.log(Xt)
 
 /**
  * favicon dark
