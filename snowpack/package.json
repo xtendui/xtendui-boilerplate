@@ -3,9 +3,9 @@
   "private": true,
   "scripts": {
     "build": "snowpack build",
-    "build:css": "postcss css/theme.css --dir dist",
+    "build:css": "postcss css/index.css --dir dist",
     "dev": "snowpack dev",
-    "dev:css": "postcss css/theme.css --dir dist -w"
+    "dev:css": "postcss css/index.css --dir dist -w"
   },
   "dependencies": {
     "gsap": "^3.5.1",

@@ -2,7 +2,7 @@
  * styles
  */
 
-import '../css/theme.css'
+import '../css/index.css'
 
 /**
  * scripts
