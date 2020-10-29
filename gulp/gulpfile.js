@@ -10,47 +10,42 @@ const babelify = require('babelify')
 const browserify = require('browserify')
 const sourcemaps = require('gulp-sourcemaps')
 
-function cleanPublic(cb) {
-  gulp.src('public', { read: false, allowEmpty: true }).pipe(clean())
-  cb()
+const cleanPublic = () => {
+  return gulp.src('public', { read: false, allowEmpty: true }).pipe(clean())
 }
 
-function html(cb) {
-  gulp.src('src/*.html').pipe(gulp.dest('public'))
-  cb()
+const html = () => {
+  return gulp.src('src/*.html').pipe(gulp.dest('public'))
 }
 
-function css(cb) {
-  gulp
+const css = () => {
+  return gulp
     .src('css/index.css')
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(postcss())
     .pipe(sourcemaps.write(''))
     .pipe(gulp.dest('public'))
     .pipe(browserSync.stream())
-  cb()
 }
 
-function js(cb) {
+const js = () => {
   let b = browserify({
     entries: 'src/index.js',
   }).transform(babelify, { global: true })
-  b.bundle()
+  return b.bundle()
     .pipe(source('index.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(uglify())
     .pipe(sourcemaps.write(''))
     .pipe(gulp.dest('public'))
-  cb()
 }
 
-function asset(cb) {
-  gulp.src('assets/*').pipe(gulp.dest('public/assets'))
-  cb()
+const asset = () => {
+  return gulp.src('assets/*').pipe(gulp.dest('public/assets'))
 }
 
-function watch() {
+const watch = () => {
   browserSync.init({
     server: {
       baseDir: 'public/',
@@ -61,6 +56,12 @@ function watch() {
   gulp.watch('src/*.html', html).on('change', browserSync.reload)
 }
 
-exports.default = series(cleanPublic, parallel(html, css, js, asset), watch)
+const dev = series(cleanPublic, parallel(html, css, js, asset, watch))
 
-exports.build = series(cleanPublic, parallel(html, css, js, asset))
+const build = series(cleanPublic, parallel(html, css, js, asset))
+
+exports.default = dev
+
+exports.dev = dev
+
+exports.build = build
