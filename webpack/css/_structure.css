@@ -2,6 +2,6 @@
  * structure
  */
 
- body {
-    @apply p-10;
+body {
+  @apply p-10;
 }
