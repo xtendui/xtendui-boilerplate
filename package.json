@@ -1,0 +1,13 @@
+{
+  "name": "xtendui-boilerplate",
+  "private": true,
+  "scripts": {
+    "lint": "eslint . --ext .js"
+  },
+  "devDependencies": {
+    "eslint": "7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier-eslint": "^11.0.0"
+  }
+}

@@ -1,10 +1,4 @@
 /**
- * styles
- */
-
-import '../css/theme.css'
-
-/**
  * scripts
  */
 

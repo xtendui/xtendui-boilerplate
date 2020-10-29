@@ -5,6 +5,10 @@ module.exports = {
       {
         useBuiltIns: 'entry',
         corejs: 3,
+        targets: {
+          esmodules: true,
+        },
+        modules: 'false',
       },
     ],
   ],

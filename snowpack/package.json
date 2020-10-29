@@ -1,0 +1,26 @@
+{
+  "name": "xtendui-snowpack",
+  "private": true,
+  "scripts": {
+    "dev": "snowpack dev",
+    "build": "snowpack build",
+    "build:css": "postcss css/theme.css --dir dist",
+    "dev:css": "postcss css/theme.css --dir dist -w"
+  },
+  "dependencies": {
+    "gsap": "^3.5.1",
+    "tailwindcss": "^2.0.0-alpha.1",
+    "xtendui": "^0.16.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@snowpack/plugin-babel": "^2.1.4",
+    "@snowpack/plugin-postcss": "^1.0.6",
+    "postcss": "^8.1.4",
+    "postcss-cli": "^8.1.0",
+    "postcss-import": "^13.0.0",
+    "snowpack": "^2.15.1"
+  }
+}
