@@ -2,8 +2,8 @@
   "name": "xtendui-webpack",
   "private": true,
   "scripts": {
-    "build": "webpack --progress --env prod --config webpack.prod.js",
-    "dev": "webpack serve --progress --env dev --config webpack.dev.js"
+    "build": "webpack --progress --config webpack.prod.js",
+    "dev": "webpack serve --progress --config webpack.dev.js"
   },
   "dependencies": {
     "gsap": "^3.5.1",

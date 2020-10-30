@@ -6,8 +6,8 @@ const common = require('./webpack.common')
 
 const dirPublic = path.join(__dirname, 'public')
 
-module.exports = env => {
-  return merge(common(env), {
+module.exports = () => {
+  return merge(common(), {
     mode: 'production',
     devtool: 'source-map',
     output: {

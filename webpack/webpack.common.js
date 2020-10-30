@@ -7,8 +7,8 @@ const dirSrc = path.join(__dirname, 'src')
 const dirStyles = path.join(__dirname, 'styles')
 const dirAssets = path.join(__dirname, 'assets')
 
-module.exports = env => {
-  const IS_DEV = !!env.dev
+module.exports = () => {
+  const IS_DEV = process.env.NODE_ENV === 'development'
   return {
     entry: {
       main: path.join(dirSrc, 'index'),
