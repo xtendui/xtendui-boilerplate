@@ -6,6 +6,6 @@
 
 @import "tailwindcss/components";
 
-@import "./_structure.css";
+@import "css/_structure.css";
 
 @import "tailwindcss/utilities";
