@@ -9,7 +9,7 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
 
 Encore.setOutputPath('public')
   .setPublicPath('/')
-  .addEntry('app', './src/index.js')
+  .addEntry('app', './src/app.js')
   .cleanupOutputBeforeBuild()
   .enableSourceMaps(!Encore.isProduction())
   .enableVersioning(Encore.isProduction())

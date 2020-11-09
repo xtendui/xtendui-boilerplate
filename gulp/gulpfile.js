@@ -20,7 +20,7 @@ const html = () => {
 
 const css = () => {
   return gulp
-    .src('css/index.css')
+    .src('css/app.css')
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(postcss())
     .pipe(sourcemaps.write(''))
@@ -30,10 +30,10 @@ const css = () => {
 
 const js = () => {
   let b = browserify({
-    entries: 'src/index.js',
+    entries: 'src/app.js',
   }).transform(babelify, { global: true })
   return b.bundle()
-    .pipe(source('index.js'))
+    .pipe(source('app.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(uglify())

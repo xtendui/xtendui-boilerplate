@@ -11,7 +11,7 @@ module.exports = () => {
   const IS_DEV = process.env.NODE_ENV === 'development'
   return {
     entry: {
-      main: path.join(dirSrc, 'index'),
+      main: path.join(dirSrc, 'app'),
     },
     resolve: {
       modules: [dirNode, dirSrc, dirStyles, dirAssets],
