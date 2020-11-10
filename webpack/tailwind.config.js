@@ -1,9 +1,16 @@
 module.exports = {
   purge: {
-    content: ['./src/**/*.ejs', './src/**/*.css', './src/**/*.js'],
-    options: {},
+    content: ['./src/**/*.ejs', './src/**/*.css', './src/**/*.js'], // put your purge content
+    options: {
+      safelist: {
+        greedy: [
+          // popperjs
+          /^data-popper-/,
+        ],
+      },
+    },
   },
-  presets: [require('tailwindcss/defaultConfig'), require('xtendui/src/tailwind-config')],
+  presets: [require('tailwindcss/defaultConfig'), require('xtendui/tailwind.preset')],
   theme: {
     // only some tailwind colors
     colors: {
@@ -40,10 +47,6 @@ module.exports = {
           800: '#352E70',
           900: '#231F4A',
         },
-      },
-      transitionTimingFunction: {
-        in: 'cubic-bezier(.19,1,.22,1)',
-        out: 'cubic-bezier(1,0,0,1)',
       },
     },
     xtendui: {

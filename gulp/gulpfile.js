@@ -32,7 +32,8 @@ const js = () => {
   let b = browserify({
     entries: 'src/app.js',
   }).transform(babelify, { global: true })
-  return b.bundle()
+  return b
+    .bundle()
     .pipe(source('app.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({ loadMaps: true }))
