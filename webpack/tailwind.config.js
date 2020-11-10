@@ -1,4 +1,5 @@
 module.exports = {
+  presets: [require('tailwindcss/defaultConfig'), require('xtendui/tailwind.preset')],
   purge: {
     content: ['./src/**/*.ejs', './src/**/*.css', './src/**/*.js'], // put your purge content
     options: {
@@ -10,7 +11,6 @@ module.exports = {
       },
     },
   },
-  presets: [require('tailwindcss/defaultConfig'), require('xtendui/tailwind.preset')],
   theme: {
     // only some tailwind colors
     colors: {
