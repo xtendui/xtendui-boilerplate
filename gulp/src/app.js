@@ -1,9 +1,16 @@
-/**
- * scripts
- */
-
 import 'xtendui'
 import 'xtendui/src/core/drop'
+import gsap from 'gsap'
+
+// no force3d
+
+gsap.config({ force3D: false })
+
+// instant animations accessibility
+
+if (Xt.noDuration) {
+  gsap.globalTimeline.timeScale(1000)
+}
 
 /**
  * favicon dark
