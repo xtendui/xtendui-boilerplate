@@ -1,10 +1,6 @@
-/**
- * import
- */
-
 @import "tailwindcss/base";
 
-@import "tailwindcss/components";
+@import "tailwindcss/dist/components";
 
 @import "./_layout.css";
 
