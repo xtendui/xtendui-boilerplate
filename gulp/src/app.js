@@ -1,7 +1,3 @@
-import 'xtendui'
-import 'xtendui/src/core/drop'
-import gsap from 'gsap'
-
 import { Xt } from 'xtendui'
 import 'xtendui/src/core/drop'
 import gsap from 'gsap'
