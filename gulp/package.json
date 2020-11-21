@@ -9,7 +9,7 @@
     "gsap": "^3.5.1",
     "gulp-clean": "^0.4.0",
     "gulp-postcss": "^9.0.0",
-    "tailwindcss": "^2.0.0-alpha.21",
+    "tailwindcss": "^2.0.0",
     "xtendui": "^0.16.7"
   },
   "devDependencies": {
