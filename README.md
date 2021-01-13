@@ -6,7 +6,7 @@
 
 - [Webpack](webpack)
 
-- [Webpack Encore](webpack-encore)
+- [Webpack Encore](encore)
 
 ## Copyright
 
