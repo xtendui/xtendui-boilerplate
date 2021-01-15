@@ -13,7 +13,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    'prettier/prettier': 2,
+    'prettier/prettier': ['error', { singleQuote: true }],
     'prefer-template': 2,
   },
 }
