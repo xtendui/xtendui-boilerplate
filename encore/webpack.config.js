@@ -1,6 +1,5 @@
 const path = require('path')
 const Encore = require('@symfony/webpack-encore')
-const CopyPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 if (!Encore.isRuntimeEnvironmentConfigured()) {
@@ -11,24 +10,22 @@ Encore.setOutputPath('public')
   .setPublicPath('/')
   .addEntry('app', './src/app.js')
   .cleanupOutputBeforeBuild()
-  .disableSingleRuntimeChunk()
+  .splitEntryChunks()
+  .enableSingleRuntimeChunk()
+  .cleanupOutputBeforeBuild()
   .enableSourceMaps(!Encore.isProduction())
   .enableVersioning(Encore.isProduction())
   .enablePostCssLoader()
-  .addPlugin(
-    new CopyPlugin({
-      patterns: [{ from: path.join(__dirname, 'assets'), to: 'assets' }],
-    })
-  )
-  /* if using twig ignore HtmlWebpackPlugin and use
+  .copyFiles({
+    from: './assets',
+    to: 'assets/[path][name].[ext]', // with hash to: 'assets/[path][name].[hash:8].[ext]',
+  })
+  /* if using symfony and twig ignore HtmlWebpackPlugin and use
   {% block stylesheets %}
-    {# 'app' must match the first argument to addEntry() in webpack.config.js #}
     {{ encore_entry_link_tags('app') }}
   {% endblock %}
   {% block javascripts %}
     {{ encore_entry_script_tags('app') }}
-    <script src="/build/runtime.js"></script>
-    <script src="/build/app.js"></script>
   {% endblock %}
   */
   .addPlugin(
