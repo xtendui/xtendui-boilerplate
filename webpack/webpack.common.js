@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 const dirNode = 'node_modules'
 const dirSrc = path.join(__dirname, 'src')
@@ -21,6 +22,9 @@ module.exports = () => {
       new HtmlWebpackPlugin({
         template: path.join(dirSrc, 'index.ejs'),
         title: 'Webpack Boilerplate',
+      }),
+      new CopyPlugin({
+        patterns: [{ from: path.join(__dirname, 'assets'), to: 'assets' }],
       }),
     ],
     module: {
