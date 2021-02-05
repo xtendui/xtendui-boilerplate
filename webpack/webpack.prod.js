@@ -11,10 +11,9 @@ module.exports = () => {
     devtool: 'source-map',
     output: {
       path: dirPublic,
+      publicPath: '',
       filename: '[name].[contenthash].bundle.js',
     },
-    plugins: [
-      new CleanWebpackPlugin(),
-    ],
+    plugins: [new CleanWebpackPlugin()],
   })
 }

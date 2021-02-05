@@ -2,6 +2,8 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
 const dirNode = 'node_modules'
 const dirSrc = path.join(__dirname, 'src')
@@ -23,6 +25,7 @@ module.exports = () => {
         template: path.join(dirSrc, 'index.ejs'),
         title: 'Webpack Boilerplate',
       }),
+      new MiniCssExtractPlugin(),
       new CopyPlugin({
         patterns: [{ from: path.join(__dirname, 'assets'), to: 'assets' }],
       }),
@@ -42,7 +45,7 @@ module.exports = () => {
         {
           test: /\.css/,
           use: [
-            'style-loader',
+            MiniCssExtractPlugin.loader,
             {
               loader: 'css-loader',
               options: {
@@ -70,6 +73,7 @@ module.exports = () => {
     },
     optimization: {
       runtimeChunk: 'single',
+      minimizer: [new CssMinimizerPlugin()],
     },
   }
 }
