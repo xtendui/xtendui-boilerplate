@@ -14,8 +14,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        success: '#48bb78',
-        error: '#f56565',
         accent: {
           50: '#F8F7FF',
           100: '#F1F0FE',
@@ -29,15 +27,15 @@ module.exports = {
           900: '#231F4A',
         },
       },
-    },
-    xtendui: {
-      btn: {
-        component: theme => ({
-          '.btn': {
-            letterSpacing: theme('letterSpacing.tight'),
-            textTransform: 'capitalize',
-          },
-        }),
+      xtendui: {
+        btn: {
+          component: theme => ({
+            '.btn': {
+              letterSpacing: theme('letterSpacing.tight'),
+              textTransform: 'capitalize',
+            },
+          }),
+        },
       },
     },
   },

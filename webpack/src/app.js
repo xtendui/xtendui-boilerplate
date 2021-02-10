@@ -3,32 +3,22 @@ import '../css/app.css'
 import { Xt } from 'xtendui'
 import 'xtendui/src/core/drop'
 import gsap from 'gsap'
+gsap.config({ force3D: false }) // smoother pixels animations
 
 /**
- * animations setup
+ * animation
  */
 
-gsap.config({ force3D: false })
+// accessibility
 
-if (Xt.durationTimescale === 1000) {
-  // instant animations accessibility
+if (matchMedia('(prefers-reduced-motion: reduce), (update: slow)').matches) {
+  // instant animations
   gsap.globalTimeline.timeScale(1000)
-  // double auto time accessibility
+  // instant interactions
+  Xt.durationTimescale = 1000
+  // double auto time
   Xt.autoTimescale = 0.5
 }
-
-const animationResponsive = () => {
-  // faster javascript animations on small screens
-  if (Xt.durationTimescale !== 1000 && matchMedia('(max-width: 767px)').matches) {
-    gsap.globalTimeline.timeScale(1.5)
-    Xt.durationTimescale = 1.5
-  } else {
-    gsap.globalTimeline.timeScale(1)
-    Xt.durationTimescale = 1
-  }
-}
-addEventListener('resize', animationResponsive)
-animationResponsive()
 
 /**
  * favicon dark
