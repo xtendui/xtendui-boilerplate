@@ -28,13 +28,13 @@ module.exports = {
         },
       },
       xtendui: {
-        btn: {
-          component: theme => ({
-            '.btn': {
-              letterSpacing: theme('letterSpacing.tight'),
-              textTransform: 'capitalize',
+        typography: {
+          utility: {
+            '.xt-h1': {
+              '@apply xt-my-auto text-3xl md:text-3xl lg:text-3xl': {},
+              textTransform: 'uppercase',
             },
-          }),
+          },
         },
       },
     },
