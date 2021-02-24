@@ -8,14 +8,15 @@
   "dependencies": {
     "gsap": "^3.6.0",
     "tailwindcss": "^2.0.2",
-    "xtendui": "^1.0.0-beta.1"
+    "xtendui": "^1.0.0-beta.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "@symfony/webpack-encore": "^0.33.0",
+    "@symfony/webpack-encore": "^1.1.1",
     "autoprefixer": "^10.2.1",
-    "html-webpack-plugin": "^4.5.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.2.0",
     "postcss": "^8.2.4",
     "postcss-import": "^14.0.0",
     "postcss-loader": "^4.1.0",

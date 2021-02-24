@@ -18,7 +18,7 @@ Encore.setOutputPath('public')
   .enablePostCssLoader()
   .copyFiles({
     from: './assets',
-    to: 'assets/[path][name].[ext]', // with hash to: 'assets/[path][name].[hash:8].[ext]',
+    to: 'assets/[path][name].[ext]', // 'assets/[path][name].[hash:8].[ext]',
   })
   /* if using symfony and twig ignore HtmlWebpackPlugin and use
   {% block stylesheets %}

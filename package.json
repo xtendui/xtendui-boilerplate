@@ -2,7 +2,17 @@
   "name": "xtendui-boilerplate",
   "private": true,
   "scripts": {
-    "lint": "eslint . --ext .js"
+    "lint": "eslint . --ext .js",
+    "i-all": "yarn i-encore && yarn i-gulp && yarn i-snowpack && yarn i-webpack",
+    "b-all": "yarn b-encore && yarn b-gulp && yarn b-snowpack && yarn b-webpack",
+    "i-encore": "cd encore && yarn install && cd ..",
+    "b-encore": "cd encore && yarn build && cd ..",
+    "i-gulp": "cd gulp && yarn install && cd ..",
+    "b-gulp": "cd gulp && yarn build && cd ..",
+    "i-snowpack": "cd snowpack && yarn install && cd ..",
+    "b-snowpack": "cd snowpack && yarn build && cd ..",
+    "i-webpack": "cd webpack && yarn install && cd ..",
+    "b-webpack": "cd webpack && yarn build && cd .."
   },
   "devDependencies": {
     "eslint": "7.10.0",

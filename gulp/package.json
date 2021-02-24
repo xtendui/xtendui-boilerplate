@@ -10,7 +10,7 @@
     "gulp-clean": "^0.4.0",
     "gulp-postcss": "^9.0.0",
     "tailwindcss": "^2.0.2",
-    "xtendui": "^1.0.0-beta.1"
+    "xtendui": "^1.0.0-beta.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
