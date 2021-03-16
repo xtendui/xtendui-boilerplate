@@ -31,8 +31,8 @@ module.exports = {
         typography: {
           utility: {
             '.xt-h1': {
-              '@apply xt-my-auto text-3xl md:text-3xl lg:text-3xl': {},
-              textTransform: 'uppercase',
+              '@apply font-black text-4xl md:text-5xl lg:text-6xl': {},
+              textTransform: 'lowercase',
             },
           },
         },
