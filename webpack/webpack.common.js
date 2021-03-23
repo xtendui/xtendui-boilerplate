@@ -21,7 +21,6 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: path.join(dirSrc, 'index.ejs'),
-        title: 'Webpack Boilerplate',
       }),
       new MiniCssExtractPlugin(),
       new CopyPlugin({
@@ -30,6 +29,14 @@ module.exports = () => {
     ],
     module: {
       rules: [
+        {
+          test: /\.ejs$/,
+          use: [
+            {
+              loader: 'ejs-webpack-loader',
+            },
+          ],
+        },
         {
           test: /\.m?js$/,
           exclude: /(node_modules)/,
