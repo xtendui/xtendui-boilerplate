@@ -2,8 +2,8 @@
   "name": "xtendui-gulp",
   "private": true,
   "scripts": {
-    "build": "gulp build",
-    "dev": "gulp dev"
+    "build": "NODE_ENV=production gulp build",
+    "dev": "NODE_ENV=development gulp dev"
   },
   "dependencies": {
     "gsap": "^3.6.0",

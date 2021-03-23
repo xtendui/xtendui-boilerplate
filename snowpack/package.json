@@ -2,8 +2,8 @@
   "name": "xtendui-snowpack",
   "private": true,
   "scripts": {
-    "build": "snowpack build",
-    "dev": "snowpack dev"
+    "build": "NODE_ENV=production snowpack build",
+    "dev": "NODE_ENV=development snowpack dev"
   },
   "dependencies": {
     "gsap": "^3.6.0",

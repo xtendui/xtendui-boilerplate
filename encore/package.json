@@ -2,8 +2,8 @@
   "name": "xtendui-webpack",
   "private": true,
   "scripts": {
-    "build": "encore production",
-    "dev": "encore dev-server --hot --open"
+    "build": "NODE_ENV=production encore production",
+    "dev": "NODE_ENV=development encore dev-server --hot --open"
   },
   "dependencies": {
     "gsap": "^3.6.0",
