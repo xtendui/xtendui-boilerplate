@@ -11,7 +11,6 @@ const dirStyles = path.join(__dirname, 'styles')
 const dirAssets = path.join(__dirname, 'assets')
 
 module.exports = () => {
-  const IS_DEV = process.env.NODE_ENV === 'development'
   return {
     entry: {
       main: path.join(dirSrc, 'app'),
@@ -20,7 +19,6 @@ module.exports = () => {
       modules: [dirNode, dirSrc, dirStyles, dirAssets],
     },
     plugins: [
-      new webpack.DefinePlugin({ IS_DEV }),
       new HtmlWebpackPlugin({
         template: path.join(dirSrc, 'index.ejs'),
         title: 'Webpack Boilerplate',
@@ -48,15 +46,9 @@ module.exports = () => {
             MiniCssExtractPlugin.loader,
             {
               loader: 'css-loader',
-              options: {
-                sourceMap: IS_DEV,
-              },
             },
             {
               loader: 'postcss-loader',
-              options: {
-                sourceMap: IS_DEV,
-              },
             },
           ],
         },
