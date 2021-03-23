@@ -1,6 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
@@ -23,20 +23,12 @@ module.exports = () => {
         minify: false,
       }),
       new MiniCssExtractPlugin(),
-      new CopyPlugin({
+      new CopyWebpackPlugin({
         patterns: [{ from: path.join(__dirname, 'assets'), to: 'assets' }],
       }),
     ],
     module: {
       rules: [
-        {
-          test: /\.ejs$/,
-          use: [
-            {
-              loader: 'ejs-webpack-loader',
-            },
-          ],
-        },
         {
           test: /\.m?js$/,
           exclude: /(node_modules)/,
