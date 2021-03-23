@@ -1,7 +1,7 @@
 module.exports = {
   presets: [require('tailwindcss/defaultConfig'), require('xtendui/tailwind.preset')],
   purge: {
-    content: ['./node_modules/xtendui/src/**/*[!.css].js', './src/**/*.ejs', './src/**/*.css', './src/**/*.js'], // put your purge content
+    content: ['./node_modules/xtendui/src/**/*[!.css].js', './src/**/*.ejs', './css/**/*.css', './src/**/*.js'], // put your purge content
     options: {
       safelist: {
         greedy: [
