@@ -8,7 +8,6 @@ const dirPublic = path.join(__dirname, 'public')
 module.exports = () => {
   return merge(common(), {
     mode: 'production',
-    devtool: 'source-map',
     output: {
       path: dirPublic,
       publicPath: '',
