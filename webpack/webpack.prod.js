@@ -10,7 +10,7 @@ module.exports = () => {
     mode: 'production',
     output: {
       path: dirPublic,
-      publicPath: '',
+      publicPath: '/',
       filename: '[name].[contenthash].bundle.js',
     },
     plugins: [new CleanWebpackPlugin()],
