@@ -2,8 +2,8 @@
   "name": "xtendui-snowpack",
   "private": true,
   "scripts": {
-    "build": "NODE_ENV=production snowpack build",
-    "dev": "NODE_ENV=development snowpack dev"
+    "build": "cross-env NODE_ENV=production snowpack build",
+    "dev": "cross-env NODE_ENV=development snowpack dev"
   },
   "dependencies": {
     "gsap": "^3.6.0",
@@ -16,6 +16,7 @@
     "@snowpack/plugin-babel": "^2.1.6",
     "@snowpack/plugin-postcss": "^1.1.0",
     "autoprefixer": "^10.2.5",
+    "cross-env": "^7.0.3",
     "postcss": "^8.2.8",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.0",

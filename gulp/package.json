@@ -2,8 +2,8 @@
   "name": "xtendui-gulp",
   "private": true,
   "scripts": {
-    "build": "NODE_ENV=production gulp build",
-    "dev": "NODE_ENV=development gulp dev"
+    "build": "cross-env NODE_ENV=production gulp build",
+    "dev": "cross-env NODE_ENV=development gulp dev"
   },
   "dependencies": {
     "gsap": "^3.6.0",
@@ -19,6 +19,7 @@
     "babelify": "^10.0.0",
     "browser-sync": "^2.26.14",
     "browserify": "^17.0.0",
+    "cross-env": "^7.0.3",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-sourcemaps": "^3.0.0",

@@ -2,8 +2,8 @@
   "name": "xtendui-webpack",
   "private": true,
   "scripts": {
-    "build": "NODE_ENV=production encore production",
-    "dev": "NODE_ENV=development encore dev-server --hot --open"
+    "build": "cross-env NODE_ENV=production encore production",
+    "dev": "cross-env NODE_ENV=development encore dev-server --hot --open"
   },
   "dependencies": {
     "gsap": "^3.6.0",
@@ -15,6 +15,7 @@
     "@babel/preset-env": "^7.13.10",
     "@symfony/webpack-encore": "^1.1.2",
     "autoprefixer": "^10.2.5",
+    "cross-env": "^7.0.3",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
     "postcss": "^8.2.8",
