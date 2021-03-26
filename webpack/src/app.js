@@ -1,8 +1,8 @@
 import '../css/app.css'
 
 import { Xt } from 'xtendui'
-import 'xtendui/src/core/usability'
-import 'xtendui/src/core/drop'
+import 'xtendui/src/usability'
+import 'xtendui/src/drop'
 import gsap from 'gsap'
 gsap.config({ force3D: false }) // smoother pixels animations
 
