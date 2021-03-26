@@ -1,6 +1,7 @@
 const path = require('path')
 const { merge } = require('webpack-merge')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const TerserJSPlugin = require('terser-webpack-plugin')
 const common = require('./webpack.common')
 
 const dirPublic = path.join(__dirname, 'public')
@@ -13,6 +14,6 @@ module.exports = () => {
       publicPath: '/',
       filename: '[name].[contenthash].bundle.js',
     },
-    plugins: [new CleanWebpackPlugin()],
+    plugins: [new CleanWebpackPlugin(), new TerserJSPlugin()],
   })
 }
