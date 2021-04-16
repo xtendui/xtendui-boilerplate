@@ -11,10 +11,15 @@ module.exports = {
       },
     },
   },
-
   theme: {
     // only some colors
     colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: '#000',
+      white: '#fff',
+      success: '#48bb78',
+      error: '#f56565',
       gray: {
         50: '#fafafa',
         100: '#f4f4f5',
@@ -30,6 +35,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        // custom colors
         primary: {
           50: '#F8F7FF',
           100: '#F1F0FE',
@@ -43,6 +49,17 @@ module.exports = {
           900: '#231F4A',
         },
       },
+      // custom animation
+      transitionDuration: {
+        DEFAULT: '150ms',
+      },
+      transitionTimingFunction: {
+        DEFAULT: 'cubic-bezier(0.4, 0, 0.2, 1)',
+        in: 'cubic-bezier(0.4, 0, 1, 1)',
+        out: 'cubic-bezier(0, 0, 0.2, 1)',
+        'in-out': 'cubic-bezier(0.4, 0, 0.2, 1)',
+      },
+      // custom xtendui
       xtendui: {
         typography: {
           utility: {

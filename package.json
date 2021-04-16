@@ -12,7 +12,7 @@
     "b-encore": "cd encore && yarn build && cd ..",
     "l-encore": "cd encore && yarn link xtendui && cd ..",
     "u-gulp": "cd gulp && yarn unlink xtendui && yarn upgrade --latest && yarn install xtendui@beta && cd ..",
-    "i-gulp": "cd gulp && yarn yarn unlink xtendui && install && cd ..",
+    "i-gulp": "cd gulp && yarn unlink xtendui && yarn install && cd ..",
     "b-gulp": "cd gulp && yarn build && cd ..",
     "l-gulp": "cd gulp && yarn link xtendui && cd ..",
     "u-snowpack": "cd snowpack && yarn unlink xtendui && yarn upgrade --latest && yarn install xtendui@beta && cd ..",
