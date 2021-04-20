@@ -68,6 +68,12 @@ module.exports = {
               textTransform: 'lowercase',
             },
           },
+          component: theme => ({
+            'b, strong': {
+              // semibold instead of bold
+              fontWeight: theme('fontWeight.semibold', 'bolder'),
+            },
+          }),
         },
       },
     },
