@@ -2,7 +2,6 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
 const dirNode = 'node_modules'
 const dirSrc = path.join(__dirname, 'src')
@@ -45,9 +44,15 @@ module.exports = () => {
             MiniCssExtractPlugin.loader,
             {
               loader: 'css-loader',
+              options: {
+                sourceMap: false,
+              },
             },
             {
               loader: 'postcss-loader',
+              options: {
+                sourceMap: false,
+              },
             },
           ],
         },
@@ -64,7 +69,6 @@ module.exports = () => {
     },
     optimization: {
       runtimeChunk: 'single',
-      minimizer: [new CssMinimizerPlugin()],
     },
   }
 }

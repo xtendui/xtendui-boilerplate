@@ -19,13 +19,7 @@ const html = () => {
 }
 
 const css = () => {
-  return gulp
-    .src('css/app.css')
-    .pipe(sourcemaps.init({ loadMaps: true }))
-    .pipe(postcss())
-    .pipe(sourcemaps.write(''))
-    .pipe(gulp.dest('public'))
-    .pipe(browserSync.stream())
+  return gulp.src('css/app.css').pipe(postcss()).pipe(gulp.dest('public')).pipe(browserSync.stream())
 }
 
 const js = () => {

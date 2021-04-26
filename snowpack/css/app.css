@@ -1,7 +1,15 @@
-@import "tailwindcss/base";
+@tailwind base;
 
-@import "tailwindcss/components";
+@tailwind components;
 
-@import "css/_common.css";
+//@import "./css/_common.css"; // still no working imports https://github.com/snowpackjs/snowpack/discussions/1693
 
-@import "tailwindcss/utilities";
+/**
+ * layout
+ */
+
+ body {
+  @apply p-10;
+}
+
+@tailwind utilities;
