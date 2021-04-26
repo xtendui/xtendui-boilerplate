@@ -1,7 +1,9 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   presets: [require('tailwindcss/defaultConfig'), require('xtendui/tailwind.preset')],
   purge: {
-    content: ['./node_modules/xtendui/src/*[!.css].js', './src/**/*.ejs', './css/**/*.css', './src/**/*.js'], // put your purge content
+    content: ['./node_modules/xtendui/src/*[!.css].js', './src/**/*.html', './css/**/*.css', './src/**/*.js'], // put your purge content
     options: {
       safelist: {
         greedy: [
@@ -32,22 +34,22 @@ module.exports = {
         800: '#27272a',
         900: '#18181b',
       },
+      primary: {
+        50: '#F8F7FF',
+        100: '#F1F0FE',
+        200: '#DDD9FD',
+        300: '#C8C2FC',
+        400: '#9E95FA',
+        500: '#7567F8',
+        600: '#695DDF',
+        700: '#463E95',
+        800: '#352E70',
+        900: '#231F4A',
+      },
     },
     extend: {
-      colors: {
-        // custom colors
-        primary: {
-          50: '#F8F7FF',
-          100: '#F1F0FE',
-          200: '#DDD9FD',
-          300: '#C8C2FC',
-          400: '#9E95FA',
-          500: '#7567F8',
-          600: '#695DDF',
-          700: '#463E95',
-          800: '#352E70',
-          900: '#231F4A',
-        },
+      fontFamily: {
+        sans: [/*'"My Font Family"',*/ ...defaultTheme.fontFamily.sans],
       },
       // custom animation
       transitionDuration: {
@@ -59,8 +61,27 @@ module.exports = {
         out: 'cubic-bezier(0, 0, 0.2, 1)',
         'in-out': 'cubic-bezier(0.4, 0, 0.2, 1)',
       },
-      // custom xtendui
+      // custom xtendui examples
       xtendui: {
+        layout: {
+          component: theme => ({
+            '::selection': {
+              backgroundColor: theme('colors.primary.600'),
+              color: theme('colors.white'),
+            },
+            '.xt-overflow-main': {
+              '&::-webkit-scrollbar': {
+                height: '10px',
+                width: '10px',
+                background: theme('colors.white'),
+              },
+              '&::-webkit-scrollbar-thumb': {
+                background: theme('colors.gray.900'),
+              },
+              scrollbarColor: `${theme('colors.gray.900')} ${theme('colors.white')}`,
+            },
+          }),
+        },
         typography: {
           utility: {
             '.xt-h1': {
