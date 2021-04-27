@@ -8,8 +8,8 @@
  * layout
  */
 
- body {
-  @apply p-10;
+body {
+  @apply py-10;
 }
 
 @tailwind utilities;

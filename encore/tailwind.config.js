@@ -48,8 +48,21 @@ module.exports = {
       },
     },
     extend: {
+      // custom font
       fontFamily: {
         sans: [/*'"My Font Family"',*/ ...defaultTheme.fontFamily.sans],
+      },
+      // custom container
+      container: {
+        center: true,
+        fluid: '1536px',
+        padding: {
+          DEFAULT: '1.25rem',
+          sm: '1.5rem',
+          md: '2rem',
+          lg: '3rem',
+          xl: '4rem',
+        },
       },
       // custom animation
       transitionDuration: {

@@ -3,5 +3,5 @@
  */
 
 body {
-  @apply p-10;
+  @apply py-10;
 }
