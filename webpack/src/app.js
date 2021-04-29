@@ -1,5 +1,7 @@
 import '../css/app.css'
 
+/* xtendui */
+
 import { Xt } from 'xtendui'
 import 'xtendui/src/usability'
 import 'xtendui/src/drop'
