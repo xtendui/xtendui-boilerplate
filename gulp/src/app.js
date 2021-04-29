@@ -1,7 +1,6 @@
 import { Xt } from 'xtendui'
 import 'xtendui/src/usability'
 import 'xtendui/src/drop'
-
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
