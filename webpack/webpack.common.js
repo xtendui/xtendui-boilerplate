@@ -5,7 +5,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const dirNode = 'node_modules'
 const dirSrc = path.join(__dirname, 'src')
-const dirStyles = path.join(__dirname, 'styles')
 const dirAssets = path.join(__dirname, 'assets')
 
 module.exports = () => {
@@ -14,7 +13,7 @@ module.exports = () => {
       main: path.join(dirSrc, 'app'),
     },
     resolve: {
-      modules: [dirNode, dirSrc, dirStyles, dirAssets],
+      modules: [dirNode, dirSrc],
     },
     plugins: [
       new HtmlWebpackPlugin({
@@ -23,7 +22,7 @@ module.exports = () => {
       }),
       new MiniCssExtractPlugin(),
       new CopyWebpackPlugin({
-        patterns: [{ from: path.join(__dirname, 'assets'), to: 'assets' }],
+        patterns: [{ from: dirAssets, to: 'assets' }],
       }),
     ],
     module: {
