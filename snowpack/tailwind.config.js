@@ -1,6 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  mode: 'jit',
   presets: [require('tailwindcss/defaultConfig'), require('xtendui/tailwind.preset')],
   purge: {
     content: ['./node_modules/xtendui/src/*[!.css].js', './dist/**/*.html', './css/**/*.css', './src/**/*.js'], // put your purge content
