@@ -21,8 +21,6 @@ module.exports = {
       current: 'currentColor',
       black: '#000',
       white: '#fff',
-      success: '#48bb78',
-      error: '#f56565',
       gray: {
         50: '#fafafa',
         100: '#f4f4f5',
@@ -35,20 +33,25 @@ module.exports = {
         800: '#27272a',
         900: '#18181b',
       },
-      primary: {
-        50: '#F8F7FF',
-        100: '#F1F0FE',
-        200: '#DDD9FD',
-        300: '#C8C2FC',
-        400: '#9E95FA',
-        500: '#7567F8',
-        600: '#695DDF',
-        700: '#463E95',
-        800: '#352E70',
-        900: '#231F4A',
-      },
     },
     extend: {
+      // custom xtendui color
+      colors: {
+        success: '#48bb78',
+        error: '#f56565',
+        primary: {
+          50: '#F8F7FF',
+          100: '#F1F0FE',
+          200: '#DDD9FD',
+          300: '#C8C2FC',
+          400: '#9E95FA',
+          500: '#7567F8',
+          600: '#695DDF',
+          700: '#463E95',
+          800: '#352E70',
+          900: '#231F4A',
+        },
+      },
       // custom font
       fontFamily: {
         sans: [/*'"My Font Family"',*/ ...defaultTheme.fontFamily.sans],
