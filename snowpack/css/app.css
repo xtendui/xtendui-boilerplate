@@ -2,7 +2,7 @@
 
 @tailwind components;
 
-//@import "./css/_common.css"; // still no working imports https://github.com/snowpackjs/snowpack/discussions/1693
+@import "./styles/_common.css";
 
 /**
  * layout

@@ -19,7 +19,7 @@ const html = () => {
 }
 
 const css = () => {
-  return gulp.src('css/app.css').pipe(postcss()).pipe(gulp.dest('public')).pipe(browserSync.stream())
+  return gulp.src('styles/app.css').pipe(postcss()).pipe(gulp.dest('public')).pipe(browserSync.stream())
 }
 
 const js = () => {
@@ -46,7 +46,7 @@ const watch = () => {
       baseDir: 'public/',
     },
   })
-  gulp.watch('css/**/*.*', css)
+  gulp.watch('styles/**/*.*', css)
   gulp.watch('src/**/*.*', js).on('change', browserSync.reload)
   gulp.watch('src/*.html', html).on('change', browserSync.reload)
 }

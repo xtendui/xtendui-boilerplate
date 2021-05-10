@@ -66,4 +66,4 @@ yarn-error.log
 
 # build files
 .cache/
-public
+public/build

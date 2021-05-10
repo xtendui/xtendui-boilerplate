@@ -1,4 +1,4 @@
-import '../css/app.css'
+import './styles/app.css'
 
 /* xtendui */
 
