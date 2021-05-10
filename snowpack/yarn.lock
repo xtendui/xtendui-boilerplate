@@ -3147,7 +3147,7 @@ svgo@^2.3.0:
     csso "^4.2.0"
     stable "^0.1.8"
 
-tailwindcss@^2.0.4, tailwindcss@^2.1.2:
+tailwindcss@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-2.1.2.tgz#29402bf73a445faedd03df6d3b177e7b52b7c4a1"
   dependencies:
@@ -3334,15 +3334,15 @@ xtend@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
 
-xtendui@^1.0.0-beta.16:
-  version "1.0.0-beta.16"
-  resolved "https://registry.yarnpkg.com/xtendui/-/xtendui-1.0.0-beta.16.tgz#ffb13b1479e411e449f733d14453a2572ecacd84"
+xtendui@^1.0.0-beta.17:
+  version "1.0.0-beta.17"
+  resolved "https://registry.yarnpkg.com/xtendui/-/xtendui-1.0.0-beta.17.tgz#5e2a8a8a179e3f8ba2b6ea49aee9d424820f4a62"
   dependencies:
     "@googlemaps/markerclustererplus" "^1.1.0"
     "@popperjs/core" "^2.9.2"
     gsap "^3.6.1"
     json5 "^2.2.0"
-    tailwindcss "^2.0.4"
+    tailwindcss "^2.1.2"
 
 y18n@^5.0.5:
   version "5.0.8"
