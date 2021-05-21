@@ -67,3 +67,4 @@ yarn-error.log
 # build files
 .cache/
 public
+dist

@@ -75,10 +75,10 @@ const changeMq = () => {
     favicon.remove()
   }
   if (colorSchemeMq.matches) {
-    const icon = Xt.createElement('<link rel="icon" href="/favicon-dark.png">')
+    const icon = Xt.createElement('<link rel="icon" href="/assets/favicon-dark.png">')
     document.head.append(icon)
   } else {
-    const icon = Xt.createElement('<link rel="icon" href="/favicon.png">')
+    const icon = Xt.createElement('<link rel="icon" href="/assets/favicon.png">')
     document.head.append(icon)
   }
 }
