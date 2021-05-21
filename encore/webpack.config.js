@@ -31,7 +31,7 @@ Encore.setOutputPath('public/build/')
     {{ encore_entry_link_tags('app') }}
   {% endblock %}
   {% block javascripts %}
-    {{ encore_entry_js_files('app') }}
+    {{ encore_entry_script_tags('app') }}
   {% endblock %}
   */
 
