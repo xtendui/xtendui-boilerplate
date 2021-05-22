@@ -15,7 +15,7 @@ const cleanPublic = () => {
 }
 
 const html = () => {
-  return gulp.src('src/*.html').pipe(gulp.dest('public'))
+  return gulp.src('src/*.html').pipe(gulp.dest('public')).pipe(browserSync.stream())
 }
 
 const css = () => {
@@ -34,6 +34,7 @@ const js = () => {
     .pipe(uglify())
     .pipe(sourcemaps.write(''))
     .pipe(gulp.dest('public'))
+    .pipe(browserSync.stream())
 }
 
 const asset = () => {
@@ -41,22 +42,34 @@ const asset = () => {
 }
 
 const watch = () => {
+  gulp.watch('styles/**/*.css', css)
+  gulp.watch('src/**/*.js', js)
+  gulp.watch('src/**/*.html', html)
+  gulp.watch('assets/**/*', asset)
+}
+
+const browser = () => {
   browserSync.init({
     server: {
       baseDir: 'public/',
     },
   })
-  gulp.watch('styles/**/*.*', css)
-  gulp.watch('src/**/*.*', js).on('change', browserSync.reload)
-  gulp.watch('src/*.html', html).on('change', browserSync.reload)
+  gulp.watch('styles/**/*.css', css)
+  gulp.watch('src/**/*.js', js)
+  gulp.watch('src/**/*.html', html)
+  gulp.watch('assets/**/*', asset)
 }
-
-const dev = series(cleanPublic, parallel(html, css, js, asset, watch))
 
 const build = series(cleanPublic, parallel(html, css, js, asset))
 
-exports.default = dev
+const dev = series(cleanPublic, parallel(html, css, js, asset, watch))
+
+const serve = series(cleanPublic, parallel(html, css, js, asset, browser))
+
+exports.default = build
+
+exports.build = build
 
 exports.dev = dev
 
-exports.build = build
+exports.serve = serve
