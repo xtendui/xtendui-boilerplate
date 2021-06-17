@@ -1,6 +1,5 @@
 {
   "name": "xtendui-gulp",
-  "private": true,
   "scripts": {
     "build": "cross-env NODE_ENV=production gulp build",
     "dev": "cross-env NODE_ENV=development gulp dev",

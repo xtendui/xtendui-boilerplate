@@ -1,6 +1,5 @@
 {
   "name": "xtendui-webpack",
-  "private": true,
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress --config webpack.prod.js",
     "dev": "cross-env NODE_ENV=development webpack watch --progress --config webpack.dev.js",

@@ -1,6 +1,5 @@
 {
   "name": "xtendui-webpack",
-  "private": true,
   "scripts": {
     "build": "cross-env NODE_ENV=production encore production",
     "dev": "cross-env NODE_ENV=development encore dev --watch --hot",

@@ -1,5 +1,5 @@
 {
-  "version": "0.0.0",
+  "name": "xtendui-vite",
   "scripts": {
     "dev": "cross-env NODE_ENV=development vite --open",
     "build": "cross-env NODE_ENV=production vite build",

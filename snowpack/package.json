@@ -1,6 +1,5 @@
 {
   "name": "xtendui-snowpack",
-  "private": true,
   "scripts": {
     "build": "cross-env NODE_ENV=production snowpack build",
     "dev": "cross-env NODE_ENV=development snowpack dev"
