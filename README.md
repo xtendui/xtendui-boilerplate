@@ -4,6 +4,8 @@
 
 - [Snowpack](snowpack)
 
+- [Vite](vite)
+
 - [Webpack](webpack)
 
 - [Webpack Encore](encore)
