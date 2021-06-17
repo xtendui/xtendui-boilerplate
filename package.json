@@ -16,7 +16,7 @@
     "b-gulp": "cd gulp && yarn build && cd ..",
     "l-gulp": "cd gulp && yarn link xtendui && cd ..",
     "u-snowpack": "cd snowpack && yarn unlink xtendui && yarn upgrade --latest && yarn add xtendui@beta && cd ..",
-    "i-snowpack": "cd snowpack && && yarn install && yarn add xtendui@beta && cd ..",
+    "i-snowpack": "cd snowpack && yarn install && yarn add xtendui@beta && cd ..",
     "b-snowpack": "cd snowpack && yarn build && cd ..",
     "l-snowpack": "cd snowpack && yarn link xtendui && cd ..",
     "u-vite": "cd vite && yarn unlink xtendui && yarn upgrade --latest && yarn add xtendui@beta && cd ..",
