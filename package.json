@@ -29,9 +29,9 @@
     "l-webpack": "cd webpack && yarn link xtendui && cd .."
   },
   "devDependencies": {
-    "eslint": "7.10.0",
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "prettier-eslint": "^11.0.0"
+    "eslint": "7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier-eslint": "^12.0.0"
   }
 }
