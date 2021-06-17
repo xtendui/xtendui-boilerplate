@@ -4,7 +4,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production encore production",
     "dev": "cross-env NODE_ENV=development encore dev --watch --hot",
-    "serve": "cross-env NODE_ENV=development encore dev-server --hot --open"
+    "devserver": "cross-env NODE_ENV=development encore dev-server --hot --open"
   },
   "dependencies": {
     "gsap": "^3.6.1",

@@ -4,7 +4,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress --config webpack.prod.js",
     "dev": "cross-env NODE_ENV=development webpack watch --progress --config webpack.dev.js",
-    "serve": "cross-env NODE_ENV=development webpack serve --progress --config webpack.dev.js"
+    "devserver": "cross-env NODE_ENV=development webpack serve --progress --config webpack.dev.js"
   },
   "dependencies": {
     "gsap": "^3.6.1",

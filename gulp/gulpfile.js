@@ -64,7 +64,7 @@ const build = series(cleanPublic, parallel(html, css, js, asset))
 
 const dev = series(cleanPublic, parallel(html, css, js, asset, watch))
 
-const serve = series(cleanPublic, parallel(html, css, js, asset, browser))
+const devserver = series(cleanPublic, parallel(html, css, js, asset, browser))
 
 exports.default = build
 
@@ -72,4 +72,4 @@ exports.build = build
 
 exports.dev = dev
 
-exports.serve = serve
+exports.devserver = devserver

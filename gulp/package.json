@@ -4,7 +4,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production gulp build",
     "dev": "cross-env NODE_ENV=development gulp dev",
-    "serve": "cross-env NODE_ENV=development gulp serve"
+    "devserver": "cross-env NODE_ENV=development gulp dev-server"
   },
   "dependencies": {
     "gsap": "^3.6.1",
