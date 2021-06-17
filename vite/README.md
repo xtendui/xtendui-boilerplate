@@ -4,5 +4,5 @@
 
 * Install required npm packages with `yarn install`
 * Use `yarn build` to build for **production**
-* Use `yarn dev` to build for **development**
-* Use `yarn serve` to preview with server for **production**
+* Use `yarn dev` to build and serve for **development**
+* Use `yarn serve` to serve for **production**

@@ -1,9 +1,9 @@
 module.exports = {
   mount: {
-    dist: '/',
+    dist: '/src',
     src: '/',
-    css: '/',
-    assets: '/assets',
+    css: '/src/styles',
+    assets: '/src/assets',
   },
   buildOptions: {
     out: 'public',

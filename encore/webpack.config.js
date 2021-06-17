@@ -8,7 +8,7 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
 
 Encore.setOutputPath('public/build/')
   .setPublicPath('/')
-  .addEntry('app', './assets/app.js')
+  .addEntry('app', './src/app.js')
   .cleanupOutputBeforeBuild()
   .splitEntryChunks()
   .enableSingleRuntimeChunk()
@@ -17,12 +17,12 @@ Encore.setOutputPath('public/build/')
   .enableVersioning(Encore.isProduction())
   .enablePostCssLoader()
   .copyFiles({
-    from: './assets/assets',
+    from: './src/assets',
     to: 'assets/[path][name].[ext]', // 'assets/[path][name].[hash:8].[ext]',
   })
   .addPlugin(
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'assets/index.ejs'),
+      template: path.join(__dirname, 'src/index.ejs'),
       title: 'Webpack Encore Boilerplate',
     })
   )

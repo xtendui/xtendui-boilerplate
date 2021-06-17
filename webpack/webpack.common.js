@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const dirNode = 'node_modules'
 const dirSrc = path.join(__dirname, 'src')
-const dirAssets = path.join(__dirname, 'assets')
+const dirAssets = path.join(__dirname, 'src/assets')
 
 module.exports = () => {
   return {
