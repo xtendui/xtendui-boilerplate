@@ -9,7 +9,7 @@
     "gsap": "^3.7.0",
     "gulp-clean": "^0.4.0",
     "gulp-postcss": "^9.0.0",
-    "tailwindcss": "^2.1.4",
+    "tailwindcss": "^2.2.0",
     "xtendui": "^1.0.0-beta.29"
   },
   "devDependencies": {
@@ -29,7 +29,6 @@
     "postcss": "^8.3.5",
     "postcss-import": "^14.0.2",
     "postcss-loader": "^6.1.0",
-    "postcss-nested": "^5.0.5",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   }

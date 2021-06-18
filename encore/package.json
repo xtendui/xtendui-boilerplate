@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "gsap": "^3.7.0",
-    "tailwindcss": "^2.1.4",
+    "tailwindcss": "^2.2.0",
     "xtendui": "^1.0.0-beta.29"
   },
   "devDependencies": {
@@ -21,7 +21,6 @@
     "html-webpack-plugin": "^5.3.1",
     "postcss": "^8.3.5",
     "postcss-import": "^14.0.2",
-    "postcss-loader": "^6.1.0",
-    "postcss-nested": "^5.0.5"
+    "postcss-loader": "^6.1.0"
   }
 }
