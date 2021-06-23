@@ -7,17 +7,17 @@
   },
   "dependencies": {
     "gsap": "^3.6.1",
-    "tailwindcss": "^2.2.0",
-    "xtendui": "^1.0.0-beta.29"
+    "tailwindcss": "^2.2.2",
+    "xtendui": "^1.0.0-beta.31"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
-    "@babel/preset-env": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
     "@rollup/plugin-babel": "^5.3.0",
     "autoprefixer": "^10.2.5",
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.1",
     "postcss-import": "^14.0.1",
-    "vite": "^2.3.7"
+    "vite": "^2.3.8"
   }
 }
