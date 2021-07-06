@@ -4933,9 +4933,9 @@ xtend@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
 
-xtendui@^1.0.0-beta.32:
-  version "1.0.0-beta.32"
-  resolved "https://registry.yarnpkg.com/xtendui/-/xtendui-1.0.0-beta.32.tgz#6d4f08aae6cc555af6929fa63dd84cd24c2e7d19"
+xtendui@^1.0.0-beta.33:
+  version "1.0.0-beta.33"
+  resolved "https://registry.yarnpkg.com/xtendui/-/xtendui-1.0.0-beta.33.tgz#11cd84787bbd37718513c2e7371af48d2fb9c01e"
   dependencies:
     "@googlemaps/markerclustererplus" "^1.2.0"
     "@popperjs/core" "^2.9.2"
