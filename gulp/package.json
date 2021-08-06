@@ -3,7 +3,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production gulp build",
     "dev": "cross-env NODE_ENV=development gulp dev",
-    "watch": "cross-env NODE_ENV=development gulp watch"
+    "watch": "cross-env NODE_ENV=development TAILWIND_MODE=watch gulp watch"
   },
   "dependencies": {
     "gsap": "^3.7.0",

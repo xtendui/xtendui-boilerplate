@@ -2,7 +2,7 @@
   "name": "xtendui-snowpack",
   "scripts": {
     "build": "cross-env NODE_ENV=production snowpack build",
-    "dev": "cross-env NODE_ENV=development snowpack dev"
+    "dev": "cross-env NODE_ENV=development TAILWIND_MODE=watch snowpack dev"
   },
   "dependencies": {
     "gsap": "^3.7.0",

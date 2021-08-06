@@ -3,7 +3,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production encore production",
     "dev": "cross-env NODE_ENV=development encore dev-server --hot --open",
-    "watch": "cross-env NODE_ENV=development encore dev --watch --hot"
+    "watch": "cross-env NODE_ENV=development TAILWIND_MODE=watch encore dev --watch --hot"
   },
   "dependencies": {
     "gsap": "^3.7.0",

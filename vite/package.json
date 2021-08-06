@@ -1,8 +1,8 @@
 {
   "name": "xtendui-vite",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development vite --open",
     "build": "cross-env NODE_ENV=production vite build",
+    "dev": "cross-env NODE_ENV=development TAILWIND_MODE=watch vite --open",
     "serve": "vite preview --open"
   },
   "dependencies": {
