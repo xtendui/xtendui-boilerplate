@@ -2,6 +2,6 @@
 
 @import "tailwindcss/components";
 
-@import "./styles/_common.css";
+@import "./_common.css";
 
 @import "tailwindcss/utilities";

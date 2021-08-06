@@ -19,7 +19,7 @@ const html = () => {
 }
 
 const css = () => {
-  return gulp.src('src/styles/app.css').pipe(postcss()).pipe(gulp.dest('public/styles')).pipe(browserSync.stream())
+  return gulp.src('src/app.css').pipe(postcss()).pipe(gulp.dest('public')).pipe(browserSync.stream())
 }
 
 const js = () => {
@@ -42,7 +42,7 @@ const asset = () => {
 }
 
 const watchFiles = () => {
-  gulp.watch('src/styles/**/*.css', css)
+  gulp.watch('src/**/*.css', css)
   gulp.watch('src/**/*.js', js)
   gulp.watch('src/**/*.html', html)
   gulp.watch('src/assets/**/*', asset)
@@ -54,7 +54,7 @@ const browser = () => {
       baseDir: 'public/',
     },
   })
-  gulp.watch('src/styles/**/*.css', css)
+  gulp.watch('src/**/*.css', css)
   gulp.watch('src/**/*.js', js)
   gulp.watch('src/**/*.html', html)
   gulp.watch('src/assets/**/*', asset)

@@ -2,14 +2,8 @@
 
 @tailwind components;
 
-@import "./styles/_common.css";
+/* custom */
 
-/**
- * layout
- */
-
-body {
-  @apply py-10;
-}
+@import "./_common.css";
 
 @tailwind utilities;
