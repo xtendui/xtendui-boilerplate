@@ -1,5 +1,3 @@
-import './app.css'
-
 /* xtendui */
 
 import 'xtendui'

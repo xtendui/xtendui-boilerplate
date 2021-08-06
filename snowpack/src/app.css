@@ -2,8 +2,10 @@
 
 @tailwind components;
 
-/* custom */
+/* layout */
 
-@import "./_common.css";
+body {
+  @apply py-10;
+}
 
 @tailwind utilities;

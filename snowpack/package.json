@@ -5,21 +5,21 @@
     "dev": "cross-env NODE_ENV=development TAILWIND_MODE=watch snowpack dev"
   },
   "dependencies": {
-    "gsap": "^3.7.0",
-    "tailwindcss": "^2.2.4",
+    "gsap": "^3.7.1",
+    "tailwindcss": "^2.2.7",
     "xtendui": "^1.0.0-beta.38"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.6",
-    "@babel/preset-env": "^7.14.7",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
     "@snowpack/plugin-babel": "^2.1.7",
-    "@snowpack/plugin-postcss": "^1.4.1",
-    "autoprefixer": "^10.2.6",
+    "@snowpack/plugin-postcss": "^1.4.3",
+    "autoprefixer": "^10.3.1",
     "cross-env": "^7.0.3",
-    "cssnano": "^5.0.6",
-    "postcss": "^8.3.5",
+    "cssnano": "^5.0.7",
+    "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.2",
-    "snowpack": "^3.6.0"
+    "snowpack": "^3.8.3"
   }
 }

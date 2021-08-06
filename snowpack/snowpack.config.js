@@ -2,7 +2,7 @@ module.exports = {
   mount: {
     dist: '/src',
     src: '/',
-    css: '/src/',
+    css: '/src',
     assets: '/src/assets',
   },
   buildOptions: {
