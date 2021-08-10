@@ -20,6 +20,6 @@
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.2",
-    "snowpack": "^3.8.3"
+    "snowpack": "^3.8.6"
   }
 }
