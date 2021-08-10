@@ -4553,6 +4553,7 @@ xtend@^4.0.2:
 xtendui@^1.0.0-beta.38:
   version "1.0.0-beta.38"
   resolved "https://registry.yarnpkg.com/xtendui/-/xtendui-1.0.0-beta.38.tgz#7e36f5527856886654aa00a60e7be5afa34331d3"
+  integrity sha512-W4e/zCDkjcdgKrx5PKGazN9lf22+otbVujRC3otJd9V3hj/9kWCHhzrLaD1PfMrgwC9pU8Jzcp7QdjsH4iQd8Q==
   dependencies:
     "@googlemaps/markerclustererplus" "^1.2.0"
     "@popperjs/core" "^2.9.2"
