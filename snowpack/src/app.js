@@ -1,7 +1,7 @@
 /* xtendui */
 
 import 'xtendui'
-import 'xtendui/src/drop'
+import 'xtendui/src/toggle'
 
 /* custom */
 
