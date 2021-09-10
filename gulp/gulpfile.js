@@ -23,7 +23,7 @@ const css = () => {
 }
 
 const js = () => {
-  let b = browserify({
+  const b = browserify({
     entries: 'src/app.js',
   }).transform(babelify, { global: true })
   return b
