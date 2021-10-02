@@ -42,7 +42,7 @@ module.exports = {
           xl: '4rem',
         },
       },
-      // custom animation
+      // custom default transition
       transitionTimingFunction: {
         DEFAULT: 'cubic-bezier(0.4, 0, 0.2, 1)',
         in: 'cubic-bezier(0.4, 0, 1, 1)',
@@ -51,12 +51,14 @@ module.exports = {
       },
       // custom xtendui examples
       xtendui: {
-        layout: {
+        global: {
           component: theme => ({
+            // custom selection
             '::selection': {
               backgroundColor: theme('colors.primary.600'),
               color: theme('colors.white'),
             },
+            // custom scrollbar
             '.xt-overflow-main': {
               '&::-webkit-scrollbar': {
                 height: '10px',
@@ -72,14 +74,15 @@ module.exports = {
         },
         typography: {
           utility: {
+            // custom headers
             '.xt-h1': {
               '@apply font-black text-4xl md:text-5xl lg:text-6xl': {},
               textTransform: 'lowercase',
             },
           },
           component: theme => ({
+            // semibold instead of bold
             'b, strong': {
-              // semibold instead of bold
               fontWeight: theme('fontWeight.semibold', 'bolder'),
             },
           }),
