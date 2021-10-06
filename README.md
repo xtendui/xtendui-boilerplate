@@ -1,9 +1,11 @@
-## Boilerplate setup examples for [Xtend UI](https://github.com/minimit/xtendui)
+## Boilerplate setup examples for [Xtend UI](https://github.com/xtendui/xtendui)
 
 <a href="https://github.com/xtendui/xtendui-boilerplate/actions/workflows/test.yml" title="Build Status" style="display: inline-block;">
   <img src="https://img.shields.io/github/workflow/status/xtendui/xtendui-boilerplate/Test?style=flat-square" alt="Build Status" loading="eager">
 </a>
   
+- [Encore](encore)
+
 - [Gulp](gulp)
 
 - [Snowpack](snowpack)
@@ -11,8 +13,6 @@
 - [Vite](vite)
 
 - [Webpack](webpack)
-
-- [Webpack Encore](encore)
 
 ## Customization
 
@@ -30,4 +30,4 @@ In the root there are the files needed for linting. See in the root `package.jso
 
 ## Copyright
 
-Licensed under [MIT license](https://github.com/minimit/xtendui-boilerplate/blob/master/LICENSE).
+Licensed under [MIT license](https://github.com/xtendui/xtendui-boilerplate/blob/master/LICENSE).

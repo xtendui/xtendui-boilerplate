@@ -1,4 +1,4 @@
-# Webpack Encore Boilerplate for [Xtend UI](https://github.com/minimit/xtendui)
+# Webpack Encore Boilerplate for [Xtend UI](https://github.com/xtendui/xtendui)
 
 ## Compilation
 

@@ -1,4 +1,4 @@
-# Webpack Boilerplate for [Xtend UI](https://github.com/minimit/xtendui)
+# Webpack Boilerplate for [Xtend UI](https://github.com/xtendui/xtendui)
 
 ## Compilation
 

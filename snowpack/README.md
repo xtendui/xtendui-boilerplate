@@ -1,4 +1,4 @@
-# Snowpack Boilerplate for [Xtend UI](https://github.com/minimit/xtendui)
+# Snowpack Boilerplate for [Xtend UI](https://github.com/xtendui/xtendui)
 
 ## Compilation
 

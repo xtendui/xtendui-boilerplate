@@ -1,4 +1,4 @@
-# Gulp Boilerplate for [Xtend UI](https://github.com/minimit/xtendui)
+# Gulp Boilerplate for [Xtend UI](https://github.com/xtendui/xtendui)
 
 ## Compilation
 

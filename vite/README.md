@@ -1,4 +1,4 @@
-# Vite Boilerplate for [Xtend UI](https://github.com/minimit/xtendui)
+# Vite Boilerplate for [Xtend UI](https://github.com/xtendui/xtendui)
 
 ## Compilation
 
