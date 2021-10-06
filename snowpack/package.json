@@ -8,17 +8,17 @@
   "dependencies": {
     "gsap": "^3.8.0",
     "tailwindcss": "^2.2.16",
-    "xtendui": "^1.0.0-beta.42"
+    "xtendui": "^1.0.0-beta.47"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
     "@snowpack/plugin-babel": "^2.1.7",
     "@snowpack/plugin-postcss": "^1.4.3",
-    "autoprefixer": "^10.3.6",
+    "autoprefixer": "^10.3.7",
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.8",
-    "postcss": "^8.3.8",
+    "postcss": "^8.3.9",
     "postcss-cli": "^9.0.1",
     "postcss-import": "^14.0.2",
     "snowpack": "^3.8.8"

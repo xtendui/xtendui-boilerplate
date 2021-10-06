@@ -9,12 +9,12 @@
   "dependencies": {
     "gsap": "^3.8.0",
     "tailwindcss": "^2.2.16",
-    "xtendui": "^1.0.0-beta.42"
+    "xtendui": "^1.0.0-beta.47"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
-    "autoprefixer": "^10.3.6",
+    "autoprefixer": "^10.3.7",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "4.0.0",
     "copy-webpack-plugin": "9.0.1",
@@ -23,16 +23,16 @@
     "cssnano": "^5.0.8",
     "file-loader": "6.2.0",
     "html-webpack-plugin": "^5.3.2",
-    "mini-css-extract-plugin": "^2.3.0",
-    "postcss": "^8.3.8",
+    "mini-css-extract-plugin": "^2.4.1",
+    "postcss": "^8.3.9",
     "postcss-import": "^14.0.2",
     "postcss-loader": "^6.1.1",
     "style-loader": "3.3.0",
     "terser-webpack-plugin": "^5.2.4",
     "url-loader": "^4.1.0",
-    "webpack": "5.56.0",
+    "webpack": "5.57.1",
     "webpack-cli": "4.8.0",
-    "webpack-dev-server": "4.3.0",
+    "webpack-dev-server": "4.3.1",
     "webpack-merge": "5.8.0"
   }
 }
