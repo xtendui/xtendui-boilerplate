@@ -8,7 +8,7 @@
   "dependencies": {
     "gsap": "^3.8.0",
     "tailwindcss": "^2.2.16",
-    "xtendui": "^1.0.0-beta.42"
+    "xtendui": "^1.0.0-beta.47"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
