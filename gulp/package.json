@@ -11,12 +11,12 @@
     "gulp-clean": "^0.4.0",
     "gulp-postcss": "^9.0.1",
     "tailwindcss": "^2.2.16",
-    "xtendui": "^1.0.0-beta.47"
+    "xtendui": "^1.0.0-beta.42"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
-    "autoprefixer": "^10.3.7",
+    "autoprefixer": "^10.3.6",
     "babelify": "^10.0.0",
     "browser-sync": "^2.27.5",
     "browserify": "^17.0.0",
@@ -27,7 +27,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
-    "postcss": "^8.3.9",
+    "postcss": "^8.3.8",
     "postcss-import": "^14.0.2",
     "postcss-loader": "^6.1.1",
     "vinyl-buffer": "^1.0.1",
