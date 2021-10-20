@@ -43,6 +43,9 @@ module.exports = {
         },
       },
       // custom default transition
+      transitionDuration: {
+        DEFAULT: '500ms',
+      },
       transitionTimingFunction: {
         DEFAULT: 'cubic-bezier(0.4, 0, 0.2, 1)',
         in: 'cubic-bezier(0.4, 0, 1, 1)',
