@@ -18,7 +18,7 @@
     "autoprefixer": "^10.4.0",
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.12",
-    "postcss": "^8.4.4",
+    "postcss": "^8.4.5",
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.0.2",
     "snowpack": "^3.8.8"
