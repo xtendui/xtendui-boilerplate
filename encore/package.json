@@ -20,7 +20,7 @@
     "cssnano": "^5.0.12",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
-    "postcss": "^8.4.4",
+    "postcss": "^8.4.5",
     "postcss-import": "^14.0.2",
     "postcss-loader": "^6.2.1"
   }
