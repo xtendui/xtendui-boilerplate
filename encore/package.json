@@ -7,7 +7,7 @@
     "watch": "cross-env NODE_ENV=development TAILWIND_MODE=watch encore dev --watch --hot"
   },
   "dependencies": {
-    "gsap": "^3.8.0",
+    "gsap": "^3.9.0",
     "tailwindcss": "^2.2.19",
     "xtendui": "^1.0.0-beta.47"
   },
