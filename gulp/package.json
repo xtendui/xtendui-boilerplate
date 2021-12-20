@@ -7,7 +7,7 @@
     "watch": "cross-env NODE_ENV=development TAILWIND_MODE=watch gulp watch"
   },
   "dependencies": {
-    "gsap": "^3.8.0",
+    "gsap": "^3.9.0",
     "gulp-clean": "^0.4.0",
     "gulp-postcss": "^9.0.1",
     "tailwindcss": "^2.2.19",
