@@ -3,21 +3,21 @@
   "private": true,
   "scripts": {
     "build": "cross-env NODE_ENV=production snowpack build",
-    "dev": "cross-env NODE_ENV=development TAILWIND_MODE=watch snowpack dev"
+    "dev": "cross-env NODE_ENV=development snowpack dev"
   },
   "dependencies": {
-    "gsap": "^3.8.0",
-    "tailwindcss": "^2.2.19",
-    "xtendui": "^1.0.0-beta.47"
+    "gsap": "^3.9.1",
+    "tailwindcss": "^3.0.13",
+    "xtendui": "^1.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
     "@snowpack/plugin-babel": "^2.1.7",
     "@snowpack/plugin-postcss": "^1.4.3",
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^10.4.2",
     "cross-env": "^7.0.3",
-    "cssnano": "^5.0.12",
+    "cssnano": "^5.0.15",
     "postcss": "^8.4.5",
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.0.2",
