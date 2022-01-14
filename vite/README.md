@@ -2,7 +2,7 @@
 
 ## Compilation
 
-* Install required npm packages with `yarn install`
-* Use `yarn build` to build for **production**
-* Use `yarn dev` to build and serve for **development**
-* Use `yarn serve` to serve for **production**
+* Install required npm packages with `npm install`
+* Use `npm run build` to build for **production**
+* Use `npm run dev` to build and serve for **development**
+* Use `npm run serve` to serve for **production**
