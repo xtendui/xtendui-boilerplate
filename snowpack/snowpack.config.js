@@ -9,5 +9,9 @@ module.exports = {
     out: 'public',
     clean: true,
   },
+  optimize: {
+    bundle: true,
+    minify: true,
+  },
   plugins: ['@snowpack/plugin-postcss'],
 }
