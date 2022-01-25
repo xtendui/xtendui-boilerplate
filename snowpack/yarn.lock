@@ -1781,6 +1781,11 @@
     "browserslist" "^4.19.1"
     "semver" "7.0.0"
 
+"core-js@^3.20.3":
+  "integrity" "sha512-vVl8j8ph6tRS3B8qir40H7yw7voy17xL0piAjlbBUsH7WIfzoedL/ZOr1OV9FyZQLWXsayOJyV4tnRyXR85/ag=="
+  "resolved" "https://registry.npmjs.org/core-js/-/core-js-3.20.3.tgz"
+  "version" "3.20.3"
+
 "core-util-is@~1.0.0":
   "integrity" "sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ=="
   "resolved" "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz"
@@ -4008,7 +4013,7 @@
   "resolved" "https://registry.npmjs.org/regenerate/-/regenerate-1.4.2.tgz"
   "version" "1.4.2"
 
-"regenerator-runtime@^0.13.4":
+"regenerator-runtime@^0.13.4", "regenerator-runtime@^0.13.9":
   "integrity" "sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA=="
   "resolved" "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz"
   "version" "0.13.9"
@@ -4763,10 +4768,10 @@
   "resolved" "https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz"
   "version" "4.0.2"
 
-"xtendui@^1.0.3":
-  "integrity" "sha512-J0634KRQGp9J4X1JXdpEIWeLGfhcFPU3G5czDd7j0XabWxAKWY0C3HF7wRCHRvgIjpMjUUi8c0eMCYHKN9L8lA=="
-  "resolved" "https://registry.npmjs.org/xtendui/-/xtendui-1.0.3.tgz"
-  "version" "1.0.3"
+"xtendui@^1.0.8":
+  "integrity" "sha512-d9ABweR9Fs0uCigsmiurWg28bt/AJtbIuWgZfDVB6afg5nfVH3oJEnvOdBhiwZoXnI1WrYRzNBbUi/bqeylNLg=="
+  "resolved" "https://registry.npmjs.org/xtendui/-/xtendui-1.0.8.tgz"
+  "version" "1.0.8"
   dependencies:
     "@popperjs/core" "^2.11.2"
     "dompurify" "^2.3.4"

@@ -4,7 +4,7 @@ module.exports = {
       '@babel/preset-env',
       {
         useBuiltIns: 'entry',
-        corejs: 3,
+        corejs: '3.20', // check must be the same minor version of installed core-js version
         targets: {
           esmodules: true,
         },
