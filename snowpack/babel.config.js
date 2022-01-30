@@ -5,10 +5,6 @@ module.exports = {
       {
         useBuiltIns: 'entry',
         corejs: require('core-js/package.json').version,
-        targets: {
-          esmodules: true,
-        },
-        modules: 'false',
       },
     ],
   ],
