@@ -8,6 +8,8 @@
 
 - [Gulp](gulp)
 
+- [Parcel](parcel)
+
 - [Snowpack](snowpack)
 
 - [Vite](vite)
