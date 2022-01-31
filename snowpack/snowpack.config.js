@@ -13,5 +13,5 @@ module.exports = {
     bundle: true,
     minify: true,
   },
-  plugins: ['@snowpack/plugin-postcss'], // no babel https://github.com/withastro/snowpack/issues/3851
+  plugins: ['@snowpack/plugin-postcss'],
 }
