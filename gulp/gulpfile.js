@@ -25,7 +25,10 @@ const css = () => {
 const js = () => {
   const b = browserify({
     entries: 'src/app.js',
-  }).transform(babelify, { global: true })
+  }).transform(babelify, {
+    global: true,
+    ignore: [/\/node_modules\/(?!xtendui\/)/],
+  })
   return b
     .bundle()
     .pipe(source('app.js'))

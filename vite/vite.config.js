@@ -5,5 +5,9 @@ export default {
   build: {
     outDir: '../public',
   },
-  plugins: [babel()],
+  plugins: [
+    babel({
+      exclude: /node_modules/,
+    }),
+  ],
 }

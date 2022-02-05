@@ -14,7 +14,7 @@
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/preset-env": "^7.16.8",
-    "@symfony/webpack-encore": "^1.7.0",
+    "@symfony/webpack-encore": "https://github.com/webgriffe/webpack-encore#fix-babel-loader-mjs",
     "autoprefixer": "^10.4.2",
     "core-js": "^3.20.3",
     "cross-env": "^7.0.3",
