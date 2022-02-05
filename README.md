@@ -6,8 +6,6 @@
   
 - [Encore](encore)
 
-- [Gulp](gulp)
-
 - [Parcel](parcel)
 
 - [Snowpack](snowpack)
