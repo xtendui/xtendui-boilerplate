@@ -13,5 +13,5 @@ module.exports = {
     bundle: true,
     minify: true,
   },
-  plugins: ['@snowpack/plugin-postcss'], // no '@snowpack/plugin-babel' gives error with corejs
+  plugins: ['@snowpack/plugin-postcss'],
 }
