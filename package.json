@@ -2,7 +2,7 @@
   "name": "xtendui-boilerplate",
   "private": true,
   "scripts": {
-    "lint": "eslint . --ext .js",
+    "lint": "eslint . --ext .js && cd nextjs && npm run lint --fix && cd ..",
     "u-all": "npm run u-encore && npm run u-nextjs && npm run u-parcel && npm run u-snowpack && npm run u-vite && npm run u-webpack",
     "i-all": "npm run i-encore && npm run i-nextjs && npm run i-parcel && npm run i-snowpack && npm run i-vite && npm run i-webpack",
     "b-all": "npm run b-encore && npm run b-nextjs && npm run b-parcel && npm run b-snowpack && npm run b-vite && npm run b-webpack",
