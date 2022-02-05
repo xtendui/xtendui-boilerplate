@@ -5141,10 +5141,10 @@
   "resolved" "https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz"
   "version" "4.0.2"
 
-"xtendui@^1.0.13":
-  "integrity" "sha512-86M6Msf/ZON/rFBPZrR7y4uFuJ01qCVC95OSOzoySCbAlOvP1Ng1T59hbSULHsW81dsBpYrIHUuqUtQWWinzQA=="
-  "resolved" "https://registry.npmjs.org/xtendui/-/xtendui-1.0.13.tgz"
-  "version" "1.0.13"
+"xtendui@^1.0.14":
+  "integrity" "sha512-VPZMmTvOwbPlU2zx4mDg3L36DfHq+WSjU2yW06smnrQBA8O2zTRHYS8kznqqz49/gE7l8FG5dMOWNDOjs7SNoA=="
+  "resolved" "https://registry.npmjs.org/xtendui/-/xtendui-1.0.14.tgz"
+  "version" "1.0.14"
   dependencies:
     "@popperjs/core" "^2.11.2"
     "dompurify" "^2.3.4"
