@@ -1827,7 +1827,7 @@
   "resolved" "https://registry.npmjs.org/colorette/-/colorette-2.0.16.tgz"
   "version" "2.0.16"
 
-"commander@^2.20.0", "commander@^2.6.0":
+"commander@^2.20.0":
   "integrity" "sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ=="
   "resolved" "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz"
   "version" "2.20.3"
@@ -3193,7 +3193,7 @@
   dependencies:
     "minimist" "^1.2.0"
 
-"json5@^2.1.2":
+"json5@^2.1.2", "json5@^2.2.0":
   "integrity" "sha512-f+8cldu7X/y7RAJurMEJmdoKXGB/X550w2Nr3tTbezL6RwEE/iMcm+tZnXeoZtKuOq6ft8+CqzEkrIgx1fPoQA=="
   "resolved" "https://registry.npmjs.org/json5/-/json5-2.2.0.tgz"
   "version" "2.2.0"
@@ -4245,14 +4245,6 @@
   "resolved" "https://registry.npmjs.org/relateurl/-/relateurl-0.2.7.tgz"
   "version" "0.2.7"
 
-"relaxed-json@^1.0.3":
-  "integrity" "sha512-b7wGPo7o2KE/g7SqkJDDbav6zmrEeP4TK2VpITU72J/M949TLe/23y/ZHJo+pskcGM52xIfFoT9hydwmgr1AEg=="
-  "resolved" "https://registry.npmjs.org/relaxed-json/-/relaxed-json-1.0.3.tgz"
-  "version" "1.0.3"
-  dependencies:
-    "chalk" "^2.4.2"
-    "commander" "^2.6.0"
-
 "renderkid@^2.0.6":
   "integrity" "sha512-oCcFyxaMrKsKcTY59qnCAtmDVSLfPbrv6A3tVbPdFMMrv5jaK10V6m40cKsoPNhAqN6rmHW9sswW4o3ruSrwUQ=="
   "resolved" "https://registry.npmjs.org/renderkid/-/renderkid-2.0.7.tgz"
@@ -5149,16 +5141,16 @@
   "resolved" "https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz"
   "version" "4.0.2"
 
-"xtendui@^1.0.12":
-  "integrity" "sha512-tLcDydO1tzmWsYvFj7aJi7mZGEFRWpfgciC/LD+3swrCebGKKxGlgiFoMMJs1ixvszRoy/RrGkbIt1p7/V/qAA=="
-  "resolved" "https://registry.npmjs.org/xtendui/-/xtendui-1.0.12.tgz"
-  "version" "1.0.12"
+"xtendui@^1.0.13":
+  "integrity" "sha512-86M6Msf/ZON/rFBPZrR7y4uFuJ01qCVC95OSOzoySCbAlOvP1Ng1T59hbSULHsW81dsBpYrIHUuqUtQWWinzQA=="
+  "resolved" "https://registry.npmjs.org/xtendui/-/xtendui-1.0.13.tgz"
+  "version" "1.0.13"
   dependencies:
     "@popperjs/core" "^2.11.2"
     "dompurify" "^2.3.4"
     "focus-trap" "^6.7.1"
+    "json5" "^2.2.0"
     "lodash" "^4.17.21"
-    "relaxed-json" "^1.0.3"
 
 "yallist@^4.0.0":
   "integrity" "sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A=="
