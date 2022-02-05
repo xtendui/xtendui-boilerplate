@@ -26,7 +26,7 @@ In the root there are the files needed for linting. See in the root `package.jso
 }
 ```
 
-Except for **Nextjs** which has it's lint inside it's folder.
+Except for **Nextjs** which has lint managed by itself.
 
 ## Copyright
 
