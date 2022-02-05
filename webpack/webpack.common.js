@@ -35,9 +35,6 @@ module.exports = () => {
           },
           use: {
             loader: 'babel-loader',
-            options: {
-              compact: true,
-            },
           },
         },
         {
