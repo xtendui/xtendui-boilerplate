@@ -11,12 +11,8 @@
     "xtendui": "^1.0.13"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.7",
-    "@babel/preset-env": "^7.16.8",
-    "@snowpack/plugin-babel": "^2.1.7",
     "@snowpack/plugin-postcss": "^1.4.3",
     "autoprefixer": "^10.4.2",
-    "core-js": "^3.20.3",
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.15",
     "postcss": "^8.4.5",
