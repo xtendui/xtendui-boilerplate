@@ -4,7 +4,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production npx parcel build src/index.html",
     "dev": "cross-env NODE_ENV=development npx parcel src/index.html",
-    "serve": "npx parcel serve src/index.html --open"
+    "start": "npx parcel serve src/index.html --open"
   },
   "dependencies": {
     "gsap": "^3.9.1",

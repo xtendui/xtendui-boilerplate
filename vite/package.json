@@ -4,7 +4,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production vite build",
     "dev": "cross-env NODE_ENV=development vite --open",
-    "serve": "vite preview --open"
+    "start": "vite preview --open"
   },
   "dependencies": {
     "gsap": "^3.9.1",
