@@ -1,9 +1,5 @@
 ## Boilerplate setup examples for [Xtend UI](https://github.com/xtendui/xtendui)
 
-<a href="https://github.com/xtendui/xtendui-boilerplate/actions/workflows/test.yml" title="Build Status" style="display: inline-block;">
-  <img src="https://img.shields.io/github/workflow/status/xtendui/xtendui-boilerplate/Test?style=flat-square" alt="Build Status" loading="eager">
-</a>
-  
 - [Encore](encore)
 
 - [Parcel](parcel)
