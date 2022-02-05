@@ -10,4 +10,4 @@
 
 ## BUGS
 
-* Nextjs has problems with [transpiling inside `node_modules`](https://github.com/vercel/next.js/discussions/32223) and with [using `.browserslistrc`](https://github.com/vercel/next.js/discussions/12826), so there's no babel in this code.
+* Nextjs has problems with [transpiling inside `node_modules`](https://github.com/vercel/next.js/discussions/32223) and with [using `.browserslistrc`](https://github.com/vercel/next.js/discussions/12826), so there's no babel in this code. I'll wait for those to work properly. if you want to polyfill correctly you can use [next-transpile-modules](https://www.npmjs.com/package/next-transpile-modules).
