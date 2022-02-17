@@ -13,6 +13,7 @@ module.exports = () => {
       path: dirPublic,
       publicPath: '/',
       filename: '[name].[contenthash].bundle.js',
+      clean: true,
     },
     plugins: [new CleanWebpackPlugin(), new TerserJSPlugin()],
   })

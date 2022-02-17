@@ -10,7 +10,7 @@ const dirAssets = path.join(__dirname, 'src/assets')
 module.exports = () => {
   return {
     entry: {
-      main: path.join(dirSrc, 'app'),
+      app: path.join(dirSrc, 'app'),
     },
     resolve: {
       modules: [dirNode, dirSrc],

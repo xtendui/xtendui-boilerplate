@@ -13,6 +13,7 @@ module.exports = env => {
       pathinfo: true,
       publicPath: '/',
       filename: '[name].bundle.js',
+      clean: true,
     },
     devServer: {
       port: '9000',
