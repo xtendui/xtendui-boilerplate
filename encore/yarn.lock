@@ -2298,9 +2298,9 @@
     "domelementtype" "^2.2.0"
 
 "dompurify@^2.3.4":
-  "integrity" "sha512-kD+f8qEaa42+mjdOpKeztu9Mfx5bv9gVLO6K9jRx4uGvh6Wv06Srn4jr1wPNY2OOUGGSKHNFN+A8MA3v0E0QAQ=="
-  "resolved" "https://registry.npmjs.org/dompurify/-/dompurify-2.3.5.tgz"
-  "version" "2.3.5"
+  "integrity" "sha512-OFP2u/3T1R5CEgWCEONuJ1a5+MFKnOYpkywpUSxv/dj1LeBT1erK+JwM7zK0ROy2BRhqVCf0LRw/kHqKuMkVGg=="
+  "resolved" "https://registry.npmjs.org/dompurify/-/dompurify-2.3.6.tgz"
+  "version" "2.3.6"
 
 "domutils@^2.5.2", "domutils@^2.8.0":
   "integrity" "sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A=="
@@ -2635,9 +2635,9 @@
     "path-exists" "^4.0.0"
 
 "focus-trap@^6.7.1":
-  "integrity" "sha512-mRVv9QPCXITaDreu+pNXiPk1Rpn0WQtGvGrDo3Z/s2kdwtzFw/WOPfbLkdxWWvcahoInm9eRztuQOr1RNyQGrw=="
-  "resolved" "https://registry.npmjs.org/focus-trap/-/focus-trap-6.7.2.tgz"
-  "version" "6.7.2"
+  "integrity" "sha512-8xCEKndV4KrseGhFKKKmczVA14yx1/hnmFICPOjcFjToxCJYj/NHH43tPc3YE/PLnLRNZoFug0EcWkGQde/miQ=="
+  "resolved" "https://registry.npmjs.org/focus-trap/-/focus-trap-6.7.3.tgz"
+  "version" "6.7.3"
   dependencies:
     "tabbable" "^5.2.1"
 
@@ -5141,10 +5141,10 @@
   "resolved" "https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz"
   "version" "4.0.2"
 
-"xtendui@^1.0.15":
-  "integrity" "sha512-itLwdy0a8C3F61BVjJXeYSZJ7KgBLL/hwnuMmfDj3vgtIPkG/9eTEaP1Jytiixr9BcOT9HOtghrIlkzAWcZ1YQ=="
-  "resolved" "https://registry.npmjs.org/xtendui/-/xtendui-1.0.15.tgz"
-  "version" "1.0.15"
+"xtendui@^1.0.16":
+  "integrity" "sha512-uI0nflijoMJsQm0P6f2Dmd7Fz6rEbOvDxpedFKuopSzUWVbp7Sl+FpQ0lV+zC3xJ73OQRYjg5f8Go6e9fyH2ug=="
+  "resolved" "https://registry.npmjs.org/xtendui/-/xtendui-1.0.16.tgz"
+  "version" "1.0.16"
   dependencies:
     "@popperjs/core" "^2.11.2"
     "dompurify" "^2.3.4"
