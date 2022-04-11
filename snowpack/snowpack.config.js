@@ -13,5 +13,5 @@ module.exports = {
     bundle: true,
     minify: true,
   },
-  plugins: ['@snowpack/plugin-postcss'],
+  plugins: ['@snowpack/plugin-postcss', '@snowpack/plugin-babel'],
 }
