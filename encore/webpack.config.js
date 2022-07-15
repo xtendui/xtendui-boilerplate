@@ -26,7 +26,7 @@ Encore.setOutputPath('public/build/')
       title: 'Webpack Encore Boilerplate',
     })
   )
-  .configureBabel(function () {}, {
+  .configureBabel(null, {
     includeNodeModules: ['xtendui'],
   })
 /* if using symfony and twig ignore HtmlWebpackPlugin and use

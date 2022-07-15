@@ -7,17 +7,17 @@
     "start": "npx parcel serve src/index.html --open"
   },
   "dependencies": {
-    "gsap": "^3.9.1",
-    "tailwindcss": "^3.0.13",
-    "xtendui": "^1.0.16"
+    "gsap": "^3.10.4",
+    "tailwindcss": "^3.1.6",
+    "xtendui": "^1.1.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "core-js": "^3.20.3",
+    "autoprefixer": "^10.4.7",
+    "core-js": "^3.23.4",
     "cross-env": "^7.0.3",
-    "cssnano": "^5.0.15",
-    "parcel": "^2.2.1",
-    "postcss-import": "^14.0.1",
+    "cssnano": "^5.1.12",
+    "parcel": "^2.6.2",
+    "postcss-import": "^14.1.0",
     "regenerator-runtime": "^0.13.9"
   }
 }

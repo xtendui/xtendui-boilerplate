@@ -6,8 +6,6 @@
 
 - [Parcel](parcel)
 
-- [Snowpack](snowpack)
-
 - [Vite](vite)
 
 - [Webpack](webpack)
