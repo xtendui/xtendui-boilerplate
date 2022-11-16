@@ -1,7 +1,7 @@
 /* xtendui */
 
 import 'xtendui'
-import 'xtendui/src/toggle.mjs' // use .mjs
+import 'xtendui/src/toggle'
 
 /* custom */
 

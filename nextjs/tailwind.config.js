@@ -2,8 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   presets: [require('tailwindcss/defaultConfig'), require('xtendui/tailwind.preset')],
-  // put other content e.g.: './src/**/*.{html,js}'
-  content: ['./node_modules/xtendui/src/*.mjs', './pages/**/*.js'],
+  content: ['./pages/**/*.js'],
   theme: {
     extend: {
       // custom xtendui color
