@@ -12,15 +12,15 @@
     "xtendui": "^1.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.2",
+    "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.20.2",
-    "@rollup/plugin-babel": "^6.0.2",
+    "@rollup/plugin-babel": "^6.0.3",
     "autoprefixer": "^10.4.13",
     "core-js": "^3.26.1",
     "cross-env": "^7.0.3",
     "cssnano": "^5.1.14",
-    "postcss-import": "^15.0.0",
-    "regenerator-runtime": "^0.13.10",
-    "vite": "^3.2.3"
+    "postcss-import": "^15.0.1",
+    "regenerator-runtime": "^0.13.11",
+    "vite": "^3.2.5"
   }
 }

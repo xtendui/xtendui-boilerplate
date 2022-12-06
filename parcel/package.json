@@ -17,7 +17,7 @@
     "cross-env": "^7.0.3",
     "cssnano": "^5.1.14",
     "parcel": "^2.8.0",
-    "postcss-import": "^15.0.0",
-    "regenerator-runtime": "^0.13.10"
+    "postcss-import": "^15.0.1",
+    "regenerator-runtime": "^0.13.11"
   }
 }
