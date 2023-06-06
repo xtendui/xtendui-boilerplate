@@ -21,6 +21,6 @@
     "cssnano": "^5.1.14",
     "postcss-import": "^15.0.1",
     "regenerator-runtime": "^0.13.11",
-    "vite": "^3.2.5"
+    "vite": "^3.2.7"
   }
 }
