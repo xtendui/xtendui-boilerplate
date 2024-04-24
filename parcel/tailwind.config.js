@@ -59,15 +59,10 @@ module.exports = {
             },
             // custom scrollbar
             '.xt-overflow-main': {
-              '&::-webkit-scrollbar': {
-                height: '10px',
-                width: '10px',
-                background: theme('colors.white'),
-              },
-              '&::-webkit-scrollbar-thumb': {
-                background: theme('colors.gray.900'),
-              },
-              scrollbarColor: `${theme('colors.gray.900')} ${theme('colors.white')}`,
+              scrollbarColor: `${theme('colors.black')} ${theme('colors.white')}`,
+            },
+            '.xt-overflow-sub': {
+              scrollbarColor: `${theme('colors.gray.300')} ${theme('colors.white')}`,
             },
           }),
         },
