@@ -4,7 +4,8 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress --config webpack.prod.js",
     "dev": "cross-env NODE_ENV=development webpack serve --progress --config webpack.dev.js",
-    "watch": "cross-env NODE_ENV=development webpack watch --progress --config webpack.dev.js"
+    "watch": "cross-env NODE_ENV=development webpack watch --progress --config webpack.dev.js",
+    "serve": "cross-env NODE_ENV=production webpack serve --progress --config webpack.prod.js"
   },
   "dependencies": {
     "gsap": "^3.11.3",
@@ -22,7 +23,6 @@
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.2",
     "cssnano": "^5.1.14",
-    "file-loader": "6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
     "postcss": "^8.4.19",
@@ -31,7 +31,6 @@
     "regenerator-runtime": "^0.13.11",
     "style-loader": "3.3.1",
     "terser-webpack-plugin": "^5.3.6",
-    "url-loader": "^4.1.1",
     "webpack": "5.75.0",
     "webpack-cli": "5.0.1",
     "webpack-dev-server": "4.11.1",

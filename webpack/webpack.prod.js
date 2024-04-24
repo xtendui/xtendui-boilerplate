@@ -1,6 +1,5 @@
 const path = require('path')
 const { merge } = require('webpack-merge')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const common = require('./webpack.common')
 
@@ -16,6 +15,6 @@ module.exports = () => {
       chunkFilename: '[id].[contenthash].js',
       clean: true,
     },
-    plugins: [new CleanWebpackPlugin(), new TerserJSPlugin()],
+    plugins: [new TerserJSPlugin()],
   })
 }
