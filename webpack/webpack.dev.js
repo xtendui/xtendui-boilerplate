@@ -11,7 +11,7 @@ module.exports = env => {
     output: {
       path: dirPublic,
       pathinfo: true,
-      publicPath: '/',
+      publicPath: 'auto',
       filename: '[name].bundle.js',
       clean: true,
     },

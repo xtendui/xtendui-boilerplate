@@ -10,7 +10,7 @@ module.exports = () => {
     mode: 'production',
     output: {
       path: dirPublic,
-      publicPath: '/',
+      publicPath: 'auto',
       filename: '[name].[contenthash].bundle.js',
       chunkFilename: '[id].[contenthash].js',
       clean: true,
