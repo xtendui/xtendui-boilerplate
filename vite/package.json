@@ -7,20 +7,20 @@
     "start": "vite preview --open"
   },
   "dependencies": {
-    "gsap": "^3.11.3",
-    "tailwindcss": "^3.2.4",
+    "gsap": "^3.12.5",
+    "tailwindcss": "^3.4.10",
     "xtendui": "^2.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.5",
-    "@babel/preset-env": "^7.20.2",
-    "@rollup/plugin-babel": "^6.0.3",
-    "autoprefixer": "^10.4.13",
-    "core-js": "^3.26.1",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@rollup/plugin-babel": "^6.0.4",
+    "autoprefixer": "^10.4.20",
+    "core-js": "^3.38.1",
     "cross-env": "^7.0.3",
-    "cssnano": "^5.1.14",
-    "postcss-import": "^15.0.1",
-    "regenerator-runtime": "^0.13.11",
-    "vite": "^4.5.2"
+    "cssnano": "^7.0.5",
+    "postcss-import": "^16.1.0",
+    "regenerator-runtime": "^0.14.1",
+    "vite": "^5.4.2"
   }
 }

@@ -6,7 +6,7 @@
 
 - [Parcel](parcel)
 
-- [Vite](vite) DYNAMIC IMPORT BROKEN NOW https://github.com/vitejs/vite/issues/14102
+- [Vite](vite)
 
 - [Webpack](webpack)
 
