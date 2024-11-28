@@ -9,7 +9,7 @@
   "dependencies": {
     "gsap": "^3.11.3",
     "tailwindcss": "^3.2.4",
-    "xtendui": "^2.0.1"
+    "xtendui": "^2.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",
